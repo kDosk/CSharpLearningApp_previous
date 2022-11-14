@@ -4,19 +4,19 @@
              xmlns:local="clr-namespace:CSharpLearningApp"
              StartupUri="\TagirBranch\MainWindowTagir.xaml">
     <Application.Resources>
-        <Style x:Key="ButtonDesign">
+        <Style x:Key="ButtonDesign" TargetType="Button">
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
             <Setter Property="Button.FontSize" Value="20"></Setter>
             <Setter Property="Button.FontWeight" Value="Bold"></Setter>
         </Style>
-        <Style x:Key="BlockDesign">
+        <Style x:Key="BlockDesign" TargetType="TextBlock">
             <Setter Property="TextBlock.Foreground" Value="#FF57F7CA"></Setter>
             <Setter Property="TextBlock.FontSize" Value="20"></Setter>
             <Setter Property="TextBlock.FontWeight" Value="Bold"></Setter>
         </Style>
 
-        <Style x:Key="GridDesign">
+        <Style x:Key="GridDesign" TargetType="Grid">
             <Setter Property="Grid.Background">
                 <Setter.Value>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -27,7 +27,7 @@
             </Setter>
         </Style>
 
-        <Style x:Key="RadioDesign">
+        <Style x:Key="RadioDesign" TargetType="RadioButton">
             <Setter Property="RadioButton.RenderTransform">
                 <Setter.Value>
                     <TransformGroup>
@@ -40,7 +40,6 @@
             </Setter>
             <Setter Property="RadioButton.FontWeight" Value="Bold"></Setter>
             <Setter Property="RadioButton.Foreground" Value="#FFFFD7C1"></Setter>
-
         </Style>
     </Application.Resources>
 </Application>
