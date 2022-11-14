@@ -29,5 +29,15 @@ namespace CSharpLearningApp.TagirBranch
         {
             NavigationService.Navigate(new TheoryPage());
         }
+
+        private void Validation_ButtonClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ValidationPage());
+        }
+
+        private void Practice_ButtonClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PracticePage());
+        }
     }
 }

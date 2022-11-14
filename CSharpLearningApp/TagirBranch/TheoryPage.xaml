@@ -9,6 +9,6 @@
       Title="TheoryPage">
 
     <Grid>
-        
+        <TextBlock Text="Привет"/>
     </Grid>
 </Page>
