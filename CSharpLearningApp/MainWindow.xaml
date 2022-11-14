@@ -1,0 +1,33 @@
+﻿<Window x:Class="CSharpLearningApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpLearningApp"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="480" MinWidth="800" MaxHeight="720" MaxWidth="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Основы программирования на C#" HorizontalAlignment="Center"/>
+
+        <Grid Grid.Row="1">
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Переменные и константы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Типы данных" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Арифметические вычисления" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Операции присваивания" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Преобразование базовых типов данных" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Условные выражения" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Циклы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Массивы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Методы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Возвращение значения и оператор return" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+                <TextBlock Text="Перечисления enum" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
