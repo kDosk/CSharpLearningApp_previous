@@ -24,6 +24,7 @@ namespace CSharpLearningApp.AmirFolder
         {
             InitializeComponent();
             MainFrame.Navigate(new AmirPage1());
+            Manager.MainFrame = MainFrame;
         }
     }
 }

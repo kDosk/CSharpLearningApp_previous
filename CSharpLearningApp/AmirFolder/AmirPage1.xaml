@@ -5,15 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp.AmirFolder"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="800" 
       Title="AmirPage1">
 
-    <Grid Style="{StaticResource ResourceKey=GridDesign}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="700"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -21,9 +16,8 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="1" Text="Выберите главу" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Style="{StaticResource ResourceKey=BlockDesign}" ></TextBlock>
-        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter1" Grid.Column="1" Grid.Row="1" Height="50" Width="700" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Глава 1: Базовые типы данных" Click="ButtonCapter1_Click"></Button>
-        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter2" Grid.Column="1" Grid.Row="2" Height="50" Width="700" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 2: Использование суффиксов и системных типов" Click="ButtonCapter2_Click"></Button>
-        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter3" Grid.Column="1" Grid.Row="3" Height="50" Width="700" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Глава 3: Неявная типизация" Click="ButtonCapter3_Click"></Button>
-        <Frame x:Name="MainFrame2" />
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter1" Grid.Column="1" Grid.Row="1" Height="50" Width="600" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Глава 1: Базовые типы данных" Click="ButtonCapter1_Click"></Button>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter2" Grid.Column="1" Grid.Row="2" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 2: Использование суффиксов и системных типов" Click="ButtonCapter2_Click"></Button>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter3" Grid.Column="1" Grid.Row="3" Height="50" Width="600" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Глава 3: Неявная типизация" Click="ButtonCapter3_Click"></Button>
     </Grid>
 </Page>

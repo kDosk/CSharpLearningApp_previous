@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Navigation;
 
 namespace CSharpLearningApp.AmirFolder
 {
@@ -28,7 +27,7 @@ namespace CSharpLearningApp.AmirFolder
 
         private void ButtonCapter1_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame2.Navigate(new AmirPage2());
+            Manager.MainFrame.Navigate(new AmirPage2());
 
         }
 

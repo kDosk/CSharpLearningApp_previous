@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpLearningApp.AmirFolder"
         mc:Ignorable="d"
-        Title="AmirWindow" Height="450" Width="800">
-    <Grid>
-        <Frame x:Name="MainFrame" />
+        Title="AmirWindow" Height="600" Width="1000" MinHeight="500" MinWidth="1000"> 
+    <Grid Style="{StaticResource ResourceKey=GridDesign}">
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.Row="1"></Frame>
     </Grid>
 </Window>

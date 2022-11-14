@@ -80,6 +80,7 @@
     <Compile Include="AmirFolder\AmirWindow.xaml.cs">
       <DependentUpon>AmirWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AmirFolder\Manager.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
