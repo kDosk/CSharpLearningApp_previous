@@ -16,31 +16,35 @@
 
         <TextBlock Text="Возвращение значения и оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <Grid Grid.Row="1" Width="700">
+        <Grid Grid.Row="1" Width="700" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Метод void, return" Grid.Column="0" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            
-            <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center" Margin="10">
+            <TextBlock Text="Метод void, return" Grid.Column="0" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="10">
                 <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5" Click="Button_Click"/>
                 <Button Style="{StaticResource ButtonDesign}" Content="Практика" Margin="0 5"/>
             </StackPanel>
 
             <TextBlock Text="Сокращенная версия методов с результатом" Grid.Column="1" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap"/>
 
-            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center" Margin="10">
-                <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5"/>
+            <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10">
+                <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5" Click="Button_Click_1"/>
                 <Button Style="{StaticResource ButtonDesign}" Content="Практика" Margin="0 5"/>
             </StackPanel>
 
-            <TextBlock Text="Выход из метода" Grid.Column="2" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="Выход из метода" Grid.Column="2" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Center" Margin="10">
-                <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5"/>
+            <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="10">
+                <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5" Click="Button_Click_2"/>
                 <Button Style="{StaticResource ButtonDesign}" Content="Практика" Margin="0 5"/>
             </StackPanel>
         </Grid>

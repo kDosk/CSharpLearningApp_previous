@@ -29,5 +29,15 @@ namespace CSharpLearningApp.Rustem.Pages
         {
             NavigatonManager.ChangePage(new TheoryPage1());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigatonManager.ChangePage(new TheoryPage2());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            NavigatonManager.ChangePage(new TheoryPage3());
+        }
     }
 }

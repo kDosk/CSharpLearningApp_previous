@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp.Rustem.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="10000" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="800"
       Title="TheoryPage1">
 
     <Grid Style="{StaticResource GridDesign}">
@@ -15,7 +15,7 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Возвращение значения и оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
+                <TextBlock Text="Оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
                 <StackPanel Grid.Row="1">
                     <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
                     Метод может возвращать значение, какой-либо результат. В примере выше были определены два метода, которые имели тип void. Методы с таким типом не возвращают никакого значения. Они просто выполняют некоторые действия.

@@ -5,10 +5,87 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp.Rustem.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="5000" d:DesignWidth="800"
       Title="TheoryPage3">
 
-    <Grid>
-        
+    <Grid Style="{StaticResource GridDesign}">
+        <ScrollViewer>
+            <Grid Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Выход из метода" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
+                <StackPanel Grid.Row="1">
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Оператор return не только возвращает значение, но и производит выход из метода. Поэтому он должен определяться после остальных инструкций. Например:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                            GetHello()
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      return"/> "Hello";
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      "/>Console.WriteLine("After return");
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    С точки зрения синтаксиса данный метод корректен, однако его инструкция Console.WriteLine("After return") не имеет смысла - она никогда не выполнится, так как до ее выполнения оператор return возвратит значение и произведет выход из метода.
+                    <LineBreak/>
+                    Однако мы можем использовать оператор return и в методах с типом void. В этом случае после оператора return не ставится никакого возвращаемого значения (ведь метод ничего не возвращает). Типичная ситуация - в зависимости от опеределенных условий произвести выход из метода:
+                    </TextBlock>
+
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="void"/>
+                            PrintPerson(
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/> name,
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/> age
+                            )
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      if"/>( age > 120 || age  &#60; 1)
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      "/>{
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="          "/>Console.WriteLine("After return");
+                            
+                            <LineBreak/>    
+                            <Run Foreground="{StaticResource BlueText}" Text="          return"/>;
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      "/>}
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      "/>Console.WriteLine($"Имя: {name} Возраст: {age}");
+                            <LineBreak/>
+                            }
+                            <LineBreak/>
+                            PrintPerson("Tom", 37); // Имя: Tom Возраст: 37
+                            <LineBreak/>
+                            PrintPerson("Dunkan", 1234); // Недопустимый возраст
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Здесь метод PrintPerson() в качестве параметров принимает имя и возраст пользователя. Однако в методе вначале мы проверяем, соответствует ли возраст некоторому диапазону (меньше 120 и больше 0). Если возраст находится вне этого диапазона, то выводим сообщение о недопустимом возрасте и с помощью оператора return выходим из метода.
+                    </TextBlock>
+                    
+                    <Grid Margin="20">
+                        <Button Content="Назад" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Left" Click="Button_Click"/>
+                        <Button Content="Тестирование" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Right"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>

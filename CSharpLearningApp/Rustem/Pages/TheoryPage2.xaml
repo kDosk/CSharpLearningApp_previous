@@ -5,10 +5,87 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp.Rustem.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="5000" d:DesignWidth="800"
       Title="TheoryPage2">
 
-    <Grid>
-        
+    <Grid Style="{StaticResource GridDesign}">
+        <ScrollViewer>
+            <Grid Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Сокращенная версия методов с результатом" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
+                <StackPanel Grid.Row="1">
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Также мы можем сокращать методы, которые возвращают значение:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                            GetMessage()
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      return"/> "Hello";
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">аналогичен следующему методу:</TextBlock>
+                        
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                                <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                                GetMessage() => "Hello";
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">А метод</TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/>
+                            Sum(
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/> x,
+                                <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/> y
+                            )
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Text="      "/> <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="return"/> x + y;
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    аналогичен следующему методу:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/>
+                            Sum(
+                                <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/> x,
+                                <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="int"/> y
+                            ) => x + y;
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <Grid Margin="20">
+                        <Button Content="Назад" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Left" Click="Button_Click"/>
+                        <Button Content="Тестирование" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Right"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>
