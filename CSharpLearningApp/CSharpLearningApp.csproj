@@ -58,6 +58,15 @@
     <Compile Include="Rustem\Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Rustem\Pages\TheoryPage1.xaml.cs">
+      <DependentUpon>TheoryPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rustem\Pages\TheoryPage2.xaml.cs">
+      <DependentUpon>TheoryPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rustem\Pages\TheoryPage3.xaml.cs">
+      <DependentUpon>TheoryPage3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Rustem\Windows\BasicWindow.xaml.cs">
       <DependentUpon>BasicWindow.xaml</DependentUpon>
     </Compile>
@@ -74,6 +83,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Rustem\Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rustem\Pages\TheoryPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rustem\Pages\TheoryPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rustem\Pages\TheoryPage3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

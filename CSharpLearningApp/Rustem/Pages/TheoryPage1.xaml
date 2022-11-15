@@ -1,0 +1,41 @@
+﻿<Page x:Class="CSharpLearningApp.Rustem.Pages.TheoryPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSharpLearningApp.Rustem.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TheoryPage1">
+    <Page.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="blueColor" Color="#86b4fd"/>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <ScrollViewer>
+        <Grid Style="{StaticResource GridDesign}">
+            <TextBlock Text="Возвращение значения и оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <StackPanel>
+                <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Метод может возвращать значение, какой-либо результат. В примере выше были определены два метода, которые имели тип void. Методы с таким типом не возвращают никакого значения. Они просто выполняют некоторые действия.
+                    <LineBreak/>
+                    Но методы также могут возвращать некоторое значение. Для этого применяется оператор return, после которого идет возвращаемое значение:
+                </TextBlock>
+                <Border Margin="15" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="#ff700f">
+                    <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                        <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                        <Run FontWeight="Bold" Foreground="{StaticResource blueColor}" Text="return"/>
+                        возвращаемое значение;
+                        </TextBlock>
+                    </Border>
+                </Border>
+                <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Метод может возвращать значение, какой-либо результат. В примере выше были определены два метода, которые имели тип void. Методы с таким типом не возвращают никакого значения. Они просто выполняют некоторые действия.
+                    <LineBreak/>
+                    Но методы также могут возвращать некоторое значение. Для этого применяется оператор return, после которого идет возвращаемое значение:
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
