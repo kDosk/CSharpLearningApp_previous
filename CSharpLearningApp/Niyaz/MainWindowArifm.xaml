@@ -8,23 +8,20 @@
         Title="MainWindowArifm" Height="720" Width="1280">
     <Grid Style="{StaticResource ResourceKey=GridDesign}">
 
-        <TextBlock Text="Арифметические Операции" Style="{StaticResource ResourceKey=ButtonDesign}" FontSize="50" HorizontalAlignment="Center" Margin="30"/>
-        <TextBlock Text="NiyazLatipov429" Style="{StaticResource ResourceKey=ButtonDesign}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Purple"/>
+        <TextBlock Text="Арифметические Операции" Style="{StaticResource ResourceKey=BlockDesign}" FontSize="50" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30"/>
+        <TextBlock Text="NiyazLatipov429" Style="{StaticResource ResourceKey=BlockDesign}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Purple"/>
 
-        <StackPanel Height="80" VerticalAlignment="Top" Margin="0 100 0 0" Orientation="Horizontal">
-            <TextBlock Text="Бинарные операции" FontSize="30" Width="200" Height="80" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Left" Margin="60 0 0 0" Style="{StaticResource ResourceKey=ButtonDesign}"/>
-            <TextBlock Text="Унарные операции" FontSize="30" Width="200" Height="80" TextWrapping="Wrap" TextAlignment="Center"  Margin="60 0 0 0" Style="{StaticResource ResourceKey=ButtonDesign}"/>
-            <TextBlock Text="Ассоциативность операторов" FontSize="30" Width="200" Height="80" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Right" Margin="0 0 0 0" Style="{StaticResource ResourceKey=ButtonDesign}"/>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center"> 
-            
-        <Button Content="Теория" Margin="30 30 30 30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="Бинарные операции" FontSize="30" Width="200" Height="80" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Left" Margin="60 0 0 0" Style="{StaticResource ResourceKey=BlockDesign}"/>
+
+            <Button Content="Теория" Margin="30 30 30 30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}" Click="Button_Click"/>
         <Button Content="Тест" Margin="30 30 30 30" VerticalAlignment="Center" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
         <Button Content="Практика" Margin="30 30 30 30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
             
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Унарные операции" FontSize="30" Width="200" Height="80" TextWrapping="Wrap" TextAlignment="Center"  Margin="0 0 0 0" Style="{StaticResource ResourceKey=BlockDesign}"/>
 
             <Button Content="Теория" Margin="30 30 30 30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
             <Button Content="Тест" Margin="30 30 30 30" VerticalAlignment="Center" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
@@ -33,6 +30,7 @@
         </StackPanel>
         
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBlock Text="Ассоциативность операторов" FontSize="30" Width="260" Height="80" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Right" Margin="0 0 40 0" Style="{StaticResource ResourceKey=BlockDesign}"/>
 
             <Button Content="Теория" Margin="30 30 30 30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
             <Button Content="Тест" Margin="30 30 30 30" VerticalAlignment="Center" HorizontalAlignment="Left" Width="300" Height="60" FontSize="30" Style="{StaticResource ResourceKey=ButtonDesign}"/>
