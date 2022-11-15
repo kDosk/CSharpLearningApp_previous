@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:CSharpLearningApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <SolidColorBrush x:Key="BlueText" Color="#86B4FD"></SolidColorBrush>
+        <SolidColorBrush x:Key="OrangeText" Color="#FFB07B"></SolidColorBrush>
+
+
         <Style x:Key="ButtonDesign" TargetType="Button">
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
@@ -40,6 +44,17 @@
             </Setter>
             <Setter Property="RadioButton.FontWeight" Value="Bold"></Setter>
             <Setter Property="RadioButton.Foreground" Value="#FFFFD7C1"></Setter>
+        </Style>
+
+        <Style x:Key="StackPanelDesign" TargetType="StackPanel">
+            <Setter Property="StackPanel.Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF267B63"/>
+                        <GradientStop Color="#FF32987F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Application.Resources>
 </Application>
