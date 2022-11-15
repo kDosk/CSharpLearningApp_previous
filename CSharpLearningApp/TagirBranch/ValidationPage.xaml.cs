@@ -23,6 +23,13 @@ namespace CSharpLearningApp.TagirBranch
         public ValidationPage()
         {
             InitializeComponent();
+            TextBlock1.Text = "Какой тип данных возвращает логические операции?";
+        }
+
+        private void RadioButtonBool_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Правильный ответ!");
+
         }
     }
 }

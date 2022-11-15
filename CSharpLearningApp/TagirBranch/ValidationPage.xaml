@@ -8,7 +8,43 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ValidationPage">
 
-    <Grid Background="White">
-        
+    <Grid Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman"/>
+        <StackPanel Grid.Row="1">
+            <StackPanel Margin="10" >
+                <TextBlock x:Name="TextBlock1" FontSize="20"/>
+                <RadioButton GroupName="First"  Content="bool" FontSize="17" Checked="RadioButtonBool_Checked"/>
+                <RadioButton GroupName="First"  Content="string" FontSize="17"/>
+                <RadioButton GroupName="First"  Content="int" FontSize="17"/>
+            </StackPanel>
+            <StackPanel Margin="10" >
+                <TextBlock x:Name="TextBlock2" FontSize="20"/>
+                <RadioButton GroupName="Second" Content="bool" FontSize="17"/>
+                <RadioButton GroupName="Second" Content="string" FontSize="17"/>
+                <RadioButton GroupName="Second" Content="int" FontSize="17"/>
+            </StackPanel>
+            <StackPanel Margin="10" >
+                <TextBlock x:Name="TextBlock3" FontSize="20"/>
+                <RadioButton GroupName="Tree" Content="bool" FontSize="17"/>
+                <RadioButton GroupName="Tree" Content="string" FontSize="17"/>
+                <RadioButton GroupName="Tree" Content="int" FontSize="17"/>
+            </StackPanel>
+            <StackPanel Margin="10" >
+                <TextBlock x:Name="TextBlock4" FontSize="20"/>
+                <RadioButton GroupName="Four" Content="bool" FontSize="17"/>
+                <RadioButton GroupName="Four" Content="string" FontSize="17"/>
+                <RadioButton GroupName="Four" Content="int" FontSize="17"/>
+            </StackPanel>
+            <StackPanel Margin="10" >
+                <TextBlock x:Name="TextBlock5" FontSize="20"/>
+                <RadioButton GroupName="Five" Content="bool" FontSize="17"/>
+                <RadioButton GroupName="Five" Content="string" FontSize="17"/>
+                <RadioButton GroupName="Five" Content="int" FontSize="17"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
