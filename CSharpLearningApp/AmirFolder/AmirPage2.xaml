@@ -1,0 +1,66 @@
+﻿<Page x:Class="CSharpLearningApp.AmirFolder.AmirPage2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSharpLearningApp.AmirFolder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="AmirPage2">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Типы данных" Style="{StaticResource ResourceKey=BlockDesign}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="    В языке C# есть следующие базовые типы данных:"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· bool: хранит значение true или false (логические литералы). Представлен системным типом System.Boolean;"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· byte: хранит целое число от 0 до 255 и занимает 1 байт. Представлен системным типом System.Byte;"></TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· sbyte: хранит целое число от -128 до 127 и занимает 1 байт. Представлен системным типом System.SByte"></TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· short: хранит целое число от -32768 до 32767 и занимает 2 байта. Представлен системным типом System.Int16"></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· ushort: хранит целое число от 0 до 65535 и занимает 2 байта. Представлен системным типом System.UInt16"></TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· int: хранит целое число от -2147483648 до 2147483647 и занимает 4 байта. Представлен системным типом System.Int32. Все целочисленные литералы по "></TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="умолчанию представляют значения типа int"></TextBlock>
+        <TextBlock Grid.Row="9" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· uint: хранит целое число от 0 до 4294967295 и занимает 4 байта. Представлен системным типом System.UInt32"></TextBlock>
+        <TextBlock Grid.Row="10" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· long: хранит целое число от –9 223 372 036 854 775 808 до 9 223 372 036 854 775 807 и занимает 8 байт. Представлен системным типом System.Int64 "></TextBlock>
+        <TextBlock Grid.Row="11" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· ulong: хранит целое число от 0 до 18 446 744 073 709 551 615 и занимает 8 байт. Представлен системным типом System.UInt64"></TextBlock>
+        <TextBlock Grid.Row="12" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· float: хранит число с плавающей точкой от -3.4*1038 до 3.4*1038 и занимает 4 байта. Представлен системным типом System.Single"></TextBlock>
+        <TextBlock Grid.Row="13" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· double: хранит число с плавающей точкой от ±5.0*10-324 до ±1.7*10308 и занимает 8 байта. Представлен системным типом System.Double"></TextBlock>
+        <TextBlock Grid.Row="14" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· decimal: хранит десятичное дробное число. Если употребляется без десятичной запятой, имеет значение от ±1.0*10-28 до ±7.9228*1028, может хранить 28 "></TextBlock>
+        <TextBlock Grid.Row="15" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="знаков после запятой и занимает 16 байт. Представлен системным типом System.Decimal"></TextBlock>
+        <TextBlock Grid.Row="16" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· char: хранит одиночный символ в кодировке Unicode и занимает 2 байта. Представлен системным типом System.Char. Этому типу соответствуют символьные"></TextBlock>
+        <TextBlock Grid.Row="17" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="литералы"></TextBlock>
+        <TextBlock Grid.Row="18" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· string: хранит набор символов Unicode. Представлен системным типом System.String. Этому типу соответствуют строковые литералы."></TextBlock>
+        <TextBlock Grid.Row="19" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="· object: может хранить значение любого типа данных и занимает 4 байта на 32-разрядной платформе и 8 байт на 64-разрядной платформе. Представлен"></TextBlock>
+        <TextBlock Grid.Row="20" Grid.Column="1" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="системным типом System.Object, который является базовым для всех других типов и классов .NET."></TextBlock>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Grid.Row="21" Grid.Column="1" Width="100" Height="40" Content="Дальше" Click="Button_Click"></Button>
+        
+        <Frame x:Name="MainFrame" />
+    </Grid>
+</Page>
