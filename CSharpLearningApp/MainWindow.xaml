@@ -5,29 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpLearningApp"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="480" MinWidth="800" MaxHeight="720" MaxWidth="1280">
-    <Grid>
+        Title="MainWindow" MinHeight="480" MinWidth="800" Height="480" Width="800">
+    <Grid Style="{StaticResource GridDesign}">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <TextBlock Text="Основы программирования на C#" HorizontalAlignment="Center"/>
+        <TextBlock Text="Основы программирования на C#" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}" VerticalAlignment="Center"/>
 
-        <Grid Grid.Row="1">
-            <StackPanel Grid.Column="0">
-                <TextBlock Text="Переменные и константы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Типы данных" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Арифметические вычисления" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Операции присваивания" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Преобразование базовых типов данных" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Условные выражения" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Циклы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Массивы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Методы" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Возвращение значения и оператор return" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-                <TextBlock Text="Перечисления enum" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
-            </StackPanel>
-        </Grid>
+        <StackPanel Grid.Row="1" Width="500">
+            <Button Content="Переменные и константы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Типы данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Арифметические вычисления" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Операции присваивания" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Преобразование базовых типов данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Условные выражения" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Циклы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Массивы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Методы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Возвращение значения и оператор return" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+            <Button Content="Перечисления enum" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -91,6 +91,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageService.cs" />
+    <Compile Include="NavigatonManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
