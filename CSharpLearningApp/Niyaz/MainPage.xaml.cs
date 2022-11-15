@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.Niyaz
 {
     /// <summary>
-    /// Логика взаимодействия для binarTeory.xaml
+    /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class binarTeory : Page
+    public partial class MainPage : Page
     {
-        public binarTeory()
+        public MainPage()
         {
             InitializeComponent();
         }
 
-        private void ExitBinarTeory_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            NavigatonManager.ChangePage(new binarTeory());
         }
     }
 }

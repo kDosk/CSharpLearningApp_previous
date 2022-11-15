@@ -101,6 +101,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Niyaz\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Niyaz\MainWindowArifm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +119,9 @@
     </Compile>
     <Compile Include="Niyaz\binarTest.xaml.cs">
       <DependentUpon>binarTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Niyaz\MainWindowArifm.xaml.cs">
       <DependentUpon>MainWindowArifm.xaml</DependentUpon>

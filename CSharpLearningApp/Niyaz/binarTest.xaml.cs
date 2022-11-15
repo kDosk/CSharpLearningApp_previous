@@ -23,6 +23,7 @@ namespace CSharpLearningApp.Niyaz
         public binarTest()
         {
             InitializeComponent();
+            
         }
     }
 }
