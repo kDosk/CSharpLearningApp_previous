@@ -25,19 +25,52 @@ namespace CSharpLearningApp.TagirBranch
             InitializeComponent();
         }
 
-        private void Theory_ButtonClick(object sender, RoutedEventArgs e)
+        #region Buttons_click
+        private void Theory_ButtonClick1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new TheoryPage());
         }
 
-        private void Validation_ButtonClick(object sender, RoutedEventArgs e)
+        private void Validation_ButtonClick1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new ValidationPage());
         }
 
-        private void Practice_ButtonClick(object sender, RoutedEventArgs e)
+        private void Practice_ButtonClick1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PracticePage());
         }
+
+        private void Theory_ButtonClick2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new TheorySravpage());
+        }
+
+        private void Validation_ButtonClick2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ValidationSravPage());
+        }
+
+        private void Practice_ButtonClick2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PracticeSravPage());
+        }
+
+        private void Theory_ButtonClick3(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new TheoryLogPage());
+        }
+
+        private void Validation_ButtonClick3(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ValidationLogPage());
+        }
+
+        private void Practice_ButtonClick3(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PracticeLogPage());
+        } 
+        #endregion
+
     }
 }

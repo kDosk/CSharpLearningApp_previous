@@ -8,7 +8,7 @@
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
             <Setter Property="Button.FontSize" Value="20"></Setter>
-            <Setter Property="Button.FontWeight" Value="Bold"></Setter
+            <Setter Property="Button.FontWeight" Value="Bold"></Setter>
         </Style>
         <Style x:Key="BlockDesign">
             <Setter Property="TextBlock.Foreground" Value="#FF57F7CA"></Setter>

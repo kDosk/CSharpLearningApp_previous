@@ -61,14 +61,32 @@
     <Compile Include="TagirBranch\MainWindowTagir.xaml.cs">
       <DependentUpon>MainWindowTagir.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TagirBranch\PracticeLogPage.xaml.cs">
+      <DependentUpon>PracticeLogPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TagirBranch\PracticePage.xaml.cs">
       <DependentUpon>PracticePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagirBranch\PracticeSravPage.xaml.cs">
+      <DependentUpon>PracticeSravPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagirBranch\TheoryLogPage.xaml.cs">
+      <DependentUpon>TheoryLogPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TagirBranch\TheoryPage.xaml.cs">
       <DependentUpon>TheoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TagirBranch\TheorySravpage.xaml.cs">
+      <DependentUpon>TheorySravpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagirBranch\ValidationLogPage.xaml.cs">
+      <DependentUpon>ValidationLogPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TagirBranch\ValidationPage.xaml.cs">
       <DependentUpon>ValidationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagirBranch\ValidationSravPage.xaml.cs">
+      <DependentUpon>ValidationSravPage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -90,7 +108,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TagirBranch\PracticeLogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TagirBranch\PracticePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TagirBranch\PracticeSravPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TagirBranch\TheoryLogPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,7 +128,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TagirBranch\TheorySravpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TagirBranch\ValidationLogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TagirBranch\ValidationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TagirBranch\ValidationSravPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

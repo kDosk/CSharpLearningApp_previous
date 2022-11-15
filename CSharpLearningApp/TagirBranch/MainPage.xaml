@@ -9,24 +9,29 @@
       Title="MainPage">
 
     <Grid Style="{StaticResource GridDesign}">
-        <TextBlock Text="Условные выражения" FontSize="25" HorizontalAlignment="Center" Margin="15" Style="{StaticResource BlockDesign}"/>
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBlock Text="Общая теория" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Validation_ButtonClick" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick" Style="{StaticResource ButtonDesign}"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Условные выражения" FontSize="25" HorizontalAlignment="Center" Margin="15" Style="{StaticResource BlockDesign}" Grid.Column="1"/>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0">
+            <TextBlock Text="Основные понятия" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Validation_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
             <TextBlock Text="Операции сравнения" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Validation_ButtonClick" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Validation_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="2">
             <TextBlock Text="Логические операции" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Validation_ButtonClick" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Validation_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
         </StackPanel>
     </Grid>
 </Page>
