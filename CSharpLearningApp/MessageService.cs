@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace CSharpLearningApp
 {
-    internal static class MessageService : IMessageService
+    internal static class MessageService
     {
         public static void ShowMessage(string message)
         {
