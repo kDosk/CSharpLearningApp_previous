@@ -26,7 +26,7 @@
             <TextBlock Text="Метод void, return" Grid.Column="0" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             
             <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center" Margin="10">
-                <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5"/>
+                <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5" Click="Button_Click"/>
                 <Button Style="{StaticResource ButtonDesign}" Content="Практика" Margin="0 5"/>
             </StackPanel>
 

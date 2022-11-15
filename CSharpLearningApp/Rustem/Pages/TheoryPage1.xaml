@@ -5,37 +5,118 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp.Rustem.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="10000" d:DesignWidth="800"
       Title="TheoryPage1">
-    <Page.Resources>
-        <ResourceDictionary>
-            <SolidColorBrush x:Key="blueColor" Color="#86b4fd"/>
-        </ResourceDictionary>
-    </Page.Resources>
 
-    <ScrollViewer>
-        <Grid Style="{StaticResource GridDesign}">
-            <TextBlock Text="Возвращение значения и оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <StackPanel>
-                <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+    <Grid Style="{StaticResource GridDesign}">
+        <ScrollViewer>
+            <Grid Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Возвращение значения и оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
+                <StackPanel Grid.Row="1">
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
                     Метод может возвращать значение, какой-либо результат. В примере выше были определены два метода, которые имели тип void. Методы с таким типом не возвращают никакого значения. Они просто выполняют некоторые действия.
                     <LineBreak/>
                     Но методы также могут возвращать некоторое значение. Для этого применяется оператор return, после которого идет возвращаемое значение:
-                </TextBlock>
-                <Border Margin="15" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="#ff700f">
-                    <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
-                        <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
-                        <Run FontWeight="Bold" Foreground="{StaticResource blueColor}" Text="return"/>
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                        <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="return"/>
                         возвращаемое значение;
-                        </TextBlock>
+                            </TextBlock>
+                        </Border>
                     </Border>
-                </Border>
-                <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
-                    Метод может возвращать значение, какой-либо результат. В примере выше были определены два метода, которые имели тип void. Методы с таким типом не возвращают никакого значения. Они просто выполняют некоторые действия.
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Например, определим метод, который возвращает значение типа string:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                            GetMessage()
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      return"/> "Hello";
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Метод GetMessage имеет тип string, следовательно, он должен возвратить строку. Поэтому в теле метода используется оператор return, после которого указана возвращаемая строка.
                     <LineBreak/>
-                    Но методы также могут возвращать некоторое значение. Для этого применяется оператор return, после которого идет возвращаемое значение:
-                </TextBlock>
-            </StackPanel>
-        </Grid>
-    </ScrollViewer>
+                    При этом методы, которые в качестве возвращаемого типа имеют любой тип, кроме void, обязательно должны использовать оператор return для возвращения значения. Например, следующее определение метода некорректно:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                            GetMessage()
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Foreground="{StaticResource BlueText}" Text="      return"/> "Hello";
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Метод GetMessage имеет тип string, следовательно, он должен возвратить строку. Поэтому в теле метода используется оператор return, после которого указана возвращаемая строка.
+                    <LineBreak/>
+                    При этом методы, которые в качестве возвращаемого типа имеют любой тип, кроме void, обязательно должны использовать оператор return для возвращения значения. Например, следующее определение метода некорректно:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                            GetMessage()
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Text="      "/> Console.WriteLine("Hello");
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    Также между возвращаемым типом метода и возвращаемым значением после оператора return должно быть соответствие. Например, в следующем случае возвращаемый тип - string, но метод возвращает число (тип int), поэтому такое определение метода некорректно:
+                    </TextBlock>
+                    <Border Margin="15" HorizontalAlignment="Center" BorderThickness="0 0 0 3" BorderBrush="LightGray">
+                        <Border Margin="5" BorderThickness="5 0 0 0" BorderBrush="LightGreen">
+                            <TextBlock Style="{StaticResource BlockDesign}" Margin="5 0">
+                            <Run FontWeight="Bold" Foreground="{StaticResource BlueText}" Text="string"/>
+                            GetMessage()
+                            <LineBreak/>
+                            {
+                            <LineBreak/>
+                            <Run Text="      return" Foreground="{StaticResource BlueText}"/> 3; // Ошибка! Метод должен возвращать строку, а не число
+                            <LineBreak/>
+                            }
+                            </TextBlock>
+                        </Border>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
+                    После оператора return также можно указывать сложные выражения или вызовы других методов, которые возвращают определенный результат. Например, метод, который возвращает сумму чисел.
+                    </TextBlock>
+
+                    <Grid Margin="20">
+                        <Button Content="Назад" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Left" Click="Button_Click"/>
+                        <Button Content="Тестирование" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Right"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
 </Page>

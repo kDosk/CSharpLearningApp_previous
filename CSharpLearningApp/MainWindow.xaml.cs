@@ -1,4 +1,4 @@
-﻿using CSharpLearningApp.AmirFolder;
+﻿using CSharpLearningApp.Rustem.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +35,7 @@ namespace CSharpLearningApp
                     ShowWindow(new Window());
                     break;
                 case "Типы данных":
-                    ShowWindow(new AmirWindow());
+                    ShowWindow(new Window());
                     break;
                 case "Арифметические вычисления":
                     ShowWindow(new Window());
@@ -59,7 +59,7 @@ namespace CSharpLearningApp
                     ShowWindow(new Window());
                     break;
                 case "Возвращение значения и оператор return":
-                    ShowWindow(new Window());
+                    ShowWindow(new BasicWindow());
                     break;
                 case "Перечисления enum":
                     ShowWindow(new Window());
