@@ -23,6 +23,25 @@ namespace CSharpLearningApp.TagirBranch
         public PracticePage()
         {
             InitializeComponent();
+            TextBlockTextss.Text = " Отдельный набор операций представляет условные выражения. " +
+                "Такие операции возвращают логическое значение, то есть значение типа 1_____: 2_____, если выражение истинно, и 3_____, если выражение ложно." +
+                " К подобным операциям относятся операции сравнения и логические операции.";
+
+        }
+
+        private void Textb1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Textb3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Textb2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

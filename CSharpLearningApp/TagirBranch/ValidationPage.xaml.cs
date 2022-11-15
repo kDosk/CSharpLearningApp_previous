@@ -24,12 +24,17 @@ namespace CSharpLearningApp.TagirBranch
         {
             InitializeComponent();
             TextBlock1.Text = "Какой тип данных возвращает логические операции?";
+            TextBlock2.Text = "Какие значение принимает bool?";
         }
 
         private void RadioButtonBool_Checked(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Правильный ответ!");
+        }
 
+        private void RadioOba_checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Правильный ответ!");
         }
     }
 }

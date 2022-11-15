@@ -13,7 +13,7 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label Content="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman"/>
+        <Label Content="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman" />
         <ScrollViewer Grid.Row="1">
             <StackPanel Orientation="Vertical">
                 <TextBlock x:Name="TextBlockTextss" Style="{StaticResource BlockDesign}"  Margin="10" Grid.Row="1" TextWrapping= "Wrap"  FontSize="20" FontFamily="Times new Roman"/>
