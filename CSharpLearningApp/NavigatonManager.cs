@@ -31,5 +31,10 @@ namespace CSharpLearningApp
             _currentFrame = currentFrame;
             _currentFrame.Content = currentPage;
         }
+
+        internal static void GoBack()
+        {
+            _currentFrame.NavigationService.GoBack();
+        }
     }
 }
