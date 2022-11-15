@@ -4,7 +4,11 @@
              xmlns:local="clr-namespace:CSharpLearningApp"
              StartupUri="AmirFolder/AmirWindow.xaml">
     <Application.Resources>
-        <Style TargetType="Button" x:Key="ButtonDesign">
+        <SolidColorBrush x:Key="BlueText" Color="#86B4FD"></SolidColorBrush>
+        <SolidColorBrush x:Key="OrangeText" Color="#FFB07B"></SolidColorBrush>
+
+
+        <Style x:Key="ButtonDesign" TargetType="Button">
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
             <Setter Property="Button.FontSize" Value="20"></Setter>
@@ -43,10 +47,15 @@
             <Setter Property="RadioButton.Foreground" Value="#FFFFD7C1"></Setter>
         </Style>
 
-        <Style TargetType="TextBlock" x:Key="BlockDesignSmall">
-            <Setter Property="TextBlock.Foreground" Value="#FF8FF3D7"></Setter>
-            <Setter Property="TextBlock.FontSize" Value="12"></Setter>
-            <Setter Property="TextBlock.FontWeight" Value="Bold"></Setter>
+        <Style x:Key="StackPanelDesign" TargetType="StackPanel">
+            <Setter Property="StackPanel.Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF267B63"/>
+                        <GradientStop Color="#FF32987F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Application.Resources>
 </Application>
