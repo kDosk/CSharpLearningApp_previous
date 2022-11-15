@@ -10,6 +10,7 @@
 
     <Grid Style="{StaticResource ResourceKey=GridDesign}">
         <Grid.RowDefinitions>
+            <RowDefinition />
             <RowDefinition Height="170"/>
             <RowDefinition/>
             <RowDefinition/>
@@ -19,24 +20,24 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition />
             <RowDefinition Height="39.286"/>
             <RowDefinition Height="100"/>
-            <RowDefinition />
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Margin="10 0 0 0" Text="В C# используется большинство операций, которые применяются и в других языках программирования. Операции представляют определенные действия над операндами - участниками операции. В качестве операнда может выступать переменной или какое-либо значение (например, число). Операции бывают унарными (выполняются над одним операндом), бинарными - над двумя операндами и тернарными - выполняются над тремя операндами. Рассмотрим все виды операций." FontSize="24" TextWrapping="Wrap" Style="{StaticResource BlockDesign}"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="1" Style="{StaticResource BlockDesign}" Text="+ операция сложения двух чисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="2" Style="{StaticResource BlockDesign}" Text="int x = 10;                   int z = x + 12; // 22" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="3" Style="{StaticResource BlockDesign}" Text="- операция вычитания двух чисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="4" Style="{StaticResource BlockDesign}" Text="int x = 10;                   int z = x - 6; // 4" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="5" Style="{StaticResource BlockDesign}" Text="* операция умножения двух чисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="6" Style="{StaticResource BlockDesign}" Text="int x = 10;                   int z = x * 5; // 50" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="7" Style="{StaticResource BlockDesign}" Text="/ операция деления двухчисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="8" Style="{StaticResource BlockDesign}" Text="int x = 10;     int z = x / 5; // 2     double a = 10;    double b = 3;  double c = a / b; // 3.33333333" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="9" Style="{StaticResource BlockDesign}" Text="% Операция получение остатка от целочисленного деления двух чисел:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
-        <TextBlock Margin="10 0 0 0" Grid.Row="10" Style="{StaticResource BlockDesign}" Text="double x = 10.0;             double z = x % 4.0; //результат равен 2" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"></TextBlock>
+        <TextBlock Text="Бинарные арифметические операции" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" FontSize="25"/>
+        <TextBlock Margin="10 0 0 0" Grid.Row="1" Text="В C# используется большинство операций, которые применяются и в других языках программирования. Операции представляют определенные действия над операндами - участниками операции. В качестве операнда может выступать переменной или какое-либо значение (например, число). Операции бывают унарными (выполняются над одним операндом), бинарными - над двумя операндами и тернарными - выполняются над тремя операндами. Рассмотрим все виды операций." FontSize="24" TextWrapping="Wrap" Style="{StaticResource BlockDesign}"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="2" Style="{StaticResource BlockDesign}" Text="+ операция сложения двух чисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="3" Style="{StaticResource BlockDesign}" Text="int x = 10;                   int z = x + 12; // 22" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="4" Style="{StaticResource BlockDesign}" Text="- операция вычитания двух чисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="5" Style="{StaticResource BlockDesign}" Text="int x = 10;                   int z = x - 6; // 4" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="6" Style="{StaticResource BlockDesign}" Text="* операция умножения двух чисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="7" Style="{StaticResource BlockDesign}" Text="int x = 10;                   int z = x * 5; // 50" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="8" Style="{StaticResource BlockDesign}" Text="/ операция деления двухчисел" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="9" Style="{StaticResource BlockDesign}" Text="int x = 10;     int z = x / 5; // 2     double a = 10;    double b = 3;  double c = a / b; // 3.33333333" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="10" Style="{StaticResource BlockDesign}" Text="% Операция получение остатка от целочисленного деления двух чисел:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Grid.Row="11" Style="{StaticResource BlockDesign}" Text="double x = 10.0;             double z = x % 4.0; //результат равен 2" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="25"></TextBlock>
         <Button Name="ExitBinarTeory" Grid.Row="13" Width="200" HorizontalAlignment="Right" Margin="0 0 100 0" Style="{StaticResource ButtonDesign}" Content="Выход" Click="ExitBinarTeory_Click"/>
 
     </Grid>

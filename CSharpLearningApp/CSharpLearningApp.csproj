@@ -89,7 +89,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Niyaz\binarPract.xaml">
+    <Page Include="Niyaz\AssociationTeory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,10 +109,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Niyaz\UnarTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\UnarTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Niyaz\binarPract.xaml.cs">
-      <DependentUpon>binarPract.xaml</DependentUpon>
+    <Compile Include="Niyaz\AssociationTeory.xaml.cs">
+      <DependentUpon>AssociationTeory.xaml</DependentUpon>
     </Compile>
     <Compile Include="Niyaz\binarTeory.xaml.cs">
       <DependentUpon>binarTeory.xaml</DependentUpon>
@@ -128,6 +136,12 @@
     </Compile>
     <Compile Include="MessageService.cs" />
     <Compile Include="NavigatonManager.cs" />
+    <Compile Include="Niyaz\UnarTeory.xaml.cs">
+      <DependentUpon>UnarTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\UnarTest.xaml.cs">
+      <DependentUpon>UnarTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

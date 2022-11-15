@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.Niyaz
 {
     /// <summary>
-    /// Логика взаимодействия для binarPract.xaml
+    /// Логика взаимодействия для UnarTest.xaml
     /// </summary>
-    public partial class binarPract : Page
+    public partial class UnarTest : Page
     {
-        public binarPract()
+        public UnarTest()
         {
             InitializeComponent();
         }

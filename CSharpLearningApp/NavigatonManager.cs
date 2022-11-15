@@ -10,7 +10,7 @@ namespace CSharpLearningApp
     internal static class NavigatonManager
     {
         private static Frame _currentFrame;
-        
+
         /// <param name="currentPage">Окно</param>
         internal static void ChangePage(Page currentPage)
         {
@@ -35,8 +35,6 @@ namespace CSharpLearningApp
         internal static void GoBack()
         {
             _currentFrame.NavigationService.GoBack();
-        }
-            }
         }
     }
 }

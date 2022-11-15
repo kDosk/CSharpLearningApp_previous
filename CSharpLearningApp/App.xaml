@@ -7,8 +7,6 @@
         <SolidColorBrush x:Key="BlueText" Color="#86B4FD"></SolidColorBrush>
         <SolidColorBrush x:Key="OrangeText" Color="#FFB07B"></SolidColorBrush>
 
-
-        <Style x:Key="ButtonDesign" TargetType="Button">
         <Style TargetType="Button" x:Key="ButtonDesign">
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
