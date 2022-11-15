@@ -56,5 +56,10 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style TargetType="TextBlock" x:Key="BlockDesignSmall">
+            <Setter Property="TextBlock.Foreground" Value="#FF78FDD8"></Setter>
+            <Setter Property="TextBlock.FontSize" Value="12"></Setter>
+            <Setter Property="TextBlock.FontWeight" Value="Bold"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
