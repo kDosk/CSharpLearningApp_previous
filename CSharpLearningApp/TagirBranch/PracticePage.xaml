@@ -13,12 +13,14 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label Content="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman" />
+        <TextBlock Text="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}" VerticalAlignment="Center"/>
         <TextBlock x:Name="TextBlockTextss" Style="{StaticResource BlockDesign}"  Margin="10" Grid.Row="1" TextWrapping= "Wrap"  FontSize="20" FontFamily="Times new Roman"/>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <TextBox Text="1" Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb1" MouseLeftButtonDown="Textb1_MouseLeftButtonDown"/>
-            <TextBox Text="2" Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb2" MouseLeftButtonDown="Textb2_MouseLeftButtonDown"/>
-            <TextBox Text="3" Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb3" MouseLeftButtonDown="Textb3_MouseLeftButtonDown"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb1" />
+            <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb2" />
+            <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb3" />
+            <Button x:Name="ButtonCheck" Content="Проверка" Height="30" Width="100" Click="ButtonCheck_Click" />
         </StackPanel>
+
     </Grid>
 </Page>

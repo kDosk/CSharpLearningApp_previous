@@ -8,25 +8,31 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ValidationPage">
     
-    <Grid Background="White" >
+    <Grid  Style="{StaticResource GridDesign}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman"/>
+        <TextBlock Text="Основные понятия" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
+        <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonExit_Click"/>
+        <Button x:Name="TheoryButton" Content="Перейти к теории" Margin="5" Height="30" Width="auto" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ButtonTheory_Click"/>
         <StackPanel Grid.Row="1" Style="{StaticResource StackPanelDesign}">
-            <StackPanel Margin="10" >
-                <TextBlock x:Name="TextBlock1" FontSize="20"/>
-                <RadioButton GroupName="First"  Content="bool" FontSize="17" Checked="RadioButtonBool_Checked"/>
-                <RadioButton GroupName="First"  Content="string" FontSize="17"/>
-                <RadioButton GroupName="First"  Content="int" FontSize="17"/>
-            </StackPanel>
-            <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
-                <TextBlock x:Name="TextBlock2" FontSize="20"/>
-                <RadioButton GroupName="Second" Content="true" FontSize="17"/>
-                <RadioButton GroupName="Second" Content="false" FontSize="17"/>
-                <RadioButton GroupName="Second" Content="Оба" FontSize="17" Checked="RadioOba_checked"/>
-            </StackPanel>
+            <Border BorderBrush="{StaticResource BlueText}" BorderThickness="1" Margin="5">
+                <StackPanel Margin="10" >
+                    <TextBlock x:Name="TextBlock1" FontSize="20" Style="{StaticResource BlockDesignSmall}"/>
+                    <RadioButton GroupName="First"  x:Name="Radiobool" Content="bool"  Checked="RadioButtonBool_Checked" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    <RadioButton GroupName="First"  x:Name="Radiostring" Content="string"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                    <RadioButton GroupName="First"  x:Name="Radioint" Content="int"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="{StaticResource BlueText}" BorderThickness="1" Margin="5">
+                <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                    <TextBlock x:Name="TextBlock2" FontSize="20" Style="{StaticResource BlockDesignSmall}"/>
+                    <RadioButton GroupName="Second" Content="true"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                    <RadioButton GroupName="Second" Content="false" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    <RadioButton GroupName="Second" Content="Оба"  Checked="RadioOba_checked" Style="{StaticResource RadioDesign}" Margin="8"/>
+                </StackPanel>
+            </Border>
         </StackPanel>
     </Grid>
 </Page>

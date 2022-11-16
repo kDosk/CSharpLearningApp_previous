@@ -40,5 +40,10 @@ namespace CSharpLearningApp.TagirBranch
         {
             NavigationService.Navigate(new ValidationPage());
         }
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
+        }
     }
 }

@@ -36,5 +36,15 @@ namespace CSharpLearningApp.TagirBranch
         {
             MessageBox.Show("Правильный ответ!");
         }
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
+        }
+
+        private void ButtonTheory_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new TheoryPage());
+        }
     }
 }
