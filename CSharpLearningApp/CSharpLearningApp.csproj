@@ -74,6 +74,8 @@
     <Compile Include="Rustem\Windows\BasicWindow.xaml.cs">
       <DependentUpon>BasicWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestCalculate.cs" />
+    <Compile Include="TestModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
