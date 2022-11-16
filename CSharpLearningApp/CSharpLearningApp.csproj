@@ -61,6 +61,9 @@
     <Compile Include="Rustem\Pages\TestPage1.xaml.cs">
       <DependentUpon>TestPage1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Rustem\Pages\TestPage2.xaml.cs">
+      <DependentUpon>TestPage2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Rustem\Pages\TheoryPage1.xaml.cs">
       <DependentUpon>TheoryPage1.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Rustem\Pages\TestPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rustem\Pages\TestPage2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

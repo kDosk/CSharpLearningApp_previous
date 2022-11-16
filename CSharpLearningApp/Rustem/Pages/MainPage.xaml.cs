@@ -46,5 +46,10 @@ namespace CSharpLearningApp.Rustem.Pages
         {
 			NavigatonManager.ChangePage(new TestPage1());
 		}
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+			NavigatonManager.ChangePage(new TestPage2());
+		}
     }
 }

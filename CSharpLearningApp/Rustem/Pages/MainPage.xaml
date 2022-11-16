@@ -39,7 +39,7 @@
 
             <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10">
                 <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5" Click="Button_Click_1"/>
-                <Button Style="{StaticResource ButtonDesign}" Content="Тест" Margin="0 5"/>
+                <Button Style="{StaticResource ButtonDesign}" Content="Тест" Margin="0 5" Click="Button_Click_4"/>
             </StackPanel>
 
             <TextBlock Text="Выход из метода" Grid.Column="2" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
