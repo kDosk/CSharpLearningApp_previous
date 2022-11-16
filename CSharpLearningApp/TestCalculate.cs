@@ -29,6 +29,8 @@ namespace CSharpLearningApp
 					}
 				}
 			}
+
+			MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из {listViewItems.Count}");
 		}
 	}
 }

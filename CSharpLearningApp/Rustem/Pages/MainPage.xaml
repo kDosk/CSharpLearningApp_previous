@@ -46,7 +46,7 @@
 
             <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="10">
                 <Button Style="{StaticResource ButtonDesign}" Content="Теория" Margin="0 5" Click="Button_Click_2"/>
-                <Button Style="{StaticResource ButtonDesign}" Content="Текст" Margin="0 5" Click="Button_Click_5"/>
+                <Button Style="{StaticResource ButtonDesign}" Content="Тест" Margin="0 5" Click="Button_Click_5"/>
             </StackPanel>
 
 			<Button Style="{StaticResource ButtonDesign}" Grid.Row="2" Grid.ColumnSpan="3" Content="Практика" Margin="0 5"/>

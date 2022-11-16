@@ -62,7 +62,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 2,
-				Question = "Какая сокращенная версия данного кода?\n" +
+				Question = "Что вернется при выполнении данного кода?\n" +
 						   "string GetValue(int a, int b)\n" +
 						   "{\n" +
 						   "\tif (a > b)\n" +
