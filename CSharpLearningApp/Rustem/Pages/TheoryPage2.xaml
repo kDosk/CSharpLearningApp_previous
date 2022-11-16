@@ -5,17 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp.Rustem.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="5000" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="TheoryPage2">
 
     <Grid Style="{StaticResource GridDesign}">
-        <ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
             <Grid Margin="15">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Сокращенная версия методов с результатом" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
+                <TextBlock Text="Сокращенная версия методов с результатом: теория" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
                 <StackPanel Grid.Row="1">
                     <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap">
                     Также мы можем сокращать методы, которые возвращают значение:
