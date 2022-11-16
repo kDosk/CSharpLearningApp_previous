@@ -64,5 +64,10 @@ namespace CSharpLearningApp.TagirBranch
                     break;
             }
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
+        }
     }
 }

@@ -13,13 +13,23 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Основные понятия" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}" VerticalAlignment="Center"/>
+        <TextBlock Text="Основные понятия" Grid.Column="1" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}" VerticalAlignment="Center"/>
+        <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ExitButton_Click"/>
         <TextBlock x:Name="TextBlockTextss" Style="{StaticResource BlockDesign}"  Margin="10" Grid.Row="1" TextWrapping= "Wrap"  FontSize="20" FontFamily="Times new Roman"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
-            <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb1" />
-            <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb2" />
-            <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb3" />
-            <Button x:Name="ButtonCheck" Content="Проверка" Height="30" Width="100" Click="ButtonCheck_Click" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="1" Style="{StaticResource BlockDesignSmall}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb1" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="2" Style="{StaticResource BlockDesignSmall}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb2" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="3" Style="{StaticResource BlockDesignSmall}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                <TextBox Height="30" Width="100" TextAlignment="Center" Margin="10" x:Name="Textb3" />
+            </StackPanel>
+            <Button x:Name="ButtonCheck" Content="Проверка" Height="auto" Width="auto" Click="ButtonCheck_Click" Style="{StaticResource ButtonDesign}"/>
         </StackPanel>
 
     </Grid>

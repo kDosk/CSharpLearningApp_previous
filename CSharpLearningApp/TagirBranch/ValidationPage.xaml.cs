@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,24 +28,40 @@ namespace CSharpLearningApp.TagirBranch
             TextBlock2.Text = "Какие значение принимает bool?";
         }
 
-        private void RadioButtonBool_Checked(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Правильный ответ!");
-        }
-
-        private void RadioOba_checked(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Правильный ответ!");
-        }
-
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new MainPage());
         }
 
-        private void ButtonTheory_Click(object sender, RoutedEventArgs e)
+        private void CheckBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new TheoryPage());
+            
+            if (Radiobool.IsChecked==true)
+            {
+               MessageBox.Show("Правильный ответ! Bool!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+            if (RadioOba.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ! Оба!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+            if (Radiobool.IsChecked == true && RadioOba.IsChecked == true)
+            {
+                NavigationService.Navigate(new PracticePage());
+            }
+            if (Radiobool.IsChecked == false || RadioOba.IsChecked == false)
+            {
+                NavigationService.Navigate(new TheoryPage());
+            }
+
+
         }
     }
 }
