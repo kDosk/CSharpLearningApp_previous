@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CSharpLearningApp
 {
-	internal class TestCalculate
+	internal static class TestCalculate
 	{
 		/// <summary>
 		/// Класс калькуляции правильных ответов теста
 		/// </summary>
 		/// <param name="listViewItems">Элементы ListView</param>
 		/// <param name="testModels">Тестовый бланк</param>
-		public TestCalculate(List<TestModel> listViewItems, List<TestModel> testModels)
+		public static void Calculate(List<TestModel> listViewItems, List<TestModel> testModels)
 		{
 			int correctAnswersCount = 0;
 
