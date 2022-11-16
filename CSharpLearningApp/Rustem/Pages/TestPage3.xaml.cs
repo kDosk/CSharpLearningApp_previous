@@ -16,13 +16,13 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.Rustem.Pages
 {
 	/// <summary>
-	/// Логика взаимодействия для TestPage2.xaml
+	/// Логика взаимодействия для TestPage3.xaml
 	/// </summary>
-	public partial class TestPage2 : Page
+	public partial class TestPage3 : Page
 	{
 		private List<TestModel> _testModels = new List<TestModel>();
 		private List<TestModel> _listViewItems = new List<TestModel>();
-		public TestPage2()
+		public TestPage3()
 		{
 			InitializeComponent();
 			TestData();
@@ -33,8 +33,8 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 1,
-				Question = "Какая сокращенная версия данного метода?\n" +
-						   "string GetValue()\n" +
+				Question = "Что вернется при выполнении данного метода?\n" +
+						   "void GetValue()\n" +
 						   "{\n" +
 						   "\treturn \"Hello World!\";\n" +
 						   "}\n",
@@ -48,120 +48,6 @@ namespace CSharpLearningApp.Rustem.Pages
 					new Answers
 					{
 						Id = 2,
-						Value = "string GetValue() => return \"Hello World!\";"
-					},
-					new Answers
-					{
-						Id = 3,
-						Value = "Никакая"
-					},
-				},
-				CorrectAnswer = "string GetValue() => \"Hello World!\";"
-			});
-
-			_testModels.Add(new TestModel
-			{
-				ID = 2,
-				Question = "Какая сокращенная версия данного метода?\n" +
-						   "int GetValue(int x, int y)\n" +
-						   "{\n" +
-						   "\treturn x + y;\n" +
-						   "}\n",
-				Answers = new List<Answers>()
-				{
-					new Answers
-					{
-						Id = 1,
-						Value = "int GetValue(int x, int y) => x + y;"
-					},
-					new Answers
-					{
-						Id = 2,
-						Value = "int GetValue(int x, int y) => return x + y;"
-					},
-					new Answers
-					{
-						Id = 3,
-						Value = "Никакая"
-					},
-				},
-				CorrectAnswer = "int GetValue(int x, int y) => x + y;"
-			});
-
-			_testModels.Add(new TestModel
-			{
-				ID = 3,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
-						   "string GetValue()\n" +
-						   "{\n" +
-						   "\tstring value = \"Hello World!\";\n" +
-						   "\treturn value;\n" +
-						   "\tvalue = \"Hello World!!!\";\n" +
-						   "}\n",
-				Answers = new List<Answers>()
-				{
-					new Answers
-					{
-						Id = 1,
-						Value = "\"Hello World!\""
-					},
-					new Answers
-					{
-						Id = 2,
-						Value = "\"Hello World!!!\""
-					},
-					new Answers
-					{
-						Id = 3,
-						Value = "Ошибка"
-					},
-				},
-				CorrectAnswer = "\"Hello World!\""
-			});
-
-			_testModels.Add(new TestModel
-			{
-				ID = 4,
-				Question = "Что будет возвращено при выполнении данного кода? \n" +
-						   "int GetValue(int x, int y) => x + y;\n" +
-						   "\n" +
-						   "GetValue();\n",
-				Answers = new List<Answers>()
-				{
-					new Answers
-					{
-						Id = 1,
-						Value = "Сумма \"x\" и \"y\""
-					},
-					new Answers
-					{
-						Id = 2,
-						Value = "Строка \"x\" + \"y\""
-					},
-					new Answers
-					{
-						Id = 3,
-						Value = "Ошибка"
-					},
-				},
-				CorrectAnswer = "Ошибка"
-			});
-
-			_testModels.Add(new TestModel
-			{
-				ID = 5,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
-						   "int GetValue(int x, string y) => x + y;\n",
-				Answers = new List<Answers>()
-				{
-					new Answers
-					{
-						Id = 1,
-						Value = "Сумма \"x\" и \"y\""
-					},
-					new Answers
-					{
-						Id = 2,
 						Value = "Ошибка"
 					},
 					new Answers
@@ -171,6 +57,119 @@ namespace CSharpLearningApp.Rustem.Pages
 					},
 				},
 				CorrectAnswer = "Ошибка"
+			});
+
+			_testModels.Add(new TestModel
+			{
+				ID = 2,
+				Question = "Какая сокращенная версия данного кода?\n" +
+						   "string GetValue(int a, int b)\n" +
+						   "{\n" +
+						   "\tif (a > b)\n" +
+						   "\t{\n" +
+						   "\t\treturn \"a больше b\"\n" +
+						   "\t}\n" +
+						   "\telse if (a < b)\n" +
+						   "\t{\n" +
+						   "\t\treturn \"b больше a\"\n" +
+						   "\t}\n" +
+						   "}\n" +
+						   "GetValue(1, 0)\n",
+				Answers = new List<Answers>()
+				{
+					new Answers
+					{
+						Id = 1,
+						Value = "\"a больше b\""
+					},
+					new Answers
+					{
+						Id = 2,
+						Value = "\"b больше a\""
+					},
+					new Answers
+					{
+						Id = 3,
+						Value = "Ничего"
+					},
+				},
+				CorrectAnswer = "\"a больше b\""
+			});
+
+			_testModels.Add(new TestModel
+			{
+				ID = 3,
+				Question = "Что будет возвращено при выполнении данного метода? \n" +
+						   "void GetValue(int x, int y) => x + y\n",
+				Answers = new List<Answers>()
+				{
+					new Answers
+					{
+						Id = 1,
+						Value = "Сумма \"x\" и \"y\""
+					},
+					new Answers
+					{
+						Id = 2,
+						Value = "Ничего"
+					},
+					new Answers
+					{
+						Id = 3,
+						Value = "Ошибка"
+					},
+				},
+				CorrectAnswer = "Ошибка"
+			});
+
+			_testModels.Add(new TestModel
+			{
+				ID = 4,
+				Question = "Для чего используется тип void?\n",
+				Answers = new List<Answers>()
+				{
+					new Answers
+					{
+						Id = 1,
+						Value = "Для возврата переменной"
+					},
+					new Answers
+					{
+						Id = 2,
+						Value = "Для определения того, что метод не возвращает значение"
+					},
+					new Answers
+					{
+						Id = 3,
+						Value = "Для проверки метода"
+					},
+				},
+				CorrectAnswer = "Для определения того, что метод не возвращает значение"
+			});
+
+			_testModels.Add(new TestModel
+			{
+				ID = 5,
+				Question = "Для чего используется оператор return void?\n",
+				Answers = new List<Answers>()
+				{
+					new Answers
+					{
+						Id = 1,
+						Value = "Для определения того, что метод не возвращает значение"
+					},
+					new Answers
+					{
+						Id = 2,
+						Value = "Для завершения выполнения метода"
+					},
+					new Answers
+					{
+						Id = 3,
+						Value = "Для перехода на другое окно приложения"
+					},
+				},
+				CorrectAnswer = "Для завершения выполнения метода"
 			});
 			#endregion
 
@@ -191,7 +190,7 @@ namespace CSharpLearningApp.Rustem.Pages
 				foreach (var item in LViewTest.Items)
 				{
 					_listViewItems.Add(item as TestModel);
-				} 
+				}
 			}
 
 			TestCalculate.Calculate(_listViewItems, _testModels);
