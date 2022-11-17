@@ -62,10 +62,5 @@ namespace CSharpLearningApp.Niyaz
             Niyazocenka.ocenka1 = otc1;
             NavigatonManager.ChangePage(new Ocenka1());
         }
-
-        private void otvet23_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
