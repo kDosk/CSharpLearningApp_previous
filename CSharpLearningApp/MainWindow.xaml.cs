@@ -34,7 +34,7 @@ namespace CSharpLearningApp
                     ShowWindow(new Window());
                     break;
                 case "Типы данных":
-                    ShowWindow(new Window());
+                    ShowWindow(new AmirFolder.AmirWindow());
                     break;
                 case "Арифметические вычисления":
                     ShowWindow(new Window());
