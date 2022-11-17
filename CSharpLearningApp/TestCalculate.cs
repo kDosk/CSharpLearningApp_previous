@@ -9,7 +9,7 @@ namespace CSharpLearningApp
 	internal static class TestCalculate
 	{
 		/// <summary>
-		/// Класс калькуляции правильных ответов теста
+		/// Метод калькуляции правильных ответов теста с использованием элемента управления RadioButton
 		/// </summary>
 		/// <param name="listViewItems">Элементы ListView</param>
 		/// <param name="testModels">Тестовый бланк</param>
