@@ -28,12 +28,12 @@ namespace CSharpLearningApp.AmirFolder
         private void ButtonCapter1_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new AmirPage2());
-
+            
         }
 
         private void ButtonCapter2_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new AmirPage22());
         }
 
         private void ButtonCapter3_Click(object sender, RoutedEventArgs e)

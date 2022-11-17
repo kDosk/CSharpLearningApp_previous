@@ -35,7 +35,7 @@
             <Setter Property="RadioButton.RenderTransform">
                 <Setter.Value>
                     <TransformGroup>
-                        <ScaleTransform ScaleX="1.9" ScaleY="1.9"/>
+                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
                         <SkewTransform/>
                         <RotateTransform/>
                         <TranslateTransform/>

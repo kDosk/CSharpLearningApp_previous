@@ -1,0 +1,62 @@
+﻿<Page x:Class="CSharpLearningApp.AmirFolder.AmirPage23"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSharpLearningApp.AmirFolder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AmirPage23">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition Height="160"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="1" Grid.Row="2" BorderBrush="#FFB07B" BorderThickness="1"></Border>
+        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FFB07B" BorderThickness="1"></Border>
+        <Border Grid.Column="2" Grid.Row="1" BorderBrush="#FFB07B" BorderThickness="1"></Border>
+        <Border Grid.Column="2" Grid.Row="2" BorderBrush="#FFB07B" BorderThickness="1"></Border>
+        <Border Grid.Column="3" Grid.Row="1" BorderBrush="#FFB07B" BorderThickness="1"></Border>
+
+        <TextBlock Style="{StaticResource ResourceKey=BlockDesign}" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="Ответьте на вопросы" HorizontalAlignment="Center"></TextBlock>
+
+        <TextBlock Margin="10 0" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="Все вещественные литералы (дробные числа) рассматриваются как значения типа:" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Width="225" HorizontalAlignment="Left"></TextBlock>
+        <RadioButton x:Name="otvet11" Grid.Row="1" Grid.Column="1" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 50 0 0" Content="double" GroupName="1q"></RadioButton>
+        <RadioButton x:Name="otvet12" Grid.Row="1" Grid.Column="1" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 85 0 0" Content="int" GroupName="1q"></RadioButton>
+        <RadioButton x:Name="otvet13" Grid.Row="1" Grid.Column="1" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 120 0 0" Content="float" GroupName="1q"></RadioButton>
+
+        <TextBlock Margin="10 0" Style="{StaticResource ResourceKey=BlockDesignSmall}" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Width="225" HorizontalAlignment="Left"><Run Text="Какие литералы "/><Run Text="рассматриваются как значения типа int"/><Run Language="ru-ru" Text="?"/></TextBlock>
+        <RadioButton x:Name="otvet41" Grid.Row="2" Grid.Column="1" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 50 0 0" Content="строковые" GroupName="4q"></RadioButton>
+        <RadioButton x:Name="otvet42" Grid.Row="2" Grid.Column="1" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 85 0 0" Content="логические&#xD;&#xA;" GroupName="4q"></RadioButton>
+        <RadioButton x:Name="otvet43" Grid.Row="2" Grid.Column="1" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 120 0 0" Content="целочисленные" GroupName="4q"></RadioButton>
+
+        <TextBlock Margin="10 0" Style="{StaticResource ResourceKey=BlockDesignSmall}" Text="Все целочисленные литералы рассматриваются как значения типа:" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" Width="225" HorizontalAlignment="Left"></TextBlock>
+        <RadioButton x:Name="otvet21" Grid.Row="1" Grid.Column="2" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 50 0 0" Content="long" GroupName="2q"></RadioButton>
+        <RadioButton x:Name="otvet22" Grid.Row="1" Grid.Column="2" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 85 0 0" Content="string" GroupName="2q"></RadioButton>
+        <RadioButton x:Name="otvet23" Grid.Row="1" Grid.Column="2" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 120 0 0" Content="int" GroupName="2q"></RadioButton>
+
+        <TextBlock Margin="10 0" Style="{StaticResource ResourceKey=BlockDesignSmall}" Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" Width="225" HorizontalAlignment="Left"><Run Text="Какой "/><Run Language="ru-ru" Text="суффикс необходимо добавить к литералу, чтобы указать что число представляет тип "/><Run Text="float"/><LineBreak/><Run/></TextBlock>
+        <RadioButton  x:Name="otvet51" Grid.Row="2" Grid.Column="2" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 50 0 0" Content="F/f" GroupName="5q"></RadioButton>
+        <RadioButton x:Name="otvet52" Grid.Row="2" Grid.Column="2" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 85 0 0" Content="UL/ul" GroupName="5q"/>
+        <RadioButton x:Name="otvet53" Grid.Row="2" Grid.Column="2" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 120 0 0" Content="L/l" GroupName="5q"></RadioButton>
+
+        <TextBlock Margin="10 0" Style="{StaticResource ResourceKey=BlockDesignSmall}" Grid.Column="3" Grid.Row="1" TextWrapping="Wrap" Width="225" HorizontalAlignment="Left"><Run Language="ru-ru" Text="Название какого"/><Run Text=" тип"/><Run Language="ru-ru" Text="а"/><Run Text=" по сути"/><Run Text=" "/><Run Text="представляет собой сокращенное обозначение системного типа?"/></TextBlock>
+        <RadioButton x:Name="otvet31" Grid.Row="1" Grid.Column="3" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 50 0 0" Content="штатного" GroupName="3q"/>
+        <RadioButton x:Name="otvet32" Grid.Row="1" Grid.Column="3" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 85 0 0" Content="встроенного" GroupName="3q"></RadioButton>
+        <RadioButton x:Name="otvet33" Grid.Row="1" Grid.Column="3" Style="{StaticResource ResourceKey=RadioDesign}" Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 120 0 0" Content="отдельного" GroupName="3q"/>
+
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center"  HorizontalAlignment="Center" Width="120" Height="40" Content="Закончить" Click="Button_Click"></Button>
+        <Frame x:Name="MainFrame" />
+    </Grid>
+</Page>
