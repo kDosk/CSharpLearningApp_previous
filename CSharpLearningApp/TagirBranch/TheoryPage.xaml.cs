@@ -38,7 +38,7 @@ namespace CSharpLearningApp.TagirBranch
 
         private void Click_ValidPage(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ValidationPage());
+            NavigationService.Navigate(new ValidationLogPage());
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
