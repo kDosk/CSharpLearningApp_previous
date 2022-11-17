@@ -56,7 +56,12 @@ namespace CSharpLearningApp.Rustem.Pages
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             NavigatonManager.ChangePage(new TestPage3());
-        } 
+        }
         #endregion
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+			NavigatonManager.ChangePage(new PracticePage());
+		}
     }
 }

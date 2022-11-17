@@ -18,7 +18,7 @@
 
 			<TextBlock Text="Практика" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
 
-			<ListView x:Name="LViewTest" Grid.Row="1" Background="Transparent" BorderBrush="{x:Null}">
+			<ListView x:Name="LViewTest" Grid.Row="1" Background="Transparent" BorderBrush="{x:Null}" VerticalAlignment="Center">
 
 				<!--#region ListViewSettings -->
 				<ListView.Template>
@@ -55,40 +55,7 @@
 
 							<!-- Test Question -->
 							<TextBlock x:Name="TBoxQuestion" Style="{StaticResource BlockDesign}" Text="{Binding Question}"></TextBlock>
-
-							<ListView ItemsSource="{Binding Answers}" Grid.Row="1" Background="Transparent" BorderBrush="{x:Null}">
-
-								<!--#region ListViewSettings -->
-								<ListView.Template>
-									<ControlTemplate>
-										<ItemsPresenter></ItemsPresenter>
-									</ControlTemplate>
-								</ListView.Template>
-
-								<ListView.ItemContainerStyle>
-									<Style TargetType="ListViewItem">
-										<Setter Property="Background" Value="Transparent"/>
-										<Setter Property="Template">
-											<Setter.Value>
-												<ControlTemplate TargetType="ListViewItem">
-													<Border BorderBrush="Transparent"
-															BorderThickness="0"
-															Background="{TemplateBinding Background}">
-														<ContentPresenter></ContentPresenter>
-													</Border>
-												</ControlTemplate>
-											</Setter.Value>
-										</Setter>
-									</Style>
-								</ListView.ItemContainerStyle>
-								<!--#endregion-->
-
-								<ListView.ItemTemplate>
-									<DataTemplate>
-										<RadioButton Content="{Binding Value}" GroupName="{Binding ElementName=TBoxQuestion, Path=Text}" IsChecked="{Binding IsCorrect}" Style="{StaticResource RadioDesign}" Margin="10"></RadioButton>
-									</DataTemplate>
-								</ListView.ItemTemplate>
-							</ListView>
+							<TextBox Text="{Binding Answer}" Width="200" TextWrapping="Wrap" Margin="10"/>
 						</StackPanel>
 					</DataTemplate>
 				</ListView.ItemTemplate>

@@ -49,7 +49,7 @@
                 <Button Style="{StaticResource ButtonDesign}" Content="Тест" Margin="0 5" Click="Button_Click_5"/>
             </StackPanel>
 
-			<Button Style="{StaticResource ButtonDesign}" Grid.Row="2" Grid.ColumnSpan="3" Content="Практика" Margin="0 5"/>
+			<Button Style="{StaticResource ButtonDesign}" Grid.Row="2" Grid.ColumnSpan="3" Content="Практика" Margin="0 5" Click="Button_Click_6"/>
 		</Grid>
     </Grid>
 </Page>
