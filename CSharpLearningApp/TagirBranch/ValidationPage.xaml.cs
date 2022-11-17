@@ -52,6 +52,8 @@ namespace CSharpLearningApp.TagirBranch
             {
                 MessageBox.Show("Неправильный ответ!");
             }
+
+
             if (Radiobool.IsChecked == true && RadioOba.IsChecked == true)
             {
                 NavigationService.Navigate(new PracticePage());

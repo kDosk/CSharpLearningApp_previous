@@ -63,6 +63,16 @@ namespace CSharpLearningApp.TagirBranch
                     Textb3.Text = "Не верный ответ";
                     break;
             }
+            if (b1 == ("bool") && b2==("true")&& b3==("false"))
+            {
+                MessageBox.Show("Всё правильно!");
+                NavigationService.Navigate(new MainPage());
+            }
+            if (b1 != ("bool") || b2 != ("true") || b3 != ("false"))
+            {
+                MessageBox.Show("Повторика теорию");
+                NavigationService.Navigate(new TheoryPage());
+            }
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
