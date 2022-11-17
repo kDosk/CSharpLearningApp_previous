@@ -1,5 +1,4 @@
-﻿using CSharpLearningApp.AmirFolder;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,7 +34,7 @@ namespace CSharpLearningApp
                     ShowWindow(new Window());
                     break;
                 case "Типы данных":
-                    ShowWindow(new AmirWindow());
+                    ShowWindow(new Window());
                     break;
                 case "Арифметические вычисления":
                     ShowWindow(new Window());
