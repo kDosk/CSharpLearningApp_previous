@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpLearningApp.AmirFolder;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,47 @@ namespace CSharpLearningApp.Niyaz
         {
             InitializeComponent();
             
+        }
+        public int otc1 = 0;
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (otvet13.IsChecked == true)
+            {
+                otc1++;
+            }
+
+            if (otvet21.IsChecked == true)
+            {
+                otc1++;
+            }
+
+            if (otvet31.IsChecked == true)
+            {
+                otc1++;
+            }
+
+            if (otvet43.IsChecked == true)
+            {
+                otc1++;
+            }
+
+            if (otvet52.IsChecked == true)
+            {
+                otc1++;
+            }
+
+            if (otc1 <= 2)
+            {
+                otc1 = 2;
+            }
+
+            Niyazocenka.ocenka1 = otc1;
+            NavigatonManager.ChangePage(new Ocenka1());
+        }
+
+        private void otvet23_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

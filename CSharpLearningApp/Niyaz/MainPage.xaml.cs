@@ -32,7 +32,7 @@ namespace CSharpLearningApp.Niyaz
 
            private void BinarTestBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigatonManager.ChangePage(new binarTest());
         }
 
 
@@ -42,7 +42,7 @@ namespace CSharpLearningApp.Niyaz
         }
         private void UnarTestBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigatonManager.ChangePage(new UnarTest());
         }
 
         private void UnarPractBtn_Click(object sender, RoutedEventArgs e)
@@ -57,7 +57,7 @@ namespace CSharpLearningApp.Niyaz
 
         private void AssociateTest_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigatonManager.ChangePage(new AssiciationTest());
         }
 
      
