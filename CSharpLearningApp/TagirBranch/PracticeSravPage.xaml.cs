@@ -79,7 +79,7 @@ namespace CSharpLearningApp.TagirBranch
             }
             if (Textbox1.Text == TextBlock1.Text && Textbox2.Text == TextBlock3.Text && Textbox3.Text == TextBlock2.Text)
             {
-                MessageBox.Show("Всё правильно!");
+                MessageBox.Show("Всё правильно! 5");
                 NavigationService.Navigate(new MainPage());
             }
             else

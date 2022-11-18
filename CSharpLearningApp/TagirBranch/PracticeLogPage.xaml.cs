@@ -41,11 +41,11 @@ namespace CSharpLearningApp.TagirBranch
             }
             if (Textbox2.Text == TextBlock2.Text)
             {
-                MessageBox.Show("Правильно3");
+                MessageBox.Show("Правильно2");
             }
             if (Textbox3.Text == TextBlock3.Text)
             {
-                MessageBox.Show("Правильно2");
+                MessageBox.Show("Правильно3");
             }
             if (Textbox1.Text == TextBlock1.Text && Textbox2.Text == TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
             {
