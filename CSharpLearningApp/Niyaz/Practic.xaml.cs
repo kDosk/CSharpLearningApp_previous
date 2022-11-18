@@ -28,43 +28,44 @@ namespace CSharpLearningApp.Niyaz
 
         private void CheckPractic_Click(object sender, RoutedEventArgs e)
         {
-            if(TextBlock1.Text == TBox3.Text && TextBlock2.Text ==TBox2.Text && TextBlock3.Text == TBox1.Text)
+            try
             {
-                MessageBox.Show("Правильно");
-            }
-            string a1 = TBox1.Text;
-            string b1 = TBox31.Text;
-            string c1 = TBox32.Text;
-            string d1 = TBox33.Text;
-            
-            switch (a1)
-            {
-                case "2.5":
-                    TBox1.Text = $"{a1}";
-                    break;
-                    default:
-                    TBox1.Text = "Не верный ответ!";
-                    break;
-            }
-            switch (b1)
-            {
-                case "унарными":
-                    TBox31.Text = $"{b1}";
-                    break;
+                
+                string a1 = TBox1.Text.ToLower();
+                string b1 = TBox31.Text.ToLower();
+                string c1 = TBox32.Text.ToLower();
+                string d1 = TBox33.Text.ToLower();
 
+                int correctAswersCount = 0;
+
+                switch (a1)
+                {
+                    case "2.5":
+                        TBox1.Text = $"{a1}";
+                        correctAswersCount++;
+						break;
+					case "2,5":
+						TBox1.Text = $"{a1}";
+						correctAswersCount++;
+						break;
+                }
+
+                if (TextBlock1.Text == TBox3.Text && TextBlock2.Text == TBox2.Text && TextBlock3.Text == Textbox1.Text)
+                {
+					correctAswersCount++;
+				}
+
+				if (b1 == "унарными" && c1 == "бинарными" && d1 == "тринарными")
+				{
+					correctAswersCount++;
+				}
+
+				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3");
             }
-            switch (c1)
+            catch (Exception ex)
             {
-                case "бинарными":
-                    TBox32.Text = $"{c1}";
-                    break;
-            }
-            switch (d1)
-            {
-                case "тринарными":
-                    TBox33.Text = $"{d1}";
-                    break; 
-                    
+
+                MessageService.ShowError("Ошибка выполнения.");
             }
 
         }
