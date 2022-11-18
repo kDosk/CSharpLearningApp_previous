@@ -113,7 +113,7 @@
 
                     <Grid Margin="20">
                         <Button Content="Назад" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Left" Click="Button_Click"/>
-                        <Button Content="Тестирование" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" HorizontalAlignment="Right"/>
+						<Button Content="Тестирование" Width="200" Style="{StaticResource ButtonDesign}" Margin="0 5" Click="ButtonGoTest_Click" HorizontalAlignment="Right"/>
                     </Grid>
                 </StackPanel>
             </Grid>
