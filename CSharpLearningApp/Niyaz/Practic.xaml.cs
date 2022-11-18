@@ -55,17 +55,19 @@ namespace CSharpLearningApp.Niyaz
 					correctAswersCount++;
 				}
 
-				if (b1 == "унарными" && c1 == "бинарными" && d1 == "тринарными")
+				if (b1 == "унарными" && c1 == "бинарными" && d1 == "тернарными")
 				{
 					correctAswersCount++;
 				}
 
 				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3");
+                NavigatonManager.ChangePage(new MainPage());
             }
             catch (Exception ex)
             {
 
                 MessageService.ShowError("Ошибка выполнения.");
+                NavigatonManager.ChangePage(new MainPage());
             }
 
         }
