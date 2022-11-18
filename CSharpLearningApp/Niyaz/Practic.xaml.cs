@@ -28,7 +28,7 @@ namespace CSharpLearningApp.Niyaz
 
         private void CheckPractic_Click(object sender, RoutedEventArgs e)
         {
-            if(TextBlock1.Text == TextBlock3.Text && TextBlock2.Text ==TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
+            if(TextBlock1.Text == TBox3.Text && TextBlock2.Text ==TBox2.Text && TextBlock3.Text == TBox1.Text)
             {
                 MessageBox.Show("Правильно");
             }
@@ -93,12 +93,12 @@ namespace CSharpLearningApp.Niyaz
 
         private void Textbox2_Drop(object sender, DragEventArgs e)
         {
-            Textbox2.Text = (string)e.Data.GetData(DataFormats.Text);
+            TBox2.Text = (string)e.Data.GetData(DataFormats.Text);
         }
 
         private void Textbox3_Drop(object sender, DragEventArgs e)
         {
-            Textbox3.Text = (string)e.Data.GetData(DataFormats.Text);
+            TBox3.Text = (string)e.Data.GetData(DataFormats.Text);
         }
     }
 }

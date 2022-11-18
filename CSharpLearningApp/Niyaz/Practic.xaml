@@ -37,11 +37,11 @@
             </StackPanel>
             <StackPanel>
                 <TextBlock Text="int z = x * 5;" Style="{StaticResource BlockDesignSmall}"/>
-                <TextBox TextWrapping="Wrap" FontSize="20"  Name="Textbox2" Width="200" Height="auto" Drop="Textbox2_Drop" />
+                <TextBox x:Name="TBox2" TextWrapping="Wrap" FontSize="20" Width="200" Height="auto" Drop="Textbox2_Drop" />
             </StackPanel>
             <StackPanel>
                 <TextBlock Text="int z = x + 12" Style="{StaticResource BlockDesignSmall}"/>
-                <TextBox TextWrapping="Wrap" FontSize="20" Name="Textbox3" Width="200" Height="30" Drop="Textbox3_Drop" />
+                <TextBox TextWrapping="Wrap" FontSize="20" x:Name="TBox3" Width="200" Height="30" Drop="Textbox3_Drop" />
             </StackPanel>
 
         </StackPanel>
