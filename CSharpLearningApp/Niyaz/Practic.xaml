@@ -1,0 +1,49 @@
+﻿<Page x:Class="CSharpLearningApp.Niyaz.Practic"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSharpLearningApp.Niyaz"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Practic">
+
+    <Grid Style="{StaticResource GridDesign}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Практическая работа" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource BlockDesign}"/>
+        <TextBlock Grid.Row="1" x:Name="TextBox1QuestPract" FontSize="20" Style="{StaticResource BlockDesign}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="TBox1" Height="30" Width="200" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 10 0 0" FontSize="20"/>
+        <Button x:Name="CheckPractic" Content="Закончить" Style="{StaticResource ButtonDesign}" Grid.Row="4" Grid.Column="1" Width="200" Height="50" Click="CheckPractic_Click"/>
+        <TextBlock FontSize="20" Style="{StaticResource BlockDesign}" Grid.Row="2"><Run Text="2. "/><Run Language="ru-ru" Text="Перетащите в нужные ячейки"/></TextBlock>
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="0 10 0 0" VerticalAlignment="Center" >
+            <TextBlock Grid.Row="1" Text="Сложение" TextWrapping="Wrap"  x:Name="TextBlock1" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock1_MouseDown" />
+            <TextBlock Grid.Row="1" Text="Умножение"  TextWrapping="Wrap" x:Name="TextBlock2" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock2_MouseDown" />
+            <TextBlock Grid.Row="1" TextWrapping="Wrap" x:Name="TextBlock3" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock3_MouseDown" ><Run Language="ru-ru" Text="П"/><Run Text="олучение остатка"/></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <StackPanel>
+                <TextBlock Text="double z = x % 4.0;" Style="{StaticResource BlockDesignSmall}"/>
+                <TextBox TextWrapping="Wrap" FontSize="20"  Name="Textbox1" Width="200" Height="auto" Drop="Textbox1_Drop"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="int z = x * 5;" Style="{StaticResource BlockDesignSmall}"/>
+                <TextBox TextWrapping="Wrap" FontSize="20"  Name="Textbox2" Width="200" Height="auto" Drop="Textbox2_Drop" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="int z = x + 12" Style="{StaticResource BlockDesignSmall}"/>
+                <TextBox TextWrapping="Wrap" FontSize="20" Name="Textbox3" Width="200" Height="30" Drop="Textbox3_Drop" />
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

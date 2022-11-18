@@ -161,6 +161,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Niyaz\Practic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Niyaz\UnarOcenka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -204,6 +208,9 @@
     </Compile>
     <Compile Include="Niyaz\Ocenka2.xaml.cs">
       <DependentUpon>Ocenka2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\Practic.xaml.cs">
+      <DependentUpon>Practic.xaml</DependentUpon>
     </Compile>
     <Compile Include="Niyaz\UnarOcenka.xaml.cs">
       <DependentUpon>UnarOcenka.xaml</DependentUpon>

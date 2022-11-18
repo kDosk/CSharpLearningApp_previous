@@ -47,7 +47,7 @@ namespace CSharpLearningApp.Niyaz
 
         private void UnarPractBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigatonManager.ChangePage(new Practic());
         }
 
         private void AssociatTeory_Click(object sender, RoutedEventArgs e)
