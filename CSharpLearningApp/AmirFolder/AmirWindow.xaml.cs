@@ -23,7 +23,7 @@ namespace CSharpLearningApp.AmirFolder
         public AmirWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new AmirPage1());
+            MainFrame.Navigate(new AmirMainPage());
             Manager.MainFrame = MainFrame;
         }
     }

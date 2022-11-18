@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.AmirFolder
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для AmirOcenka2.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class AmirOcenka1 : Page
     {
-        public Page1()
+        public AmirOcenka1()
         {
             InitializeComponent();
             if (AmirOcenki.ocenka1 <= 2)
