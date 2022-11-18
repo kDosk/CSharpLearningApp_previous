@@ -28,7 +28,7 @@
         <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="79" Width="187" Margin="10 0 0 0"  >
             <TextBlock Grid.Row="1" Text="Сложение" TextWrapping="Wrap"  x:Name="TextBlock1" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock1_MouseDown" />
             <TextBlock Grid.Row="1" Text="Умножение"  TextWrapping="Wrap" x:Name="TextBlock2" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock2_MouseDown" />
-            <TextBlock Grid.Row="1" TextWrapping="Wrap" x:Name="TextBlock3" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock3_MouseDown" ><Run Language="ru-ru" Text="П"/><Run Text="олучение остатка"/></TextBlock>
+            <TextBlock Grid.Row="1" TextWrapping="Wrap" x:Name="TextBlock3" FontSize="20" Style="{StaticResource BlockDesignSmall}" MouseDown="TextBlock3_MouseDown" Height="69" Text="олучение остатка"/>
         </StackPanel>
         <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="135" Width="200">
             <StackPanel>
