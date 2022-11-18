@@ -28,7 +28,15 @@ namespace CSharpLearningApp.Niyaz
 
         private void CheckPractic_Click(object sender, RoutedEventArgs e)
         {
+            if(TextBlock1.Text == TextBlock3.Text && TextBlock2.Text ==TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
+            {
+                MessageBox.Show("Правильно");
+            }
             string a1 = TBox1.Text;
+            string b1 = TBox31.Text;
+            string c1 = TBox32.Text;
+            string d1 = TBox33.Text;
+            
             switch (a1)
             {
                 case "2.5":
@@ -38,11 +46,27 @@ namespace CSharpLearningApp.Niyaz
                     TBox1.Text = "Не верный ответ!";
                     break;
             }
-
-            if(TextBlock1.Text == TextBlock3.Text && TextBlock2.Text ==TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
+            switch (b1)
             {
-                MessageBox.Show("Правильно");
+                case "унарными":
+                    TBox31.Text = $"{b1}";
+                    break;
+
             }
+            switch (c1)
+            {
+                case "бинарными":
+                    TBox32.Text = $"{c1}";
+                    break;
+            }
+            switch (d1)
+            {
+                case "тринарными":
+                    TBox33.Text = $"{d1}";
+                    break; 
+                    
+            }
+
         }
 
         private void TextBlock1_MouseDown(object sender, MouseButtonEventArgs e)
