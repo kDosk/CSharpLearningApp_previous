@@ -18,7 +18,7 @@
             <StackPanel Width="500">
                 <Button Content="Переменные и константы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
                 <Button Content="Типы данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                <Button Content="Арифметические вычисления" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                <Button Content="Арифметические операции" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
                 <Button Content="Операции присваивания" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
                 <Button Content="Преобразование базовых типов данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
                 <Button Content="Условные выражения" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>

@@ -37,8 +37,8 @@ namespace CSharpLearningApp
                 case "Типы данных":
                     ShowWindow(new AmirFolder.AmirWindow());
                     break;
-                case "Арифметические вычисления":
-                    ShowWindow(new Window());
+                case "Арифметические операции":
+                    ShowWindow(new Niyaz.MainWindowArifm());
                     break;
                 case "Операции присваивания":
                     ShowWindow(new Window());
