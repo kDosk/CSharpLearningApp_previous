@@ -22,11 +22,8 @@ namespace CSharpLearningApp.lilia
         public WindowLilia()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
             MainFrame.Content = new MainPage();
         }
+
     }
 }
