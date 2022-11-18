@@ -1,0 +1,36 @@
+﻿<Page x:Class="CSharpLearningApp.Niyaz.UnarTeory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSharpLearningApp.Niyaz"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280" MinHeight="480" MinWidth="640"
+      Title="UnarTeory">
+
+    <Grid Style="{StaticResource GridDesign}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Унарные операции" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" FontSize="25"/>
+        <TextBlock Grid.Row="1" Text="++ Операция инкремента Инкремент бывает префиксным: ++x - сначала значение переменной x увеличивается на 1, а потом ее значение возвращается в качестве результата операции. И также существует постфиксный инкремент: x++ - сначала значение переменной x возвращается в качестве результата операции, а затем к нему прибавляется 1." Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="2" Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap" x:Name="inkrementBox"/>
+        <TextBlock Grid.Row="3" Text="Операция декремента или уменьшения значения на единицу. Также существует префиксная форма декремента (--x) и постфиксная (x--)." Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="4" x:Name="dekrementBox" Style="{StaticResource BlockDesign}" FontSize="20" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="5" Text="При выполнении сразу нескольких арифметических операций следует учитывать порядок их выполнения. Приоритет операций от наивысшего к низшему: 1. Инкремент, декремент 2. Умножение, деление, получение остатка 3. Сложение, вычитание" Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="6" Text="Для изменения порядка следования операций применяются скобки. Рассмотрим набор операций:" Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="7" x:Name="skobki" Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="8" Text="Здесь мы имеем дело с тремя операциями: декремент, вычитание и умножение. Сначала выполняется декремент переменной c, затем умножение b*a, и в конце вычитание. То есть фактически набор операций выглядел так:" Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="9" Text="int d = (c--)-(b*a);" Style="{StaticResource BlockDesign}" FontSize="25" Margin="10 0 0 0" TextWrapping="Wrap"/>
+        <Button Name="BackUnarTeory" Grid.Row="10" HorizontalAlignment="Right" Width="200" Margin="0 0 50 0" Height="30" Style="{StaticResource ButtonDesign}" Content="Выход" Click="BackUnarTeory_Click"/>
+    </Grid>
+</Page>

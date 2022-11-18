@@ -55,6 +55,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AmirFolder\AmirOcenka2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPage22.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPage23.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirOcenka1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Compile Include="Rustem\Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -88,6 +120,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AmirFolder\AmirOcenka2.xaml.cs">
+      <DependentUpon>AmirOcenka2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirOcenki.cs" />
+    <Compile Include="AmirFolder\AmirPage1.xaml.cs">
+      <DependentUpon>AmirPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPage2.xaml.cs">
+      <DependentUpon>AmirPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPage22.xaml.cs">
+      <DependentUpon>AmirPage22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPage23.xaml.cs">
+      <DependentUpon>AmirPage23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPage3.xaml.cs">
+      <DependentUpon>AmirPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirWindow.xaml.cs">
+      <DependentUpon>AmirWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\Manager.cs" />
+    <Compile Include="AmirFolder\AmirOcenka1.xaml.cs">
+      <DependentUpon>AmirOcenka1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -96,6 +154,58 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Niyaz\AssiciationTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\AssociationTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\binarTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\binarTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\MainWindowArifm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\NiyazOcenka3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\Ocenka1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\Ocenka2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\Practic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\UnarOcenka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\UnarTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Niyaz\UnarTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Rustem\Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -134,8 +244,48 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Niyaz\AssiciationTest.xaml.cs">
+      <DependentUpon>AssiciationTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\AssociationTeory.xaml.cs">
+      <DependentUpon>AssociationTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\binarTeory.xaml.cs">
+      <DependentUpon>binarTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\binarTest.xaml.cs">
+      <DependentUpon>binarTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\MainWindowArifm.xaml.cs">
+      <DependentUpon>MainWindowArifm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MessageService.cs" />
     <Compile Include="NavigatonManager.cs" />
+    <Compile Include="Niyaz\NiyazOcenka3.xaml.cs">
+      <DependentUpon>NiyazOcenka3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\ocenka.cs" />
+    <Compile Include="Niyaz\Ocenka1.xaml.cs">
+      <DependentUpon>Ocenka1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\Ocenka2.xaml.cs">
+      <DependentUpon>Ocenka2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\Practic.xaml.cs">
+      <DependentUpon>Practic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\UnarOcenka.xaml.cs">
+      <DependentUpon>UnarOcenka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\UnarTeory.xaml.cs">
+      <DependentUpon>UnarTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niyaz\UnarTest.xaml.cs">
+      <DependentUpon>UnarTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -161,5 +311,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
