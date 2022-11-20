@@ -10,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CSharpLearningApp
+namespace CSharpLearningApp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainKamilysWindow.xaml
+    /// Логика взаимодействия для PeremenniTest.xaml
     /// </summary>
-    public partial class MainKamilysWindow : Window
+    public partial class PeremenniTest : Page
     {
-        public MainKamilysWindow()
+        public PeremenniTest()
         {
             InitializeComponent();
-            MainFrame.Navigate(new MainKamilysWindow());
-            Manager.MainFrame = MainFrame;
         }
     }
 }
