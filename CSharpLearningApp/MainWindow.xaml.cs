@@ -31,7 +31,7 @@ namespace CSharpLearningApp
             switch ((sender as Button).Content)
             {
                 case "Переменные и константы":
-                    ShowWindow(new Window());
+                    ShowWindow(new Pages.MainKamilysWindow());
                     break;
                 case "Типы данных":
                     ShowWindow(new Window());

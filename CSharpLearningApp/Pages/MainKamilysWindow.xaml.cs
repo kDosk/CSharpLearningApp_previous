@@ -22,7 +22,7 @@ namespace CSharpLearningApp
         public MainKamilysWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new MainKamilysWindow());
+            MainFrame.Navigate(new MainPageK());
             Manager.MainFrame = MainFrame;
         }
     }

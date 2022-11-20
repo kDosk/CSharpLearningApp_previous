@@ -19,5 +19,6 @@
         <TextBlock Grid.Row="0" Grid.Column="1" Text=" Выберите главу" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Style="{StaticResource ResourceKey=BlockDesign}" ></TextBlock>
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter1" Grid.Column="1" Grid.Row="1" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 1: Переменные" Click="ButtonCapter1_Click"></Button>
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter2" Grid.Column="1" Grid.Row="2" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 2: Константы" Click="ButtonCapter2_Click"></Button>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.Row="1"></Frame>
     </Grid>
 </Page>
