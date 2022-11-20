@@ -32,7 +32,7 @@ namespace CSharpLearningApp.Pages
                 otc3++;
             }
 
-            if (otvet22.IsChecked == true)
+            if (otvet21.IsChecked == true)
             {
                 otc3++;
             }
