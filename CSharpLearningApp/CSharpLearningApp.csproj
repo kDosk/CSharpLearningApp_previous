@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TestCalcule.cs" />
+    <Compile Include="TestModel.cs" />
     <Page Include="Pages\KamilyaOcenka1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,6 +118,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PracticePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MessageService.cs" />
@@ -128,6 +134,9 @@
     </Compile>
     <Compile Include="Pages\PemenenniiTheory.xaml.cs">
       <DependentUpon>PemenenniiTheory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PracticePage.xaml.cs">
+      <DependentUpon>PracticePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

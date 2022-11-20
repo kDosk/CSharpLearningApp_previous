@@ -34,5 +34,10 @@ namespace CSharpLearningApp.Pages
         {
             Manager.MainFrame.Navigate(new KonstantiTheory());
         }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            NavigatonManager.ChangePage(new PracticePage());
+        }
     }
 }
