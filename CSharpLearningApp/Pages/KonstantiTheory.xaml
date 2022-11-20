@@ -19,7 +19,7 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="70"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0" Text="Неявная типизация" Style="{StaticResource ResourceKey=BlockDesign}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Константа" Style="{StaticResource ResourceKey=BlockDesign}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
         <ScrollViewer Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
             <TextBlock TextWrapping="Wrap" Name="Text1"  Style="{StaticResource ResourceKey=BlockDesignSmall}"></TextBlock>
         </ScrollViewer>
