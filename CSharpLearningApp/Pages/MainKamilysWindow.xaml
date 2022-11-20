@@ -6,15 +6,7 @@
         xmlns:local="clr-namespace:CSharpLearningApp"
         mc:Ignorable="d"
         Title="MainKamilysWindow" Height="450" Width="800" >
-    <Grid>
-        <StackPanel>
-            <TextBlock Background="Red" FontSize="20" FontFamily="Times New Roman" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"><Italic>Тема: Переменные и константы</Italic></TextBlock>
-            <TextBlock Text="Для хранения данных в программе применяются переменные.  Переменная представляет именнованную область памяти, в которой хранится значение определенного типа. 
- Переменная имеет тип, имя и значение. Тип определяет, какого рода информацию может хранить переменная.
- Перед использованием любую переменную надо определить. Синтаксис определения переменной выглядит следующим образом:" 
-                       Background="White" FontSize="14" FontFamily="Times New Roman" TextWrapping="Wrap" />
-            <Label Content="тип имя_переменной;" Margin="20,5,564.6,10" FontSize="20"/>
-            <Ellipse Fill="Red" Width="20" Height="20" Margin="-720,-40,50,700"/>
-        </StackPanel>
+    <Grid Style="{StaticResource ResourceKey=GridDesign}">
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.Row="1"></Frame>
     </Grid>
 </Window>
