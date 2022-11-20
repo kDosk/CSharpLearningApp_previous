@@ -58,7 +58,7 @@ namespace CSharpLearningApp.Pages
             }
 
             KamilyaOcenki.ocenka2 = otc3;
-            Manager.MainFrame.Navigate(new AmirOcenka3());
+            Manager.MainFrame.Navigate(new KamilyaOcenka2());
         }
     }
 }
