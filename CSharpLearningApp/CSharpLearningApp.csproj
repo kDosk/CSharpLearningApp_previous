@@ -86,7 +86,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="FolderKamilya\KamilyaOcenki.cs" />
-    <Compile Include="Manager.cs" />
+    <Compile Include="FolderKamilya\Manager.cs" />
     <Compile Include="FolderKamilya\Pages\KamilyaOcenka1.xaml.cs">
       <DependentUpon>KamilyaOcenka1.xaml</DependentUpon>
     </Compile>
