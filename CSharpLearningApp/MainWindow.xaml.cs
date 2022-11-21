@@ -23,6 +23,7 @@ namespace CSharpLearningApp
         public MainWindow()
         {
             InitializeComponent();
+            TBoxinfo.Text = InfoStorage.Inforamation;
         }
 
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
