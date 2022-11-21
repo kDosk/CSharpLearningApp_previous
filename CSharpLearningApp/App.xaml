@@ -7,7 +7,30 @@
         <SolidColorBrush x:Key="BlueText" Color="#86B4FD"></SolidColorBrush>
         <SolidColorBrush x:Key="OrangeText" Color="#FFB07B"></SolidColorBrush>
 
-        <Style TargetType="Button" x:Key="ButtonDesign">
+
+        <Style x:Key="ButtonDesign" TargetType="Button">
+
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </Style.Resources>
+
+            <Setter Property="Background" Value="LightBlue" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFDE874D" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
             <Setter Property="Button.FontSize" Value="20"></Setter>
@@ -56,9 +79,8 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
         <Style TargetType="TextBlock" x:Key="BlockDesignSmall">
-            <Setter Property="TextBlock.Foreground" Value="#FF8FF3D7"></Setter>
+            <Setter Property="TextBlock.Foreground" Value="#FF78FDD8"></Setter>
             <Setter Property="TextBlock.FontSize" Value="12"></Setter>
             <Setter Property="TextBlock.FontWeight" Value="Bold"></Setter>
         </Style>
@@ -75,7 +97,7 @@
                         <Border BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Background="{TemplateBinding Background}"
-                                SnapsToDevicePixels="True"> 
+                                SnapsToDevicePixels="True">
                             <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="3"></ContentPresenter>
                         </Border>
                     </ControlTemplate>

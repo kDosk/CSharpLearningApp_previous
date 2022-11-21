@@ -37,7 +37,6 @@ namespace CSharpLearningApp
             gridSignIn.Visibility = Visibility.Hidden;
         }
 
-
         private void Authorization(string name, string pass)
         {
             if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(pass))
@@ -67,7 +66,7 @@ namespace CSharpLearningApp
                     UserModel.AddUser(name, pass, surname);
                     UserStorage.CurrentUser = UserModel.GetUser(name, pass);
 
-                    Close();
+                    this.Close();
                 }
                 else
                 {

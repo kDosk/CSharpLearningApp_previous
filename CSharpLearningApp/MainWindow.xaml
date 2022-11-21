@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <ScrollViewer Grid.Row="1" Width="auto" VerticalScrollBarVisibility="Auto" VerticalAlignment="Center" Margin="10">
+            <ScrollViewer Grid.Row="1" Width="500" VerticalScrollBarVisibility="Auto" VerticalAlignment="Center" Margin="10">
                 <StackPanel>
                     <Button Content="Переменные и константы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
                     <Button Content="Типы данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
