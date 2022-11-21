@@ -23,6 +23,5 @@
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="250" TextWrapping="Wrap" Name="Text1"  Style="{StaticResource ResourceKey=BlockDesignSmall}"></TextBlock>
         <TextBox x:Name="Text2" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Margin="0 50 0 0" Height="120" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
         <Button x:Name="GoTestButton" Style="{StaticResource ResourceKey=ButtonDesign}" HorizontalAlignment="Center"  Grid.Row="2" Grid.Column="1" Width="120" Height="40" Content="К темам" Click="GoTestButton_Click"></Button>
-
     </Grid>
 </Page>

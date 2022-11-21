@@ -1,4 +1,5 @@
 ﻿using CSharpLearningApp.AmirFolder.AmirPages;
+using CSharpLearningApp.AmirFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,8 +29,7 @@ namespace CSharpLearningApp.AmirFolder
 
         private void ButtonCapter1_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AmirPage2());
-            
+            Manager.MainFrame.Navigate(new AmirPage2());           
         }
 
         private void ButtonCapter2_Click(object sender, RoutedEventArgs e)
@@ -45,6 +45,11 @@ namespace CSharpLearningApp.AmirFolder
         private void ButtonPractise_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new AmirPractisePage());
+        }
+
+        private void ButtonGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            AmirCloseWindow.CloseWinds();
         }
     }
 }
