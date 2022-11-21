@@ -28,21 +28,48 @@ namespace CSharpLearningApp.Niyaz
 
         private void CheckPractic_Click(object sender, RoutedEventArgs e)
         {
-            string a1 = TBox1.Text;
-            switch (a1)
+            try
             {
-                case "2.5":
-                    TBox1.Text = $"{a1}";
-                    break;
-                    default:
-                    TBox1.Text = "Не верный ответ!";
-                    break;
+                
+                string a1 = TBox1.Text.ToLower();
+                string b1 = TBox31.Text.ToLower();
+                string c1 = TBox32.Text.ToLower();
+                string d1 = TBox33.Text.ToLower();
+
+                int correctAswersCount = 0;
+
+                switch (a1)
+                {
+                    case "2.5":
+                        TBox1.Text = $"{a1}";
+                        correctAswersCount++;
+						break;
+					case "2,5":
+						TBox1.Text = $"{a1}";
+						correctAswersCount++;
+						break;
+                }
+
+                if (TextBlock1.Text == TBox3.Text && TextBlock2.Text == TBox2.Text && TextBlock3.Text == Textbox1.Text)
+                {
+					correctAswersCount++;
+				}
+
+				if (b1 == "унарными" && c1 == "бинарными" && d1 == "тернарными")
+				{
+					correctAswersCount++;
+				}
+
+				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3");
+                NavigatonManager.ChangePage(new MainPage());
+            }
+            catch (Exception ex)
+            {
+
+                MessageService.ShowError("Ошибка выполнения.");
+                NavigatonManager.ChangePage(new MainPage());
             }
 
-            if(TextBlock1.Text == TextBlock3.Text && TextBlock2.Text ==TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
-            {
-                MessageBox.Show("Правильно");
-            }
         }
 
         private void TextBlock1_MouseDown(object sender, MouseButtonEventArgs e)
@@ -69,12 +96,12 @@ namespace CSharpLearningApp.Niyaz
 
         private void Textbox2_Drop(object sender, DragEventArgs e)
         {
-            Textbox2.Text = (string)e.Data.GetData(DataFormats.Text);
+            TBox2.Text = (string)e.Data.GetData(DataFormats.Text);
         }
 
         private void Textbox3_Drop(object sender, DragEventArgs e)
         {
-            Textbox3.Text = (string)e.Data.GetData(DataFormats.Text);
+            TBox3.Text = (string)e.Data.GetData(DataFormats.Text);
         }
     }
 }
