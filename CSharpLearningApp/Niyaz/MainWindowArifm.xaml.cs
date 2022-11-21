@@ -23,6 +23,7 @@ namespace CSharpLearningApp.Niyaz
         {
             InitializeComponent();
             NavigatonManager.ChangePage(MainFrame, new MainPage());
+            WindowManager.CurrentWindow = this;
         }
     }
 }

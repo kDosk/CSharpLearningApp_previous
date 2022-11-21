@@ -60,6 +60,9 @@ namespace CSharpLearningApp.Niyaz
             NavigatonManager.ChangePage(new AssiciationTest());
         }
 
-     
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            WindowManager.CloseWindow();
+        }
     }
 }
