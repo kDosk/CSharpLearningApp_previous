@@ -28,13 +28,13 @@ namespace CSharpLearningApp
         private void SignInButton_Checked(object sender, RoutedEventArgs e)
         {
             gridSignIn.Visibility = Visibility.Visible;
-            gridSignUp.Visibility = Visibility.Hidden;
+            gridSignUp.Visibility = Visibility.Collapsed;
         }
 
         private void SignUpButton_Checked(object sender, RoutedEventArgs e)
         {
             gridSignUp.Visibility = Visibility.Visible;
-            gridSignIn.Visibility = Visibility.Hidden;
+            gridSignIn.Visibility = Visibility.Collapsed;
         }
 
         private void Authorization(string name, string pass)
@@ -45,6 +45,7 @@ namespace CSharpLearningApp
                 if (user != null)
                 {
                     UserStorage.CurrentUser = user;
+                    DialogResult = true;
                 }
                 else
                 {
@@ -65,12 +66,11 @@ namespace CSharpLearningApp
                 {
                     UserModel.AddUser(name, pass, surname);
                     UserStorage.CurrentUser = UserModel.GetUser(name, pass);
-
-                    this.Close();
+                    DialogResult = true;
                 }
                 else
                 {
-                    MessageService.ShowError("Проверьте введенный пароль.");
+                    MessageService.ShowError("Пароли не совпадают.");
                 }
             }
             else
@@ -87,8 +87,11 @@ namespace CSharpLearningApp
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
             Registration(TBoxSignUpSurname.Text, TBoxSignUpName.Text, TBoxSignUpPass.Text, TBoxSignUpPassConfirm.Text);
-            MainWindow window = new MainWindow();
-            window.Show();
+        }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

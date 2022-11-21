@@ -75,7 +75,10 @@ namespace CSharpLearningApp
         /// <param name="currentWindow">Название окна</param>
         private void ShowWindow(Window currentWindow)
         {
-            currentWindow.ShowDialog();
+			if (new AuthWindow().ShowDialog() == true)
+            {
+                currentWindow.ShowDialog();
+            }
         }
     }
 }
