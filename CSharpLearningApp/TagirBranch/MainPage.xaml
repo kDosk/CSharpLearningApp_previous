@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:CSharpLearningApp.TagirBranch"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainPage">
+      Title="MainPage" >
 
     <Grid Style="{StaticResource GridDesign}">
         <Grid.ColumnDefinitions>
