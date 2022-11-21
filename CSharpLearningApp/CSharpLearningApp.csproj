@@ -88,6 +88,8 @@
     <Compile Include="TagirBranch\ValidationSravPage.xaml.cs">
       <DependentUpon>ValidationSravPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestCalculate.cs" />
+    <Compile Include="TestModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,6 +148,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageService.cs" />
+    <Compile Include="NavigatonManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
