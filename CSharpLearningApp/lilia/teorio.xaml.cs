@@ -43,5 +43,15 @@ namespace CSharpLearningApp.lilia
                 " определенное количество разрядов, равное значению правого операнда: A <<= B эквивалентно A = A << B\r\n\r\n>>=: присваивание после сдвига разрядов вправо. Присваивает левому операнду результат сдвига его битового представления вправо на определенное количество разрядов, равное значению правого операнда:" +
                 " A >>= B эквивалентно A = A >> B ";
         }
+                                                
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
+        }
+
+        private void Click_ValidPage(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Test1());
+        }
     }
 }

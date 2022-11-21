@@ -25,6 +25,7 @@ namespace CSharpLearningApp.lilia
             InitializeComponent();
             TextBlock1.Text = "Как обозначается базовая операция присваивания?";
             TextBlock2.Text = "Как обозначается дизъюнкция?";
+            TextBlock3.Text = "Как обозначается присваивание после сдвига разрядов вправо";
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
@@ -50,7 +51,14 @@ namespace CSharpLearningApp.lilia
             {
                 MessageBox.Show("Неправильный ответ!");
             }
-          
+            if (Radio3.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ! ");
             }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+        }
     }
 }

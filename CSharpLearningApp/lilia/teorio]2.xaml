@@ -1,4 +1,4 @@
-﻿<Page x:Class="CSharpLearningApp.lilia.teorio"
+﻿<Page x:Class="CSharpLearningApp.lilia.teorio_2"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,22 +6,24 @@
       xmlns:local="clr-namespace:CSharpLearningApp.lilia"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="teorio">
+      Title="teorio_2">
 
-    <Grid Style="{StaticResource GridDesign}">
+    <Grid>
+        <Grid Style="{StaticResource GridDesign}">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <TextBlock Text="Базовые операции" Style="{StaticResource BlockDesign}" FontFamily="Times new Roman" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+            <TextBlock Text="Различные операции" Style="{StaticResource BlockDesign}" FontFamily="Times new Roman" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
             <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonExit_Click"/>
         </Grid>
         <ScrollViewer Grid.Row="1">
             <StackPanel Orientation="Vertical">
-                <TextBlock x:Name="TextBlockTextss" Style="{StaticResource BlockDesign}"  Margin="10" Grid.Row="1" TextWrapping= "Wrap"  FontSize="20" FontFamily="Times new Roman"/>
+                <TextBlock x:Name="TextBlockTexts1" Style="{StaticResource BlockDesign}"  Margin="10" Grid.Row="1" TextWrapping= "Wrap"  FontSize="20" FontFamily="Times new Roman"/>
                 <Button x:Name="TestButton" Content="Проверить свои знания"  Style="{StaticResource ButtonDesign}" Margin="10" Height="30" Width="240" Grid.Row="0" HorizontalAlignment="Center" Click="Click_ValidPage"/>
             </StackPanel>
         </ScrollViewer>
+    </Grid>
     </Grid>
 </Page>
