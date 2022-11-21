@@ -1,4 +1,4 @@
-﻿<Page x:Class="CSharpLearningApp.AmirFolder.AmirPage1"
+﻿<Page x:Class="CSharpLearningApp.AmirFolder.AmirMainPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:CSharpLearningApp.AmirFolder"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800" 
-      Title="AmirPage1"
+      Title="AmirMainPage"
       >
 
     <Grid>
@@ -15,10 +15,13 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="1" Text=" Выберите главу" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Style="{StaticResource ResourceKey=BlockDesign}" ></TextBlock>
-        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter1" Grid.Column="1" Grid.Row="1" Height="50" Width="600" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Глава 1: Базовые типы данных" Click="ButtonCapter1_Click"></Button>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter1" Grid.Column="1" Grid.Row="1" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 1: Базовые типы данных" Click="ButtonCapter1_Click"></Button>
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter2" Grid.Column="1" Grid.Row="2" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 2: Использование суффиксов и системных типов" Click="ButtonCapter2_Click"></Button>
-        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter3" Grid.Column="1" Grid.Row="3" Height="50" Width="600" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Глава 3: Неявная типизация" Click="ButtonCapter3_Click"></Button>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter3" Grid.Column="1" Grid.Row="3" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 3: Неявная типизация" Click="ButtonCapter3_Click"></Button>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonPractise" Grid.Column="1" Grid.Row="4" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 3: Неявная типизация" Click="ButtonPractise_Click"></Button>
     </Grid>
 </Page>

@@ -55,27 +55,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AmirFolder\AmirOcenka2.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirOcenka2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AmirFolder\AmirPage1.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirImplicitTypingTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AmirFolder\AmirPage2.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirImplicitTypingTheory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AmirFolder\AmirPage22.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AmirFolder\AmirPage23.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirDataTypesTheory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AmirFolder\AmirPage3.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirOcenka3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPages\AmirPractisePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPages\AmirSuffixesAndSysTypesTheory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPages\AmirSuffixesAndSysTypesTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmirFolder\AmirPages\AmirDataTypesTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -83,7 +99,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AmirFolder\AmirOcenka1.xaml">
+    <Page Include="AmirFolder\AmirPages\AmirOcenka1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -120,30 +136,42 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AmirFolder\AmirOcenka2.xaml.cs">
+    <Compile Include="AmirFolder\AmirPages\AmirOcenka2.cs">
       <DependentUpon>AmirOcenka2.xaml</DependentUpon>
     </Compile>
     <Compile Include="AmirFolder\AmirOcenki.cs" />
-    <Compile Include="AmirFolder\AmirPage1.xaml.cs">
-      <DependentUpon>AmirPage1.xaml</DependentUpon>
+    <Compile Include="AmirFolder\AmirPages\AmirImplicitTypingTest.xaml.cs">
+      <DependentUpon>AmirImplicitTypingTest.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AmirFolder\AmirPage2.xaml.cs">
-      <DependentUpon>AmirPage2.xaml</DependentUpon>
+    <Compile Include="AmirFolder\AmirPages\AmirImplicitTypingTheory.xaml.cs">
+      <DependentUpon>AmirImplicitTypingTheory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AmirFolder\AmirPage22.xaml.cs">
-      <DependentUpon>AmirPage22.xaml</DependentUpon>
+    <Compile Include="AmirFolder\AmirPages\AmirMainPage.xaml.cs">
+      <DependentUpon>AmirMainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AmirFolder\AmirPage23.xaml.cs">
-      <DependentUpon>AmirPage23.xaml</DependentUpon>
+    <Compile Include="AmirFolder\AmirPages\AmirDataTypesTheory.xaml.cs">
+      <DependentUpon>AmirDataTypesTheory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AmirFolder\AmirPage3.xaml.cs">
-      <DependentUpon>AmirPage3.xaml</DependentUpon>
+    <Compile Include="AmirFolder\AmirPages\AmirOcenka3.xaml.cs">
+      <DependentUpon>AmirOcenka3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPages\AmirPractisePage.xaml.cs">
+      <DependentUpon>AmirPractisePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPages\AmirSuffixesAndSysTypesTheory.xaml.cs">
+      <DependentUpon>AmirSuffixesAndSysTypesTheory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPages\AmirSuffixesAndSysTypesTest.xaml.cs">
+      <DependentUpon>AmirSuffixesAndSysTypesTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPages\AmirDataTypesTest.xaml.cs">
+      <DependentUpon>AmirDataTypesTest.xaml</DependentUpon>
     </Compile>
     <Compile Include="AmirFolder\AmirWindow.xaml.cs">
       <DependentUpon>AmirWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="AmirFolder\Manager.cs" />
-    <Compile Include="AmirFolder\AmirOcenka1.xaml.cs">
+    <Compile Include="AmirFolder\AmirPages\AmirOcenka1.xaml.cs">
       <DependentUpon>AmirOcenka1.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpLearningApp.AmirFolder.AmirPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,11 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.AmirFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AmirPage1.xaml
+    /// Логика взаимодействия для AmirMainPage.xaml
     /// </summary>
-    public partial class AmirPage1 : Page
+    public partial class AmirMainPage : Page
     {
-        public AmirPage1()
+        public AmirMainPage()
         {
             InitializeComponent();
         }
@@ -33,12 +34,17 @@ namespace CSharpLearningApp.AmirFolder
 
         private void ButtonCapter2_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AmirPage22());
+            Manager.MainFrame.Navigate(new AmirSuffixesAndSysTypesTheory());
         }
 
         private void ButtonCapter3_Click(object sender, RoutedEventArgs e)
         {
+            Manager.MainFrame.Navigate(new AmirImplicitTypingTheory());
+        }
 
+        private void ButtonPractise_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AmirPractisePage());
         }
     }
 }

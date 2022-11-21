@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.AmirFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AmirPage23.xaml
+    /// Логика взаимодействия для AmirSuffixesAndSysTypesTest.xaml
     /// </summary>
-    public partial class AmirPage23 : Page
+    public partial class AmirSuffixesAndSysTypesTest : Page
     {
-        public AmirPage23()
+        public AmirSuffixesAndSysTypesTest()
         {
             InitializeComponent();
         }

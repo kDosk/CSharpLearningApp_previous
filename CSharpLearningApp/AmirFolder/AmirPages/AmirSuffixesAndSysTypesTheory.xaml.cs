@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.AmirFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AmirPage22.xaml
+    /// Логика взаимодействия для AmirSuffixesAndSysTypesTheory.xaml
     /// </summary>
-    public partial class AmirPage22 : Page
+    public partial class AmirSuffixesAndSysTypesTheory : Page
     {
-        public AmirPage22()
+        public AmirSuffixesAndSysTypesTheory()
         {
             InitializeComponent();
             Text1.Text = (" Использование суффиксов"+
@@ -40,7 +40,7 @@ namespace CSharpLearningApp.AmirFolder
 
         private void GoTestBtn_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AmirPage23());
+            Manager.MainFrame.Navigate(new AmirSuffixesAndSysTypesTest());
         }
     }
 }

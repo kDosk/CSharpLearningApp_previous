@@ -57,12 +57,17 @@ namespace CSharpLearningApp.AmirFolder
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AmirPage3());
+            Manager.MainFrame.Navigate(new AmirDataTypesTest());
         }
 
-        private void ScrollViewer_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.GoBack();
+        }
+
+        private void GoTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AmirDataTypesTest());
         }
     }
 }

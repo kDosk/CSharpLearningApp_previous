@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CSharpLearningApp.AmirFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AmirPage3.xaml
+    /// Логика взаимодействия для AmirDataTypesTest.xaml
     /// </summary>
-    public partial class AmirPage3 : Page
+    public partial class AmirDataTypesTest : Page
     {
-        public AmirPage3()
+        public AmirDataTypesTest()
         {
             InitializeComponent();
         }
@@ -58,7 +58,7 @@ namespace CSharpLearningApp.AmirFolder
             }
 
             AmirOcenki.ocenka1 = otc1;
-            Manager.MainFrame.Navigate(new Page1());
+            Manager.MainFrame.Navigate(new AmirOcenka2());
         }
     }
 }
