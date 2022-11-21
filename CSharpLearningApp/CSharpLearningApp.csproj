@@ -57,23 +57,23 @@
     </ApplicationDefinition>
     <Compile Include="TestCalcule.cs" />
     <Compile Include="TestModel.cs" />
-    <Page Include="Pages\KamilyaOcenka1.xaml">
+    <Page Include="FolderKamilya\Pages\KamilyaOcenka1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\KamilyaOcenka2.xaml">
+    <Page Include="FolderKamilya\Pages\KamilyaOcenka2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\KonstantiTest.xaml">
+    <Page Include="FolderKamilya\Pages\KonstantiTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\KonstantiTheory.xaml">
+    <Page Include="FolderKamilya\Pages\KonstantiTheory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\MainKamilysWindow.xaml">
+    <Page Include="FolderKamilya\Pages\MainKamilysWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -85,40 +85,40 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="KamilyaOcenki.cs" />
+    <Compile Include="FolderKamilya\KamilyaOcenki.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Pages\KamilyaOcenka1.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\KamilyaOcenka1.xaml.cs">
       <DependentUpon>KamilyaOcenka1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\KamilyaOcenka2.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\KamilyaOcenka2.xaml.cs">
       <DependentUpon>KamilyaOcenka2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\KonstantiTest.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\KonstantiTest.xaml.cs">
       <DependentUpon>KonstantiTest.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\KonstantiTheory.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\KonstantiTheory.xaml.cs">
       <DependentUpon>KonstantiTheory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MainKamilysWindow.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\MainKamilysWindow.xaml.cs">
       <DependentUpon>MainKamilysWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\MainPageK.xaml">
+    <Page Include="FolderKamilya\Pages\MainPageK.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\PemenenniiTest.xaml">
+    <Page Include="FolderKamilya\Pages\PemenenniiTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\PemenenniiTheory.xaml">
+    <Page Include="FolderKamilya\Pages\PemenenniiTheory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\PracticePage.xaml">
+    <Page Include="FolderKamilya\Pages\PracticePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,16 +126,16 @@
   <ItemGroup>
     <Compile Include="MessageService.cs" />
     <Compile Include="NavigatonManager.cs" />
-    <Compile Include="Pages\MainPageK.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\MainPageK.xaml.cs">
       <DependentUpon>MainPageK.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\PemenenniiTest.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\PemenenniiTest.xaml.cs">
       <DependentUpon>PemenenniiTest.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\PemenenniiTheory.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\PemenenniiTheory.xaml.cs">
       <DependentUpon>PemenenniiTheory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\PracticePage.xaml.cs">
+    <Compile Include="FolderKamilya\Pages\PracticePage.xaml.cs">
       <DependentUpon>PracticePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
