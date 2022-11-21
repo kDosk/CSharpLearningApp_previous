@@ -60,7 +60,10 @@ namespace CSharpLearningApp
 
         private void Registration(string surname, string name, string pass, string confirmPass)
         {
-            if (!string.IsNullOrEmpty(surname) && !string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(pass) && !string.IsNullOrEmpty(confirmPass))
+            if (!string.IsNullOrEmpty(surname) &&
+                !string.IsNullOrEmpty(name) &&
+                !string.IsNullOrEmpty(pass) &&
+                !string.IsNullOrEmpty(confirmPass))
             {
                 if (pass == confirmPass)
                 {

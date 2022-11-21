@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpLearningApp"
         mc:Ignorable="d"
-        Title="AuthWindow" Height="300" Width="500">
+        Title="Авторизация пользователя" Height="300" Width="500">
     <Grid Style="{StaticResource GridDesign}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -26,11 +26,11 @@
                 </Grid.ColumnDefinitions>
 
                 <RadioButton x:Name="SignInButton" Grid.Column="0" GroupName="AuthButtons" Content="Авторизация" Style="{StaticResource BorderlessButton}" Checked="SignInButton_Checked"/>
-                <RadioButton x:Name="SignUpButton" Grid.Column="1" GroupName="AuthButtons" Content="Регистрация" Style="{StaticResource BorderlessButton}" Checked="SignUpButton_Checked"/>
+				<RadioButton x:Name="SignUpButton" Grid.Column="1" GroupName="AuthButtons" Content="Регистрация" Style="{StaticResource BorderlessButton}" Checked="SignUpButton_Checked"/>
             </Grid>
 
 
-            <Grid x:Name="gridSignIn" Grid.Row="1" VerticalAlignment="Center" Visibility="Visible">
+            <Grid x:Name="gridSignIn" Grid.Row="1" VerticalAlignment="Center" Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -51,7 +51,7 @@
 				<Button Grid.Row="2" Grid.ColumnSpan="2" Content="Назад" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="10" HorizontalAlignment="Left" Click="ButtonBack_Click" FontSize="16"/>
             </Grid>
 
-            <Grid x:Name="gridSignUp" Grid.Row="1" VerticalAlignment="Center" Visibility="Hidden">
+            <Grid x:Name="gridSignUp" Grid.Row="1" VerticalAlignment="Center" Visibility="Visible">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
