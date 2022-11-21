@@ -169,8 +169,6 @@
     </Compile>
     <Compile Include="TestCalculate.cs" />
     <Compile Include="TestModel.cs" />
-    <Compile Include="TestCalcule.cs" />
-    <Compile Include="TestModel.cs" />
     <Page Include="FolderKamilya\Pages\KamilyaOcenka1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

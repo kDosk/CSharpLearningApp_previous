@@ -42,28 +42,28 @@ namespace CSharpLearningApp
                     ShowWindow(new Niyaz.MainWindowArifm());
                     break;
                 case "Операции присваивания":
-                    ShowWindow(new Window());
+                    MessageService.ShowExclamination("Данный элемент еще не готов");
                     break;
                 case "Преобразование базовых типов данных":
-                    ShowWindow(new Window());
+                    MessageService.ShowExclamination("Данный элемент еще не готов");
                     break;
                 case "Условные выражения":
                     ShowWindow(new MainWindowTagir());
                     break;
                 case "Циклы":
-                    ShowWindow(new Window());
+                    MessageService.ShowExclamination("Данный элемент еще не готов");
                     break;
                 case "Массивы":
-                    ShowWindow(new Window());
+                    MessageService.ShowExclamination("Данный элемент еще не готов");
                     break;
                 case "Методы":
-                    ShowWindow(new Window());
+                    MessageService.ShowExclamination("Данный элемент еще не готов");
                     break;
                 case "Возвращение значения и оператор return":
                     ShowWindow(new BasicWindow());
                     break;
                 case "Перечисления enum":
-                    ShowWindow(new Window());
+                    MessageService.ShowExclamination("Данный элемент еще не готов");
                     break;
                 default:
                     MessageBox.Show("Ошибка выполнения.");

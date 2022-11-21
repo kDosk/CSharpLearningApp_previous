@@ -37,7 +37,7 @@ namespace CSharpLearningApp.Pages
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new PracticePage());
+            MessageService.ShowExclamination("Данный элемент в разработке");
         }
     }
 }
