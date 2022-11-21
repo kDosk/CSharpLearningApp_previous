@@ -26,13 +26,32 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
     {
         public AmirPractisePage()
         {
-            InitializeComponent();
+            InitializeComponent();  
+            Text1.Text = ("Перейдите на сайт https://www.onlinegdb.com/online_csharp_compiler, через любой удобный браузер\r" +
+                "Вместо строки:\r" +
+                "Console.WriteLine(\"Hello World\");\r" +
+                "Введите строки:\r" +
+                "string name = \"Tom\";\r\nint age = 33;\r\nbool isEmployed = false;\r\ndouble weight = 78.65;\r\nConsole.WriteLine($\"Имя: {name}\");\r\nConsole.WriteLine($\"Возраст: {age}\");\r\nConsole.WriteLine($\"Вес: {weight}\");\r\nConsole.WriteLine($\"Работает: {isEmployed}\");" +
+                "\rКакой получился результат:");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {  
+        private void GoTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Text2.Text == "Имя: Tom\r\nВозраст: 33\r\nВес: 78.65\r\nРаботает: False")
+            {
+                Manager.MainFrame.Navigate(new AmirPractisePage2());
+            }
+            else
+            {
+                MessageBox.Show("Неверный код");
+            }
+        }
+
+        private void TextBox_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
 
         }
-     
     }
 }
+
+

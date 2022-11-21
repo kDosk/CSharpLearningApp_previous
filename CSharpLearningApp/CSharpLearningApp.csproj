@@ -83,6 +83,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AmirFolder\AmirPages\AmirPractisePage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AmirFolder\AmirPages\AmirSuffixesAndSysTypesTheory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,6 +132,9 @@
     </Compile>
     <Compile Include="AmirFolder\AmirPages\AmirPractisePage.xaml.cs">
       <DependentUpon>AmirPractisePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmirFolder\AmirPages\AmirPractisePage2.xaml.cs">
+      <DependentUpon>AmirPractisePage2.xaml</DependentUpon>
     </Compile>
     <Compile Include="AmirFolder\AmirPages\AmirSuffixesAndSysTypesTheory.xaml.cs">
       <DependentUpon>AmirSuffixesAndSysTypesTheory.xaml</DependentUpon>
