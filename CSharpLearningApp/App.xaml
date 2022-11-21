@@ -85,35 +85,38 @@
             <Setter Property="TextBlock.FontWeight" Value="Bold"></Setter>
         </Style>
 
-        <Style x:Key="BorderlessButton" TargetType="RadioButton" BasedOn="{StaticResource {x:Type ToggleButton}}">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0 0 0 3"/>
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Foreground" Value="#FFFFD7C1"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="ToggleButton">
-                        <Border BorderBrush="{TemplateBinding BorderBrush}"
+		<!--#region Borderless RadioButton -->
+		<Style x:Key="BorderlessButton" TargetType="RadioButton" BasedOn="{StaticResource {x:Type ToggleButton}}">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="BorderThickness" Value="0 0 0 3"/>
+			<Setter Property="Margin" Value="5"/>
+			<Setter Property="Foreground" Value="#FFFFD7C1"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="ToggleButton">
+						<Border BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Background="{TemplateBinding Background}"
                                 SnapsToDevicePixels="True">
-                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="3"></ContentPresenter>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsChecked" Value="True">
-                    <Setter Property="BorderBrush" Value="{StaticResource OrangeText}"/>
-                </Trigger>
-                <Trigger Property="IsChecked" Value="False">
-                    <Setter Property="BorderBrush" Value="Transparent"/>
-                </Trigger>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="Transparent"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Application.Resources>
+							<ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="3"></ContentPresenter>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Style.Triggers>
+				<Trigger Property="IsChecked" Value="True">
+					<Setter Property="BorderBrush" Value="{StaticResource OrangeText}"/>
+				</Trigger>
+				<Trigger Property="IsChecked" Value="False">
+					<Setter Property="BorderBrush" Value="Transparent"/>
+				</Trigger>
+				<Trigger Property="IsMouseOver" Value="True">
+					<Setter Property="Background" Value="Transparent"/>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+		<!--#endregion-->
+	</Application.Resources>
 </Application>
