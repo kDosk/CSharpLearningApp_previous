@@ -55,6 +55,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1T.xaml.cs">
+      <DependentUpon>Page1T.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1Test.xaml.cs">
+      <DependentUpon>Page1Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page2Teoriya.xaml.cs">
+      <DependentUpon>Page2Teoriya.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page2Test.xaml.cs">
+      <DependentUpon>Page2Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page3Teoriya.xaml.cs">
+      <DependentUpon>Page3Teoriya.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page3Test.xaml.cs">
+      <DependentUpon>Page3Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowGalimova.xaml.cs">
+      <DependentUpon>WindowGalimova.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +95,34 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Page1T.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page1Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page2Teoriya.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page2Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page3Teoriya.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page3Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowGalimova.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MessageService.cs" />

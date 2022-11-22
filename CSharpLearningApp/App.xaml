@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:CSharpLearningApp"
-             StartupUri="MainWindow.xaml">
+             StartupUri="WindowGalimova.xaml">
     <Application.Resources>
         <Style x:Key="ButtonDesign" TargetType="Button">
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
@@ -26,7 +26,16 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        <Style x:Key="StackPanelDesign" TargetType="StackPanel">
+            <Setter Property="StackPanel.Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF267B63"/>
+                        <GradientStop Color="#FF32987F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style x:Key="RadioDesign" TargetType="RadioButton">
             <Setter Property="RadioButton.RenderTransform">
                 <Setter.Value>
