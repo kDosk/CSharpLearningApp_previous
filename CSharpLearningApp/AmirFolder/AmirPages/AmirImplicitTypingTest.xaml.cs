@@ -24,10 +24,27 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
         {
             InitializeComponent();
         }
-
+        int Rad = 0;
         public int otc3 = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            otc3 = 0;
+            if(otvet11.IsChecked == false && otvet12.IsChecked == false && otvet13.IsChecked == false 
+                || otvet21.IsChecked == false && otvet22.IsChecked == false 
+                || otvet31.IsChecked == false && otvet32.IsChecked == false && otvet33.IsChecked == false
+                || otvet41.IsChecked == false && otvet42.IsChecked == false && otvet43.IsChecked == false
+                || otvet51.IsChecked == false && otvet52.IsChecked == false )
+            {
+                MessageBox.Show("Выберите ответы");
+                Rad = 0;
+            }
+            else
+            {
+                Rad = 1;
+            }
+
+
+
             if (otvet12.IsChecked == true)
             {
                 otc3++;
@@ -38,17 +55,17 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
                 otc3++;
             }
 
-            if (otvet33.IsChecked == true)
+             if (otvet33.IsChecked == true)
             {
                 otc3++;
             }
 
-            if (otvet41.IsChecked == true)
+             if (otvet41.IsChecked == true)
             {
                 otc3++;
             }
 
-            if (otvet52.IsChecked == true)
+             if (otvet52.IsChecked == true)
             {
                 otc3++;
             }
@@ -58,8 +75,12 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
                 otc3 = 2;
             }
 
+            if(Rad == 1)
+            {
             AmirOcenki.ocenka3 = otc3;
             Manager.MainFrame.Navigate(new AmirOcenka3());
+            }
+
         }
     }
 }
