@@ -54,7 +54,7 @@
                         <TextBlock x:Name="TextBlock5" FontSize="20" />
                         <RadioButton GroupName="First"  x:Name="Radio5" Content="3" Style="{StaticResource RadioDesign}" Margin="8"/>
                         <RadioButton GroupName="First"   Content="5"  Style="{StaticResource RadioDesign}" Margin="8"/>
-                        <RadioButton GroupName="First"   Content=""  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="7"  Style="{StaticResource RadioDesign}" Margin="8"/>
                     </StackPanel>
                 </Border>
                 <Button x:Name="Chec5tn" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
