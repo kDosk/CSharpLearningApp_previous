@@ -50,7 +50,7 @@
                 <Button Style="{StaticResource ButtonDesign}" Content="Тест" Margin="0 5" Click="Button_Click_5"/>
             </StackPanel>
 
-			<Button Style="{StaticResource ButtonDesign}" Grid.Row="2" Grid.ColumnSpan="3" Content="Практика" Margin="0 5" Click="Button_Click_6"/>
+			<Button Style="{StaticResource ButtonDesign}" Grid.Row="2" Grid.Column="1" Content="Практика" Margin="10 5" Click="Button_Click_6"/>
 		</Grid>
 
         <TextBlock Text="Ответственный за форму: С. Рустем" Style="{StaticResource BlockDesignSmall}" Grid.Row="2" HorizontalAlignment="Center" Margin="15"/>
