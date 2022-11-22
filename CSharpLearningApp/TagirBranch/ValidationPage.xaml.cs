@@ -41,8 +41,6 @@ namespace CSharpLearningApp.TagirBranch
         {
             int a = 0;
             int b = 0;
-            string = 
-
             /*if (Radioint.IsChecked == false && Radiostring.IsChecked == false && RadioOtvet1.IsChecked == false)
             {
                 b++;
@@ -74,7 +72,6 @@ namespace CSharpLearningApp.TagirBranch
                 case false:
                     switch (Radiostring.IsChecked)
                     {
-
                         case true:
                             b++;
                             break;
@@ -85,7 +82,32 @@ namespace CSharpLearningApp.TagirBranch
                                     b++;
                                     break;
                                     case false:
-                                    
+                                    MessageBox.Show("Первый вопрос не отвечен");
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+            }
+            switch (RadioOtvet2.IsChecked)
+            {
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (true2.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (false2.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    MessageBox.Show("Второй вопрос не отвечен");
                                     break;
                             }
                             break;
@@ -93,37 +115,92 @@ namespace CSharpLearningApp.TagirBranch
                     break;
             }
 
-
-            if (RadioOtvet1.IsChecked == true)
+            switch (RadioOtvet3.IsChecked)
             {
-                a++;
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (Srav3.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (Log3.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    switch (ObaNo3.IsChecked)
+                                    {
+                                        case true:
+                                            b++;
+                                            break;
+                                            case false:
+                                            MessageBox.Show("Третий вопрос не отвечен");
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            
-
-            if (RadioOtvet2.IsChecked == true)
+            switch (RadioOtvet4.IsChecked)
             {
-                a++;
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (true4.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (false4.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    switch (Yes4.IsChecked)
+                                    {
+                                        case true:
+                                            b++;
+                                            break;
+                                        case false:
+                                            switch (No4.IsChecked)
+                                            {
+                                                case true:
+                                                    b++;
+                                                    break;
+                                                case false:
+                                                    switch (Yesno4.IsChecked)
+                                                    {
+                                                        case true:
+                                                            b++;
+                                                            break;
+                                                        case false:
+                                                            MessageBox.Show("Четвёртый вопрос не отвечен");
+                                                            break;
+                                                    }
+                                                    break;
+                                            }
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            
-            if (RadioOtvet3.IsChecked == true) 
-            {
-                a++;
-            }
-            
-            if (RadioOtvet4.IsChecked == true)
-            {
-                a++;
-            }
-            
-            if (RadioOtvet5.IsChecked == true)
-            {
-                a++;
-            }
-            
 
             if (b == 5 || a==0)
             {
-                MessageBox.Show("Ответьте на вопросы");
+                MessageBox.Show("Ответьте на все вопросы");
             }
             if (a==2 || a==1)
             {
