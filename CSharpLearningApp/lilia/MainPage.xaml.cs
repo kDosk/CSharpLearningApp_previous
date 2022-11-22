@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CSharpLearningApp
+namespace CSharpLearningApp.lilia
 {
     /// <summary>
     /// Логика взаимодействия для MainPage.xaml
