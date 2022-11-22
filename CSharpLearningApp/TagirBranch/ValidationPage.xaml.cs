@@ -41,7 +41,7 @@ namespace CSharpLearningApp.TagirBranch
         {
             int a = 0;
             int b = 0;
-            string = 
+           // string = "";
 
             /*if (Radioint.IsChecked == false && Radiostring.IsChecked == false && RadioOtvet1.IsChecked == false)
             {
