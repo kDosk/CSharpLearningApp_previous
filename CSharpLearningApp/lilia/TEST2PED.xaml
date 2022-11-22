@@ -1,0 +1,65 @@
+﻿<Page x:Class="CSharpLearningApp.TEST2PED"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSharpLearningApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TEST2PED">
+
+    <Grid  Style="{StaticResource GridDesign}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Различные операции часть1" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
+        <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonExit_Click"/>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Grid.Row="1" >
+                <Border  BorderThickness="1" BorderBrush="Black" Margin="5">
+                    <StackPanel Margin="10" >
+                        <TextBlock x:Name="TextBlock1" FontSize="20" />
+                        <RadioButton GroupName="First"  x:Name="Radio1" Content="=" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="-="  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="+="  Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border  BorderThickness="1" BorderBrush="Black" Margin="5">
+                    <StackPanel Margin="10" >
+                        <TextBlock x:Name="TextBlock2" FontSize="20" />
+                        <RadioButton GroupName="Second" Content="*="  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second" Content="%=" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second" Content="|="  x:Name="Radio2" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border  BorderThickness="1" BorderBrush="Black" Margin="5">
+                    <StackPanel Margin="10" >
+                        <TextBlock x:Name="TextBlock3" FontSize="20" />
+                        <RadioButton GroupName="Second" Content="/="  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second" Content="-=" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second" Content="|="  x:Name="Radio3" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border  BorderThickness="1" BorderBrush="Black" Margin="5">
+                    <StackPanel Margin="10" >
+                        <TextBlock x:Name="TextBlock4" FontSize="20" />
+                        <RadioButton GroupName="First"  x:Name="Radio4" Content="=" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="^="  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="/="  Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border  BorderThickness="1" BorderBrush="Black" Margin="5">
+                    <StackPanel Margin="10" >
+                        <TextBlock x:Name="TextBlock5" FontSize="20" />
+                        <RadioButton GroupName="First"  x:Name="Radio5" Content="3" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="5"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First"   Content="7"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Button x:Name="Chec5tn" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid> 
+</Page>

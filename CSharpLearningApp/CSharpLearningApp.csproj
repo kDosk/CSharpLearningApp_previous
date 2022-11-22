@@ -203,6 +203,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="lilia\TEST2PED.xaml.cs">
+      <DependentUpon>TEST2PED.xaml</DependentUpon>
+    </Compile>
+    <Page Include="lilia\teorio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lilia\teorio]2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lilia\Test1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lilia\WindowLilia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lilia\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -269,6 +292,21 @@
     </Compile>
     <Compile Include="FolderKamilya\Pages\MainKamilysWindow.xaml.cs">
       <DependentUpon>MainKamilysWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lilia\teorio.xaml.cs">
+      <DependentUpon>teorio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lilia\teorio]2.xaml.cs">
+      <DependentUpon>teorio]2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lilia\Test1.xaml.cs">
+      <DependentUpon>Test1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lilia\WindowLilia.xaml.cs">
+      <DependentUpon>WindowLilia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lilia\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -423,6 +461,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MWMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lilia\TEST2PED.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
