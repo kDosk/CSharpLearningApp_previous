@@ -25,6 +25,7 @@ namespace CSharpLearningApp
         public MainWindow()
         {
             InitializeComponent();
+            TBoxinfo.Text = InfoStorage.Inforamation;
         }
 
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
@@ -77,7 +78,10 @@ namespace CSharpLearningApp
         /// <param name="currentWindow">Название окна</param>
         private void ShowWindow(Window currentWindow)
         {
-            currentWindow.ShowDialog();
+			if (new AuthWindow().ShowDialog() == true)
+            {
+                currentWindow.ShowDialog();
+            }
         }
     }
 }
