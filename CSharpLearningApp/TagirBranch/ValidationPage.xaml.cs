@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -41,29 +42,7 @@ namespace CSharpLearningApp.TagirBranch
         {
             int a = 0;
             int b = 0;
-            /*if (Radioint.IsChecked == false && Radiostring.IsChecked == false && RadioOtvet1.IsChecked == false)
-            {
-                b++;
-            }
-            if (true2.IsChecked == false && false2.IsChecked == false && RadioOtvet2.IsChecked == false)
-            {
-                b++;
-
-            }
-            if (Srav3.IsChecked== false && Log3.IsChecked==false && ObaNo3.IsChecked==false && RadioOtvet3.IsChecked==false) 
-            {
-                b++;
-            }
-            if (true4.IsChecked == false && false4.IsChecked == false && Yes4.IsChecked== false && No4.IsChecked == false && Yesno4.IsChecked == false && RadioOtvet4.IsChecked == false)
-            {
-                b++;
-            }
-            if (Isp5.IsChecked == false && IspUpr5.IsChecked==false && RadioOtvet5.IsChecked==false)
-            {
-                b++;
-
-            }*/
-
+            string c = null;
             switch (RadioOtvet1.IsChecked)
             {
                 case true:
@@ -82,7 +61,7 @@ namespace CSharpLearningApp.TagirBranch
                                     b++;
                                     break;
                                     case false:
-                                    MessageBox.Show("Первый вопрос не отвечен");
+                                    c = "Первый вопрос не отвечен";
                                     break;
                             }
                             break;
@@ -107,7 +86,7 @@ namespace CSharpLearningApp.TagirBranch
                                     b++;
                                     break;
                                 case false:
-                                    MessageBox.Show("Второй вопрос не отвечен");
+                                    c = c + "\rВторой вопрос не отвечен";
                                     break;
                             }
                             break;
@@ -139,7 +118,7 @@ namespace CSharpLearningApp.TagirBranch
                                             b++;
                                             break;
                                             case false:
-                                            MessageBox.Show("Третий вопрос не отвечен");
+                                            c = c + "\rТретий вопрос не отвечен";
                                             break;
                                     }
                                     break;
@@ -184,7 +163,7 @@ namespace CSharpLearningApp.TagirBranch
                                                             b++;
                                                             break;
                                                         case false:
-                                                            MessageBox.Show("Четвёртый вопрос не отвечен");
+                                                            c = c + "\rЧетвёртый вопрос не отвечен";
                                                             break;
                                                     }
                                                     break;
@@ -197,11 +176,32 @@ namespace CSharpLearningApp.TagirBranch
                     }
                     break;
             }
-
-            if (b == 5 || a==0)
+            switch (RadioOtvet5.IsChecked)
             {
-                MessageBox.Show("Ответьте на все вопросы");
+                case true:
+                    a++;
+                    break;
+                    case false:
+                    switch (Isp5.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                            case false:
+                            switch (IspUpr5.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                    case false:
+                                    c = c + "\rПятый вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
+
             if (a==2 || a==1)
             {
                 MessageBox.Show("Оценка 2 перечитайте текст и перепройдите тест");
