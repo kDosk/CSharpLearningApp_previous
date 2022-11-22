@@ -26,9 +26,34 @@ namespace CSharpLearningApp
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void TheoryBaz_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new teorio());
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Test1());
+        }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new TEST2PED());
+
+        }
+
+        private void Practik_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            NavigationService.Navigate(new teorio_2());
+
         }
     }
 }

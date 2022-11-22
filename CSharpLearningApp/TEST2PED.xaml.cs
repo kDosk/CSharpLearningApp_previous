@@ -24,5 +24,15 @@ namespace CSharpLearningApp
         {
             InitializeComponent();
         }
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage());
+        }
+
+        private void CheckBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

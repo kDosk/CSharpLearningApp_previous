@@ -22,21 +22,21 @@
             <TextBlock Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="Операции присваивания" VerticalAlignment="Center" FontSize="25" Grid.Column="1" />
             <StackPanel  Grid.Row="1" VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center">
                 <TextBlock Style="{StaticResource BlockDesign}"  TextWrapping="Wrap" Text="Базовые операции"  FontSize="19" Margin="10"/>
-                <Button Content="Теория" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click" />
-                <Button Content="Тест" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
-                <Button Content="Практическое задание" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
+                <Button Content="Теория" Style="{StaticResource ButtonDesign}" Name="TheoryBaz" HorizontalAlignment="Center" Margin="10" Click="TheoryBaz_Click"/>
+                <Button Content="Тест" Style="{StaticResource  ButtonDesign}" Name="Test" HorizontalAlignment="Center" Margin="10" Click="Test_Click" />
+                <Button Content="Практическое задание" Style="{StaticResource  ButtonDesign}" Name="Practik" HorizontalAlignment="Center" Margin="10" Click="Practik_Click" />
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" >
                 <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap" Text="Различные операции часть 1" FontSize="19" Margin="10"/>
-                <Button Content="Теория" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
-                <Button Content="Тест" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
-                <Button Content="Практическое задание" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
+                <Button Content="Теория" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click_1"/>
+                <Button Content="Тест" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click" />
+                <Button Content="Практическое задание" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Center" Margin="10" />
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
                 <TextBlock Style="{StaticResource BlockDesign}" TextWrapping="Wrap" Text="Различные операции часть 2" FontSize="19" Margin="10"/>
-                <Button Content="Теория" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
-                <Button Content="Тест" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
-                <Button Content="Практическое задание" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" Click="Button_Click"/>
+                <Button Content="Теория" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" />
+                <Button Content="Тест" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10"/>
+                <Button Content="Практическое задание" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Center" Margin="10" />
             </StackPanel>
 
 
