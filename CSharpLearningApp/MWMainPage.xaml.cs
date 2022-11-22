@@ -28,7 +28,6 @@ namespace CSharpLearningApp
         public MWMainPage()
         {
             InitializeComponent();
-            TBoxinfo.Text = InfoStorage.Inforamation;
         }
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
         {
@@ -73,7 +72,7 @@ namespace CSharpLearningApp
                     default:
                         MessageBox.Show("Ошибка выполнения.");
                         break;
-                } 
+                }
             }
             else
             {

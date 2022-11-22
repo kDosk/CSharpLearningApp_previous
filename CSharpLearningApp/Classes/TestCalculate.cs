@@ -16,6 +16,7 @@ namespace CSharpLearningApp
 		public static void Calculate(List<TestModel> listViewItems, List<TestModel> testModels)
 		{
 			int correctAnswersCount = 0;
+			int score = 0;
 
 			for (int i = 0; i < listViewItems.Count; i++)
 			{
@@ -30,7 +31,27 @@ namespace CSharpLearningApp
 				}
 			}
 
+			var percent = listViewItems.Count / 100 * correctAnswersCount;
+
+			if (percent < 50)
+			{
+				score = 2;
+			}
+			else if (percent >= 40 && percent < 60)
+			{
+                score = 3;
+            }
+            else if (percent >= 60 && percent < 70)
+            {
+                score = 4;
+            }
+            else
+			{
+                score = 5;
+            }
+
 			MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из {listViewItems.Count}");
+			InfoStorage.SetInfo($"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name} завершил тестирование по теме \"Оператор return\", Оценка - {score}");
 		}
 	}
 }
