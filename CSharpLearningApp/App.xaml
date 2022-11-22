@@ -8,10 +8,16 @@
         <SolidColorBrush x:Key="OrangeText" Color="#FFB07B"></SolidColorBrush>
 
         <Style TargetType="Button" x:Key="ButtonDesign">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                </Style>
+            </Style.Resources>
             <Setter Property="Button.Foreground" Value="#FFFFD7C1"></Setter>
             <Setter Property="Button.Background" Value="#FFBD6432"></Setter>
             <Setter Property="Button.FontSize" Value="20"></Setter>
             <Setter Property="Button.FontWeight" Value="Bold"></Setter>
+            
         </Style>
 
         <Style TargetType="TextBlock" x:Key="BlockDesign">
