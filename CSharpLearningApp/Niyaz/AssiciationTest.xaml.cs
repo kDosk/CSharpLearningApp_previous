@@ -28,7 +28,7 @@ namespace CSharpLearningApp.Niyaz
         public int otc3;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            otc3 = 0;
             if (otvet11.IsChecked != true && otvet12.IsChecked != true && otvet13.IsChecked != true || otvet21.IsChecked != true && otvet22.IsChecked != true && otvet23.IsChecked != true || otvet31.IsChecked != true && otvet32.IsChecked != true && otvet33.IsChecked != true)
             {
                 MessageService.ShowMessage("Есть пустые ячейки");
