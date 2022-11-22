@@ -28,6 +28,7 @@ namespace CSharpLearningApp
         public MWMainPage()
         {
             InitializeComponent();
+            TBoxinfo.Text = InfoStorage.Inforamation;
         }
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
         {
@@ -48,7 +49,7 @@ namespace CSharpLearningApp
                     case "Операции присваивания":
                         ShowWindow(new WindowLilia());
                         break;
-                    case "Преобразование базовых типов данных":
+                    case "Преобразование типов данных":
                         ShowWindow(new Window());
                         break;
                     case "Условные выражения":
@@ -87,6 +88,7 @@ namespace CSharpLearningApp
         private void ShowWindow(Window currentWindow)
         {
             currentWindow.ShowDialog();
-        }
+			TBoxinfo.Text = InfoStorage.Inforamation;
+		}
     }
 }

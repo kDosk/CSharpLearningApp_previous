@@ -85,7 +85,7 @@
                 <TextBlock Grid.Row="4" Text="Повтор пароля:" Style="{StaticResource BlockDesignSmall}" VerticalAlignment="Center" Margin="10"/>
                 <TextBox x:Name="TBoxSignUpPassConfirm" Grid.Row="4" Grid.Column="1" Height="20" Margin="10" FontSize="16"/>
 
-                <Button x:Name="SignUp" Grid.Row="5" Grid.ColumnSpan="2" Content="Вход" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="10" HorizontalAlignment="Right" Click="SignUp_Click" FontSize="16"/>
+                <Button x:Name="SignUp" Grid.Row="5" Grid.ColumnSpan="2" Content="Регистрация" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="10" HorizontalAlignment="Right" Click="SignUp_Click" FontSize="16"/>
             </Grid>
             <!--#endregion-->
         </Grid>
