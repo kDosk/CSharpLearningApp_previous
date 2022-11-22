@@ -67,7 +67,7 @@ namespace CSharpLearningApp.Pages
 
 		private void ButtonBack_Click(object sender, RoutedEventArgs e)
 		{
-			NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
 		}
 
 		private void ButtonCompleteTest_Click(object sender, RoutedEventArgs e)

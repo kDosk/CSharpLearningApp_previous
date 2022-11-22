@@ -55,10 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AuthWindow.xaml.cs">
-      <DependentUpon>AuthWindow.xaml</DependentUpon>
+    <Compile Include="AuthPage.xaml.cs">
+      <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InfoStorage.cs" />
     <Compile Include="TagirBranch\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -171,12 +170,16 @@
     <Compile Include="Rustem\Windows\BasicWindow.xaml.cs">
       <DependentUpon>BasicWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TestCalculate.cs" />
-    <Compile Include="TestModel.cs" />
-    <Compile Include="UserModel.cs" />
-    <Compile Include="UserStorage.cs" />
-    <Compile Include="WindowManager.cs" />
-    <Page Include="AuthWindow.xaml">
+    <Compile Include="Classes\PageNavigationManager.cs" />
+    <Compile Include="Classes\WindowNavigationManager.cs" />
+    <Compile Include="Classes\InfoStorage.cs" />
+    <Compile Include="MWMainPage.xaml.cs">
+      <DependentUpon>MWMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\TestCalculate.cs" />
+    <Compile Include="Classes\TestModel.cs" />
+    <Compile Include="Classes\UserModel.cs" />
+    <Page Include="AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -419,6 +422,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MWMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Niyaz\AssiciationTest.xaml.cs">
@@ -439,8 +446,6 @@
     <Compile Include="Niyaz\MainWindowArifm.xaml.cs">
       <DependentUpon>MainWindowArifm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MessageService.cs" />
-    <Compile Include="NavigatonManager.cs" />
     <Compile Include="FolderKamilya\Pages\MainPageK.xaml.cs">
       <DependentUpon>MainPageK.xaml</DependentUpon>
     </Compile>
@@ -475,6 +480,7 @@
     <Compile Include="Niyaz\UnarTest.xaml.cs">
       <DependentUpon>UnarTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\MessageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

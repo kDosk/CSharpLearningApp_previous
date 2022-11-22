@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace CSharpLearningApp
 {
-    internal class WindowManager
+    internal class WindowNavigationManager
     {
         public static Window CurrentWindow { get; set; }
 

@@ -8,35 +8,16 @@
         Title="Приложение изучения языка программирования C#" MinHeight="500" MinWidth="800" Height="500" Width="800">
     <Grid Style="{StaticResource GridDesign}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Основы программирования на C#" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}" VerticalAlignment="Center"/>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
 
-            <ScrollViewer Grid.Row="1" Width="400" VerticalScrollBarVisibility="Auto" VerticalAlignment="Center" Margin="10">
-                <StackPanel>
-                    <Button Content="Переменные и константы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Типы данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Арифметические вычисления" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Операции присваивания" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Преобразование типов данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Условные выражения" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Циклы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Массивы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Методы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Оператор return" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                    <Button Content="Перечисления enum" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                </StackPanel>
-            </ScrollViewer>
+        <TextBlock Text="Основы программирования на C#" HorizontalAlignment="Left" Style="{StaticResource BlockDesign}" VerticalAlignment="Center" Margin="30 0"/>
+        <StackPanel Orientation="Horizontal" Margin="10 0" HorizontalAlignment="Right">
+            <!--<TextBlock x:Name="TBoxCurrentUserName" Margin="10" Style="{StaticResource BlockDesignSmall}"/>-->
+            <Button x:Name="MainButton" Content="Пользователь" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" VerticalAlignment="Center" Width="170" Height="35" HorizontalAlignment="Right"/>
+        </StackPanel>
 
-			<Border Grid.Column="1" Margin="10" BorderThickness="3" BorderBrush="#FFBD6432">
-				<TextBox x:Name="TBoxinfo" Background="Transparent" Foreground="#FF8FF3D7" FontSize="16" VerticalAlignment="Stretch" BorderThickness="0" IsReadOnly="True"/>
-			</Border>
-		</Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"/>
     </Grid>
 </Window>

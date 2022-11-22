@@ -27,42 +27,42 @@ namespace CSharpLearningApp.Niyaz
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new binarTeory());
+            PageNavigationManager.ChangePage(new binarTeory());
         }
 
            private void BinarTestBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new binarTest());
+            PageNavigationManager.ChangePage(new binarTest());
         }
 
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new UnarTeory());
+            PageNavigationManager.ChangePage(new UnarTeory());
         }
         private void UnarTestBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new UnarTest());
+            PageNavigationManager.ChangePage(new UnarTest());
         }
 
         private void UnarPractBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new Practic());
+            PageNavigationManager.ChangePage(new Practic());
         }
 
         private void AssociatTeory_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new AssociationTeory());
+            PageNavigationManager.ChangePage(new AssociationTeory());
         }
 
         private void AssociateTest_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new AssiciationTest());
+            PageNavigationManager.ChangePage(new AssiciationTest());
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            WindowManager.CloseWindow();
+            WindowNavigationManager.CloseWindow();
         }
     }
 }

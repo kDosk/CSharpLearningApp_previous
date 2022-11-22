@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace CSharpLearningApp
 {
-    internal static class NavigatonManager
+    internal class PageNavigationManager
     {
         private static Frame _currentFrame;
 
