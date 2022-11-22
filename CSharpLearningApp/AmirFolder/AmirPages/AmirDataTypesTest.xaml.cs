@@ -24,10 +24,28 @@ namespace CSharpLearningApp.AmirFolder
         {
             InitializeComponent();
         }
+        int Rad = 0;
         public int otc1 = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(otvet13.IsChecked == true)
+            otc1 = 0;
+            if (otvet11.IsChecked == false && otvet12.IsChecked == false && otvet13.IsChecked == false
+                || otvet21.IsChecked == false && otvet22.IsChecked == false
+                || otvet31.IsChecked == false && otvet32.IsChecked == false && otvet33.IsChecked == false
+                || otvet41.IsChecked == false && otvet42.IsChecked == false && otvet43.IsChecked == false
+                || otvet51.IsChecked == false && otvet52.IsChecked == false)
+            {
+                MessageBox.Show("Выберите ответы");
+                Rad = 0;
+            }
+            else
+            {
+                Rad = 1;
+            }
+
+
+
+            if (otvet13.IsChecked == true)
             {
                 otc1 ++;
             }
@@ -56,9 +74,11 @@ namespace CSharpLearningApp.AmirFolder
             {
                 otc1 = 2;
             }
-
-            AmirOcenki.ocenka1 = otc1;
-            Manager.MainFrame.Navigate(new AmirOcenka2());
+            if (Rad == 1)
+            {
+                AmirOcenki.ocenka1 = otc1;
+                Manager.MainFrame.Navigate(new AmirOcenka2());
+            }
         }
     }
 }
