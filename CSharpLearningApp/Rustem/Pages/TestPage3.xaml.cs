@@ -33,7 +33,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 1,
-				Question = "Что вернется при выполнении данного метода?\n" +
+				Question = "1. Что вернется при выполнении данного метода?\n" +
 						   "void GetValue()\n" +
 						   "{\n" +
 						   "\treturn \"Hello World!\";\n" +
@@ -62,7 +62,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 2,
-				Question = "Что вернется при выполнении данного кода?\n" +
+				Question = "2. Что вернется при выполнении данного кода?\n" +
 						   "string GetValue(int a, int b)\n" +
 						   "{\n" +
 						   "\tif (a > b)\n" +
@@ -99,7 +99,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 3,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
+				Question = "3. Что будет возвращено при выполнении данного метода? \n" +
 						   "void GetValue(int x, int y) => x + y\n",
 				Answers = new List<Answers>()
 				{
@@ -125,7 +125,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 4,
-				Question = "Для чего используется тип void?\n",
+				Question = "4. Для чего используется тип void?\n",
 				Answers = new List<Answers>()
 				{
 					new Answers
@@ -150,7 +150,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 5,
-				Question = "Для чего используется оператор return void?\n",
+				Question = "5. Для чего используется оператор return void?\n",
 				Answers = new List<Answers>()
 				{
 					new Answers
@@ -178,7 +178,7 @@ namespace CSharpLearningApp.Rustem.Pages
 
 		private void ButtonBack_Click(object sender, RoutedEventArgs e)
 		{
-			NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
 		}
 
 		private void ButtonCompleteTest_Click(object sender, RoutedEventArgs e)

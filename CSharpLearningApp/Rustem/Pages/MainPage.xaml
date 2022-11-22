@@ -12,6 +12,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Возвращение значения и оператор return" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -51,5 +52,8 @@
 
 			<Button Style="{StaticResource ButtonDesign}" Grid.Row="2" Grid.ColumnSpan="3" Content="Практика" Margin="0 5" Click="Button_Click_6"/>
 		</Grid>
+
+        <TextBlock Text="Ответственный за форму: С. Рустем" Style="{StaticResource BlockDesignSmall}" Grid.Row="2" HorizontalAlignment="Center" Margin="15"/>
+
     </Grid>
 </Page>

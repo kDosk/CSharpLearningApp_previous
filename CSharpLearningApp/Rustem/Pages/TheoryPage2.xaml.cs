@@ -27,12 +27,12 @@ namespace CSharpLearningApp.Rustem.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
         }
 
         private void ButtonGoTest_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TestPage2());
+            PageNavigationManager.ChangePage(new TestPage2());
         }
     }
 }

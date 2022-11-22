@@ -7,11 +7,11 @@ using System.Windows;
 
 namespace CSharpLearningApp
 {
-    internal class WindowManager
+    internal class WindowNavigationManager
     {
         public static Window CurrentWindow { get; set; }
 
-        public void CloseWindow()
+        public static void CloseWindow()
         {
             CurrentWindow.Close();
         }

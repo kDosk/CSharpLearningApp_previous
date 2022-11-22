@@ -54,7 +54,7 @@
 						<StackPanel Orientation="Vertical" Margin="10">
 
 							<!-- Test Question -->
-							<TextBlock x:Name="TBoxQuestion" Style="{StaticResource BlockDesign}" Text="{Binding Question}"></TextBlock>
+							<TextBlock x:Name="TBoxQuestion" Style="{StaticResource BlockDesign}" Text="{Binding Question}" TextWrapping="Wrap"></TextBlock>
 							<TextBox Text="{Binding Answer}" Width="200" TextWrapping="Wrap" Margin="10"/>
 						</StackPanel>
 					</DataTemplate>
