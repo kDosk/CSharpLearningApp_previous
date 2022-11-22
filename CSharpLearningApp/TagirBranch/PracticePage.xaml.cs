@@ -36,10 +36,16 @@ namespace CSharpLearningApp.TagirBranch
             string b1 = Textb1.Text;
             string b2 = Textb2.Text;
             string b3 = Textb3.Text;
+            int a = 0;
+            string pr = null;
             switch (b1)
             {
                 case "bool":
-                    Textb1.Text = $"Правильно! {b1}";
+                    Textb1.Text = "Правильно!";
+                    a++;
+                    break;
+                case "":
+                    Textb1.Text = "Пусто!";
                     break;
                 default:
                     Textb1.Text = "Не верный ответ";
@@ -48,7 +54,11 @@ namespace CSharpLearningApp.TagirBranch
             switch (b2)
             {
                 case "true":
-                    Textb2.Text = $"Правильно! {b2}";
+                    Textb2.Text = "Правильно!";
+                    a++;
+                    break;
+                case "":
+                    Textb2.Text = "Пусто!";
                     break;
                 default:
                     Textb2.Text = "Не верный ответ";
@@ -57,21 +67,44 @@ namespace CSharpLearningApp.TagirBranch
             switch (b3)
             {
                 case "false":
-                    Textb3.Text = $"Правильно! {b3}";
+                    Textb3.Text = "Правильно!";
+                    a++;
+                    break;
+                case "":
+                    Textb3.Text = "Пусто!";
                     break;
                 default:
                     Textb3.Text = "Не верный ответ";
                     break;
             }
-            if (b1 == ("bool") && b2==("true")&& b3==("false"))
+
+            switch (a)
             {
-                MessageBox.Show("Всё правильно!");
-                NavigationService.Navigate(new MainPage());
+                    case 0:
+                    pr = "нет правильных ответов";
+                    break;
+                    case 1:
+                    pr = "один правильный ответ";
+                    break;
+                    case 2:
+                    pr = "два правильных ответа";
+                    break;
+                    case 3:
+                    pr = "три правильных ответа";
+                    break;
             }
-            if (b1 != ("bool") || b2 != ("true") || b3 != ("false"))
+            MessageBoxResult result = MessageBox.Show($" У вас {pr} \r\rХотите перейти к следующей теме?", "Итог", MessageBoxButton.YesNoCancel, MessageBoxImage.Asterisk);
+            switch (result)
             {
-                MessageBox.Show("Повторика теорию");
-                NavigationService.Navigate(new TheoryPage());
+                case MessageBoxResult.Yes:
+                    NavigationService.Navigate(new TheorySravpage());
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("Тогда переходим к теории!");
+                    NavigationService.Navigate(new TheoryPage());
+                    break;
+                default:
+                    break;
             }
         }
 

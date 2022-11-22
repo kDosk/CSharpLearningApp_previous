@@ -65,28 +65,61 @@ namespace CSharpLearningApp.TagirBranch
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int a = 0;
+            string pr = null;
             if (Textbox1.Text == TextBlock1.Text)
             {
-                MessageBox.Show("Правильно1");
+                a++;
+            }
+            else if (Textbox1.Text == "")
+            {
+                Textbox1.Text = "Пусто";
             }
             if (Textbox2.Text == TextBlock3.Text)
             {
-                MessageBox.Show("Правильно3");
+                a++;
+            }
+            else if (Textbox2.Text == "")
+            {
+                Textbox2.Text = "Пусто";
             }
             if (Textbox3.Text == TextBlock2.Text)
             {
-                MessageBox.Show("Правильно2");
+                a++;
             }
-            if (Textbox1.Text == TextBlock1.Text && Textbox2.Text == TextBlock3.Text && Textbox3.Text == TextBlock2.Text)
+            else if (Textbox3.Text == "")
             {
-                MessageBox.Show("Всё правильно! 5");
-                NavigationService.Navigate(new MainPage());
+                Textbox3.Text = "Пусто";
             }
-            else
+            switch (a)
             {
-                MessageBox.Show("Где-то ошибка, переходим к теории");
-                NavigationService.Navigate(new TheorySravpage());
+                case 0:
+                    pr = "Оценка 2";
+                    break;
+                case 1:
+                    pr = "Оценка 3";
+                    break;
+                case 2:
+                    pr = "Оценка 4";
+                    break;
+                case 3:
+                    pr = "Оценка 5";
+                    break;
             }
+
+                MessageBoxResult result = MessageBox.Show($" У вас {pr} \r\rХотите перейти к следующей теме?", "Итог", MessageBoxButton.YesNoCancel, MessageBoxImage.Asterisk);
+                switch (result)
+                {
+                    case MessageBoxResult.Yes:
+                        NavigationService.Navigate(new TheoryLogPage());
+                        break;
+                    case MessageBoxResult.No:
+                        MessageBox.Show("Тогда переходим к теории!");
+                        NavigationService.Navigate(new TheoryPage());
+                        break;
+                    default:
+                        break;
+                }
         }
     }
 }
