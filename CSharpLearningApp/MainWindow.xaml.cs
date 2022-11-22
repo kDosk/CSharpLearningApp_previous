@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpLearningApp.TagirBranch;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,7 +47,7 @@ namespace CSharpLearningApp
                     ShowWindow(new Window());
                     break;
                 case "Условные выражения":
-                    ShowWindow(new Window());
+                    ShowWindow(new MainWindowTagir());
                     break;
                 case "Циклы":
                     ShowWindow(new Window());

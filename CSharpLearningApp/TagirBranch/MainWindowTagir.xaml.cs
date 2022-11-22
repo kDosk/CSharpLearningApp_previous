@@ -24,5 +24,10 @@ namespace CSharpLearningApp.TagirBranch
             InitializeComponent();
             MainFrameTagir.Content = new MainPage();
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

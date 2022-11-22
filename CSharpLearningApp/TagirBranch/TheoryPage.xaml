@@ -20,7 +20,7 @@
         <ScrollViewer Grid.Row="1">
             <StackPanel Orientation="Vertical">
                 <TextBlock x:Name="TextBlockTextss" Style="{StaticResource BlockDesign}"  Margin="10" Grid.Row="1" TextWrapping= "Wrap"  FontSize="20" FontFamily="Times new Roman"/>
-                <Button x:Name="TestButton" Content="Проверить свои знания"  Style="{StaticResource ButtonDesign}" Margin="10" Height="30" Width="240" Grid.Row="0" HorizontalAlignment="Center" Click="Click_ValidPage"/>
+                <Button x:Name="TestButton" Content="Тестирование"  Style="{StaticResource ButtonDesign}" Margin="10" Grid.Row="0" HorizontalAlignment="Center" Click="Click_ValidPage"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

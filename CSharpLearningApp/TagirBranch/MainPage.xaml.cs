@@ -69,7 +69,7 @@ namespace CSharpLearningApp.TagirBranch
         private void Practice_ButtonClick3(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PracticeLogPage());
-        } 
+        }
         #endregion
 
     }
