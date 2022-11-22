@@ -9,13 +9,15 @@ namespace CSharpLearningApp
     internal class UserModel
     {
         private static List<UserModel> users = new List<UserModel>();
+        public static UserModel CurrentUser { get; set; } = null;
 
         public int ID { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
+        public string Login { get; set; }
         public string Password { get; set; }
 
-        public static bool AddUser(string name, string password, string surname)
+        public static bool AddUser(string name, string login, string password, string surname)
         {
             try
             {
@@ -24,6 +26,7 @@ namespace CSharpLearningApp
                     ID = users.Count + 1,
                     Surname = surname,
                     Name = name,
+                    Login = login,
                     Password = password
                 });
                 return true;
@@ -39,12 +42,12 @@ namespace CSharpLearningApp
             users.Remove(users.Where(p => p.ID == ID).FirstOrDefault());
         }
 
-        public static UserModel GetUser(string name, string password)
+        public static UserModel SearchUser(string login, string password)
         {
             UserModel user = null;
             foreach (var item in users)
             {
-                if (item.Name == name && item.Password == password)
+                if (item.Login == login && item.Password == password)
                 {
                     user = item;
                     break;
