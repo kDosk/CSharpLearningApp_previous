@@ -22,6 +22,8 @@
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="250" TextWrapping="Wrap" Name="Text1"  Style="{StaticResource ResourceKey=BlockDesignSmall}"></TextBlock>
         <TextBox x:Name="Text2" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Margin="0 50 0 0" Height="120" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
         <Button x:Name="GoTestButton" Style="{StaticResource ResourceKey=ButtonDesign}" HorizontalAlignment="Center"  Grid.Row="2" Grid.Column="1" Width="120" Height="40" Content="Далее" Click="GoTestButton_Click"></Button>
-
+        <TextBlock Grid.Row="1" Style="{StaticResource BlockDesign}" FontSize="10" Grid.Column="1" VerticalAlignment="Center" Margin="115 -330 0 10" Foreground="#FF252598">
+            <Hyperlink Click="Hyperlink_Click" Foreground="#FF1739A0">https://www.onlinegdb.com/online_csharp_compiler</Hyperlink>
+        </TextBlock>
         </Grid>
 </Page>

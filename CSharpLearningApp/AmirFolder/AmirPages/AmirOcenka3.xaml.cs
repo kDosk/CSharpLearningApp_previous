@@ -27,6 +27,7 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
                 if (AmirOcenki.ocenka3 <= 2)
                 {
                     OcenkaText.Text = ("Ваша оценка 2\r" + "Тест провален!");
+                
                 }
 
                 if (AmirOcenki.ocenka3 == 3)
