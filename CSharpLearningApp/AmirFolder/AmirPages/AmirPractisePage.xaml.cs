@@ -3,6 +3,7 @@ using System;
 using System.CodeDom.Compiler;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -27,7 +28,7 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
         public AmirPractisePage()
         {
             InitializeComponent();  
-            Text1.Text = ("Перейдите на сайт"+"https://www.onlinegdb.com/online_csharp_compiler,"+" через любой удобный браузер\r" +
+            Text1.Text = ("Перейдите на сайт"+"                                                                             ,"+" через любой удобный браузер\r" +
                 "Вместо строки:\r" +
                 "Console.WriteLine(\"Hello World\");\r" +
                 "Введите строки:\r" +
@@ -47,14 +48,9 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
             }
         }
 
-        private void TextBox_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Text2_Click(object sender, RoutedEventArgs e)
-        {
-
+            Process.Start("https://www.onlinegdb.com/online_csharp_compiler");
         }
     }
 }
