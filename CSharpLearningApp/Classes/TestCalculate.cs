@@ -13,7 +13,7 @@ namespace CSharpLearningApp
 		/// </summary>
 		/// <param name="listViewItems">Элементы ListView</param>
 		/// <param name="testModels">Тестовый бланк</param>
-		public static void Calculate(List<TestModel> listViewItems, List<TestModel> testModels)
+		public static void Calculate(List<TestModel> listViewItems, List<TestModel> testModels, string title = null, string type = "type_1")
 		{
 			int correctAnswersCount = 0;
 			int score = 0;
@@ -31,9 +31,9 @@ namespace CSharpLearningApp
 				}
 			}
 
-			var percent = listViewItems.Count / 100 * correctAnswersCount;
+			double percent = 100f / listViewItems.Count  * correctAnswersCount;
 
-			if (percent < 50)
+			if (percent < 40)
 			{
 				score = 2;
 			}
@@ -51,7 +51,28 @@ namespace CSharpLearningApp
             }
 
 			MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из {listViewItems.Count}");
-			InfoStorage.SetInfo($"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name} завершил тестирование по теме \"Оператор return\", Оценка - {score}");
+			ShowResult(score, title, type);
+		}
+
+		/// <summary>
+		/// Метод вывода результата на главное окно
+		/// </summary>
+		/// <param name="score">Оценка</param>
+		/// <param name="title">Название темы</param>
+		/// <param name="type">Тип задания: "type_1" - Тест, "type_2" - Практическое задание</param>
+		public static void ShowResult(double score, string title, string type)
+		{
+			switch (type)
+			{
+				case "type_1":
+					InfoStorage.SetInfo($"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name} завершил тестирование по теме \"{title}\", Оценка - {score}");
+					break;
+				case "type_2":
+					InfoStorage.SetInfo($"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name} завершил практическое задание по теме \"{title}\", Оценка - {score}");
+					break;
+				default:
+					break;
+			}
 		}
 	}
 }

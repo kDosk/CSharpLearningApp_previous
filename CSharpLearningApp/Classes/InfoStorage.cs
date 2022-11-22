@@ -8,11 +8,11 @@ namespace CSharpLearningApp
 {
 	internal class InfoStorage
 	{
-		public static string Inforamation { get; set; }
+		public static string Inforamation { get; private set; }
 
 		public static void SetInfo(string info)
 		{
-			Inforamation += info + "\r\n";
+			Inforamation += info + "\r\n\r\n";
 		}
 	}
 }

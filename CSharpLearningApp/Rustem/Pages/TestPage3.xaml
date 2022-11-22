@@ -16,7 +16,7 @@
 				<RowDefinition Height="auto"/>
 			</Grid.RowDefinitions>
 
-			<TextBlock Text="Сокращенная версия методов с результатом: Тест" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
+			<TextBlock Text="Выход из метода: Тест" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="15"/>
 
 			<ListView x:Name="LViewTest" Grid.Row="1" Background="Transparent" BorderBrush="{x:Null}">
 
