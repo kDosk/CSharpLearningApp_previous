@@ -93,10 +93,9 @@
 
         <!--#region UserInfoPage -->
         <StackPanel x:Name="UserInfoGrid" Grid.Column="1" Visibility="Collapsed" VerticalAlignment="Center">
-            <TextBlock Style="{StaticResource BlockDesign}" Text="Данные пользователя" HorizontalAlignment="Center" Margin="15"/>
-            <TextBlock x:Name="TBoxUserSurname" Style="{StaticResource BlockDesign}" Text="Имя:" HorizontalAlignment="Center"/>
-            <TextBlock x:Name="TBoxUserName" Style="{StaticResource BlockDesign}" Text="Фамилия:" HorizontalAlignment="Center"/>
-            <Button x:Name="ButtonUserExit" Grid.Row="2" Grid.ColumnSpan="2" Content="Выход" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="10" HorizontalAlignment="Right" Click="ButtonExit_Click" FontSize="16"/>
+            <TextBlock Style="{StaticResource BlockDesign}" Text="Текущий пользователь:" HorizontalAlignment="Center" Margin="15"/>
+            <TextBlock x:Name="TBoxUser" Style="{StaticResource BlockDesign}" HorizontalAlignment="Center"/>
+            <Button x:Name="ButtonUserExit" Grid.Row="2" Grid.ColumnSpan="2" Content="Выход" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="20" HorizontalAlignment="Center" Click="ButtonExit_Click" FontSize="16"/>
         </StackPanel>
         <!--#endregion-->
     </Grid>

@@ -33,6 +33,8 @@ namespace CSharpLearningApp
             {
                 UserInfoGrid.Visibility = Visibility.Visible;
                 AuthGrid.Visibility = Visibility.Collapsed;
+
+                TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
             }
         }
 
@@ -124,11 +126,13 @@ namespace CSharpLearningApp
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
             Authorization(TBoxSignInLogin.Text, TBoxSignInPass.Text);
+            TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
         }
 
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
             Registration(TBoxSignUpSurname.Text, TBoxSignUpName.Text, TBoxSignUpLogin.Text, TBoxSignUpPass.Text, TBoxSignUpPassConfirm.Text);
+            TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
