@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,5 +64,10 @@ namespace CSharpLearningApp.Rustem.Pages
         {
             PageNavigationManager.ChangePage(new PracticePage());
 		}
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            WindowNavigationManager.CloseWindow();
+        }
     }
 }

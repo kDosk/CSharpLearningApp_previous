@@ -24,6 +24,7 @@ namespace CSharpLearningApp.Rustem.Windows
         {
             InitializeComponent();
             PageNavigationManager.ChangePage(MainFrame, new MainPage());
+            WindowNavigationManager.CurrentWindow = this;
         }
     }
 }

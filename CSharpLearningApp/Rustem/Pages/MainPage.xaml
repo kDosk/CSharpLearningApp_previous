@@ -54,6 +54,7 @@
 		</Grid>
 
         <TextBlock Text="Ответственный за форму: С. Рустем" Style="{StaticResource BlockDesignSmall}" Grid.Row="2" HorizontalAlignment="Center" Margin="15"/>
+        <Button Style="{StaticResource ButtonDesign}" Content="Выход" Grid.Row="2" Margin="20 5" VerticalAlignment="Center" Height="35" HorizontalAlignment="Right" Width="120" Click="ButtonExit_Click"/>
 
     </Grid>
 </Page>
