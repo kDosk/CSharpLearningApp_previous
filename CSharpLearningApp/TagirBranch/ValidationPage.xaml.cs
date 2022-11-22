@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.IO.Packaging;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
@@ -43,6 +44,9 @@ namespace CSharpLearningApp.TagirBranch
             int a = 0;
             int b = 0;
             string c = null;
+            string d = null;
+            string otvet = null;
+
             switch (RadioOtvet1.IsChecked)
             {
                 case true:
@@ -61,7 +65,7 @@ namespace CSharpLearningApp.TagirBranch
                                     b++;
                                     break;
                                     case false:
-                                    c = "Первый вопрос не отвечен";
+                                    c = "\rПервый вопрос не отвечен";
                                     break;
                             }
                             break;
@@ -93,7 +97,6 @@ namespace CSharpLearningApp.TagirBranch
                     }
                     break;
             }
-
             switch (RadioOtvet3.IsChecked)
             {
                 case true:
@@ -201,23 +204,46 @@ namespace CSharpLearningApp.TagirBranch
                     }
                     break;
             }
-
-            if (a==2 || a==1)
+            switch (b)
             {
-                MessageBox.Show("Оценка 2 перечитайте текст и перепройдите тест");
+                case 0:
+                    d = "ноль ошибок!";
+                        break;
+                case 1:
+                    d = "одна ошибка!";
+                    break;
+                case 2:
+                    d = "две ошибки!";
+                    break;
+                case 3:
+                    d = "три ошибки!";
+                    break;
+                case 4:
+                    d = "четыре ошибки!";
+                    break;
+                case 5:
+                    d = "пять ошибок!";
+                    break;
             }
-            if (a==3) 
+            switch (a)
             {
-                MessageBox.Show("Оценка 3 ");
+                case 0:
+                case 1:
+                case 2:
+                    otvet = "оценка 2";
+                    break;
+                case 3:
+                    otvet = "оценка 3";
+                    break;
+                case 4:
+                    otvet = "оценка 4";
+                    break;
+                case 5:
+                    otvet = "оценка 5";
+                    break;
             }
-            if (a == 4)
-            {
-                MessageBox.Show("Оценка 4");
-            }
-            if (a == 5)
-            {
-                MessageBox.Show("Оценка 5");
-            }
+            MessageService.ShowMessage($"У вас {d} \r\rВопросы на которые не даны ответы:{c} \r\rВаша {otvet} поздравляю");
+            
         }
     }
 }

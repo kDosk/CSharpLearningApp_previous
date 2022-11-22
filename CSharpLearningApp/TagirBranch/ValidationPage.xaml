@@ -13,13 +13,13 @@
             <RowDefinition Height="40"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Основные понятия" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
+        <TextBlock Text="Тестовая часть" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
         <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonExit_Click"/>
         <ScrollViewer Grid.Row="1">
             <Grid>
                 <StackPanel Style="{StaticResource StackPanelDesign}">
             <Border BorderBrush="{StaticResource BlueText}" BorderThickness="1" Margin="5">
-                <StackPanel Margin="10" >
+                <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
                     <TextBlock x:Name="TextBlock1" FontSize="20" Style="{StaticResource BlockDesignSmall}"/>
                     <RadioButton GroupName="First"  x:Name="RadioOtvet1" Content="bool" Style="{StaticResource RadioDesign}" Margin="8"/>
                     <RadioButton GroupName="First"  x:Name="Radiostring" Content="string"  Style="{StaticResource RadioDesign}" Margin="8"/>
@@ -54,14 +54,14 @@
                 </StackPanel>
             </Border>
             <Border BorderBrush="{StaticResource BlueText}" BorderThickness="1" Margin="5">
-                <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
-                    <TextBlock x:Name="TextBlock5" FontSize="20" Style="{StaticResource BlockDesignSmall}" TextWrapping="Wrap"/>
-                    <RadioButton GroupName="five" Content="Используются для просмотра статистики программы." x:Name="Isp5" Style="{StaticResource RadioDesign}" Margin="8"/>
-                    <RadioButton GroupName="five" Content="Используются для управлением ходом выполнения выделения памяти." x:Name="IspUpr5" Style="{StaticResource RadioDesign}" Margin="8"/>
-                    <RadioButton GroupName="five" Content="Используются для управления ходом выполнения программы."  x:Name="RadioOtvet5" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                            <TextBlock x:Name="TextBlock5" FontSize="20" Style="{StaticResource BlockDesignSmall}" TextWrapping="Wrap"/>
+                            <RadioButton GroupName="five" FontSize="10" Content="Используются для просмотра статистики программы." x:Name="Isp5" Style="{StaticResource RadioDesign}" Margin="8"/>
+                            <RadioButton GroupName="five" FontSize="10" Content="Используются для управлением ходом выполнения выделения памяти." x:Name="IspUpr5" Style="{StaticResource RadioDesign}" Margin="8"/>
+                            <RadioButton GroupName="five" FontSize="10" Content="Используются для управления ходом выполнения программы." x:Name="RadioOtvet5" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        </StackPanel>
+                    </Border>
                     <Button x:Name="CheckBtn" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
-                </StackPanel>
-            </Border>
         </StackPanel>
             </Grid>
         </ScrollViewer>
