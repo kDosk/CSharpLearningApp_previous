@@ -27,7 +27,7 @@ namespace CSharpLearningApp.Niyaz
 
         private void ExitBinarTeory_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
         }
     }
 }

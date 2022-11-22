@@ -61,13 +61,13 @@ namespace CSharpLearningApp.Niyaz
 				}
 
 				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3");
-                NavigatonManager.ChangePage(new MainPage());
+                PageNavigationManager.ChangePage(new MainPage());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 MessageService.ShowError("Ошибка выполнения.");
-                NavigatonManager.ChangePage(new MainPage());
+                PageNavigationManager.ChangePage(new MainPage());
             }
 
         }

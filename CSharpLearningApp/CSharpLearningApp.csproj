@@ -143,9 +143,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Compile Include="AuthPage.xaml.cs">
-      <DependentUpon>AuthPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Classes\PageNavigationManager.cs" />
     <Compile Include="Classes\WindowNavigationManager.cs" />
     <Compile Include="Classes\InfoStorage.cs" />
@@ -186,19 +183,6 @@
     <Compile Include="Rustem\Windows\BasicWindow.xaml.cs">
       <DependentUpon>BasicWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\PageNavigationManager.cs" />
-    <Compile Include="Classes\WindowNavigationManager.cs" />
-    <Compile Include="Classes\InfoStorage.cs" />
-    <Compile Include="MWMainPage.xaml.cs">
-      <DependentUpon>MWMainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Classes\TestCalculate.cs" />
-    <Compile Include="Classes\TestModel.cs" />
-    <Compile Include="Classes\UserModel.cs" />
-    <Page Include="AuthPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="FolderKamilya\Pages\KamilyaOcenka1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -477,10 +461,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Rustem\Windows\BasicWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MWMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

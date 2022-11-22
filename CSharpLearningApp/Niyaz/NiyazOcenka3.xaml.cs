@@ -41,7 +41,7 @@ namespace CSharpLearningApp.Niyaz
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new MainPage());
+            PageNavigationManager.ChangePage(new MainPage());
         }
     }
     

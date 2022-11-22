@@ -52,7 +52,7 @@ namespace CSharpLearningApp.Niyaz
             }
 
             Niyazocenka.ocenka3 = otc3;
-            NavigatonManager.ChangePage(new NiyazOcenka3());
+            PageNavigationManager.ChangePage(new NiyazOcenka3());
             }
             
         }

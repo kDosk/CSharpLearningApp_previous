@@ -22,8 +22,8 @@ namespace CSharpLearningApp.Niyaz
         public MainWindowArifm()
         {
             InitializeComponent();
-            NavigatonManager.ChangePage(MainFrame, new MainPage());
-            WindowManager.CurrentWindow = this;
+            PageNavigationManager.ChangePage(MainFrame, new MainPage());
+            WindowNavigationManager.CurrentWindow = this;
         }
     }
 }

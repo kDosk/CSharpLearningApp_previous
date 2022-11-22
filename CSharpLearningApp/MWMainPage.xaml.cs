@@ -1,4 +1,8 @@
-﻿using CSharpLearningApp.Rustem.Windows;
+﻿using CSharpLearningApp.AmirFolder;
+using CSharpLearningApp.lilia;
+using CSharpLearningApp.Niyaz;
+using CSharpLearningApp.Rustem.Windows;
+using CSharpLearningApp.TagirBranch;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,22 +38,22 @@ namespace CSharpLearningApp
                 switch ((sender as Button).Content)
                 {
                     case "Переменные и константы":
-                        ShowWindow(new Window());
+                        ShowWindow(new MainKamilysWindow());
                         break;
                     case "Типы данных":
-                        ShowWindow(new Window());
+                        ShowWindow(new AmirWindow());
                         break;
                     case "Арифметические вычисления":
-                        ShowWindow(new Window());
+                        ShowWindow(new MainWindowArifm());
                         break;
                     case "Операции присваивания":
-                        ShowWindow(new Window());
+                        ShowWindow(new WindowLilia());
                         break;
                     case "Преобразование базовых типов данных":
                         ShowWindow(new Window());
                         break;
                     case "Условные выражения":
-                        ShowWindow(new Window());
+                        ShowWindow(new MainWindowTagir());
                         break;
                     case "Циклы":
                         ShowWindow(new Window());
