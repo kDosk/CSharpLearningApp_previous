@@ -33,31 +33,31 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new PracticeModel
 			{
 				ID = 1,
-				Question = "______ - оператор, который возвращает значение.",
+				Question = "1. Введите пропущенное слово: \"______ - оператор, который возвращает значение.\"",
 				CorrectAnswer = "return"
 			});
 			_testModels.Add(new PracticeModel
 			{
 				ID = 2,
-				Question = "____ - тип, используемый для определения того, что метод не возвращает значение.",
+				Question = "2. Введите пропущенное слово:\"____ - тип, используемый для определения того, что метод не возвращает значение.\"",
 				CorrectAnswer = "void"
 			});
 			_testModels.Add(new PracticeModel
 			{
 				ID = 3,
-				Question = "Верное ли написание метода \"int GetValue(int a, int b) => a + b\"? Ответ: Верно | Неверно",
+				Question = "3. Верное ли написание метода \"int GetValue(int a, int b) => a + b\"? Ответ: Верно | Неверно",
 				CorrectAnswer = "Верно"
 			});
 			_testModels.Add(new PracticeModel
 			{
 				ID = 4,
-				Question = "Верное ли написание метода \"string GetValue(int a, int b) => a + b\"? Ответ: Верно | Неверно",
+				Question = "4. Верное ли написание метода \"string GetValue(int a, int b) => a + b\"? Ответ: Верно | Неверно",
 				CorrectAnswer = "Неверно"
 			});
 			_testModels.Add(new PracticeModel
 			{
 				ID = 5,
-				Question = "Верное ли написание метода \"void GetValue(int a, int b) => a + b\"? Ответ: Верно | Неверно",
+				Question = "5. Верное ли написание метода \"void GetValue(int a, int b) => a + b\"? Ответ: Верно | Неверно",
 				CorrectAnswer = "Неверно"
 			});
 			#endregion
@@ -67,7 +67,7 @@ namespace CSharpLearningApp.Rustem.Pages
 
 		private void ButtonBack_Click(object sender, RoutedEventArgs e)
 		{
-			NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
 		}
 
 		private void ButtonCompleteTest_Click(object sender, RoutedEventArgs e)

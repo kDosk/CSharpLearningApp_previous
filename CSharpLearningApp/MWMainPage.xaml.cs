@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpLearningApp.Rustem.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,7 +61,7 @@ namespace CSharpLearningApp
                         ShowWindow(new Window());
                         break;
                     case "Оператор return":
-                        ShowWindow(new Window());
+                        ShowWindow(new BasicWindow());
                         break;
                     case "Перечисления enum":
                         ShowWindow(new Window());

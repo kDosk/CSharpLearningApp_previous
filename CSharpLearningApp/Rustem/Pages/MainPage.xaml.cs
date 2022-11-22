@@ -28,40 +28,40 @@ namespace CSharpLearningApp.Rustem.Pages
         #region TheoryPages EventArgs
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TheoryPage1());
+            PageNavigationManager.ChangePage(new TheoryPage1());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TheoryPage2());
+            PageNavigationManager.ChangePage(new TheoryPage2());
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TheoryPage3());
+            PageNavigationManager.ChangePage(new TheoryPage3());
         }
         #endregion
 
         #region TestPages EventArgs
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TestPage1());
+            PageNavigationManager.ChangePage(new TestPage1());
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TestPage2());
+            PageNavigationManager.ChangePage(new TestPage2());
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            NavigatonManager.ChangePage(new TestPage3());
+            PageNavigationManager.ChangePage(new TestPage3());
         }
         #endregion
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-			NavigatonManager.ChangePage(new PracticePage());
+            PageNavigationManager.ChangePage(new PracticePage());
 		}
     }
 }

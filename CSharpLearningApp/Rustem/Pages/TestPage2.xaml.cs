@@ -33,7 +33,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 1,
-				Question = "Какая сокращенная версия данного метода?\n" +
+				Question = "1. Какая сокращенная версия данного метода?\n" +
 						   "string GetValue()\n" +
 						   "{\n" +
 						   "\treturn \"Hello World!\";\n" +
@@ -62,7 +62,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 2,
-				Question = "Какая сокращенная версия данного метода?\n" +
+				Question = "2. Какая сокращенная версия данного метода?\n" +
 						   "int GetValue(int x, int y)\n" +
 						   "{\n" +
 						   "\treturn x + y;\n" +
@@ -91,7 +91,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 3,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
+				Question = "3. Что будет возвращено при выполнении данного метода? \n" +
 						   "string GetValue()\n" +
 						   "{\n" +
 						   "\tstring value = \"Hello World!\";\n" +
@@ -122,7 +122,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 4,
-				Question = "Что будет возвращено при выполнении данного кода? \n" +
+				Question = "4. Что будет возвращено при выполнении данного кода? \n" +
 						   "int GetValue(int x, int y) => x + y;\n" +
 						   "\n" +
 						   "GetValue();\n",
@@ -150,7 +150,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 5,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
+				Question = "5. Что будет возвращено при выполнении данного метода? \n" +
 						   "int GetValue(int x, string y) => x + y;\n",
 				Answers = new List<Answers>()
 				{
@@ -179,7 +179,7 @@ namespace CSharpLearningApp.Rustem.Pages
 
 		private void ButtonBack_Click(object sender, RoutedEventArgs e)
 		{
-			NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
 		}
 
 		private void ButtonCompleteTest_Click(object sender, RoutedEventArgs e)

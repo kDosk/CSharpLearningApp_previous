@@ -33,7 +33,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 1,
-				Question = "Какой оператор используется в методе для возврата значения?",
+				Question = "1. Какой оператор используется в методе для возврата значения?",
 				Answers = new List<Answers>()
 				{
 					new Answers
@@ -58,7 +58,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 2,
-				Question = "Какой тип используется в методе, который НЕ возвращает значение?",
+				Question = "2. Какой тип используется в методе, который НЕ возвращает значение?",
 				Answers = new List<Answers>()
 				{
 					new Answers
@@ -83,7 +83,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 3,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
+				Question = "3. Что будет возвращено при выполнении данного метода? \n" +
 						   "string GetValue()\n" +
 						   "{\n" +
 						   "\treturn 3;\n" +
@@ -112,7 +112,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 4,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
+				Question = "4. Что будет возвращено при выполнении данного метода? \n" +
 						   "string GetValue()\n" +
 						   "{\n" +
 						   "\tint a = 5;\n" +
@@ -147,7 +147,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			_testModels.Add(new TestModel
 			{
 				ID = 5,
-				Question = "Что будет возвращено при выполнении данного метода? \n" +
+				Question = "5. Что будет возвращено при выполнении данного метода? \n" +
 						   "void GetValue()\n" +
 						   "{\n" +
 						   "\tConsole.WriteLine(\"Hello World!\")\n" +
@@ -179,7 +179,7 @@ namespace CSharpLearningApp.Rustem.Pages
 
 		private void ButtonBack_Click(object sender, RoutedEventArgs e)
 		{
-			NavigatonManager.GoBack();
+            PageNavigationManager.GoBack();
 		}
 
 		private void ButtonCompleteTest_Click(object sender, RoutedEventArgs e)
