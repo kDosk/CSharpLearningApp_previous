@@ -18,17 +18,17 @@
 
                 <ScrollViewer Width="400" VerticalScrollBarVisibility="Auto" VerticalAlignment="Center" Margin="10">
                     <StackPanel>
-                        <Button Content="Переменные и константы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Типы данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Арифметические вычисления" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Операции присваивания" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Преобразование типов данных" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Условные выражения" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Циклы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Массивы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Методы" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Оператор return" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
-                        <Button Content="Перечисления enum" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Переменные и константы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Камиля" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Типы данных" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Т. Амир" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Арифметические вычисления" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Л. Нияз" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Операции присваивания" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Г. Лилия" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Преобразование типов данных" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: М. Спартак" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Условные выражения" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Тагир" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Циклы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Г. Лилия" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Массивы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Булат" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Методы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Е. Линиза" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Оператор return" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Рустем" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
+                        <Button Content="Перечисления enum" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Регина" Style="{StaticResource ButtonDesign}" Margin="0 5"/>
                     </StackPanel>
                 </ScrollViewer>
 
