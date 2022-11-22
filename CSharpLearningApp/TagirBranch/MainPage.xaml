@@ -15,6 +15,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="Условные выражения" FontSize="25" HorizontalAlignment="Center" Margin="15" Style="{StaticResource BlockDesign}" Grid.Column="1"/>
+        <TextBlock Text="Создатель: Сюндюков Тагир Ильдарович" VerticalAlignment="Bottom" Margin="2" Style="{StaticResource BlockDesignSmall}"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Style="{StaticResource StackPanelDesign}">
             <TextBlock Text="Основные понятия" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
             <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
