@@ -207,7 +207,20 @@ namespace CSharpLearningApp.TagirBranch
                     otvet = "оценка 5";
                     break;
             }
-            MessageService.ShowMessage($"У вас {d} \r\rВопросы на которые не даны ответы:{c} \r\rВаша {otvet} поздравляю");
+            MessageBoxResult result = MessageBox.Show($"У вас {d} \r\rВопросы на которые не даны " +
+               $"ответы:{c} \r\rВаша {otvet} поздравляю \r\rХотите перейти дальше?", "Итог", MessageBoxButton.YesNoCancel, MessageBoxImage.Asterisk);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    NavigationService.Navigate(new PracticeLogPage());
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("Тогда переходим к теории!");
+                    NavigationService.Navigate(new TheoryLogPage());
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
