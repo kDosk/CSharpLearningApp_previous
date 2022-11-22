@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
+using CSharpLearningApp.AmirFolder.AmirPages;
 
 namespace CSharpLearningApp.AmirFolder
 {
@@ -25,6 +26,7 @@ namespace CSharpLearningApp.AmirFolder
             InitializeComponent();
             MainFrame.Navigate(new AmirMainPage());
             Manager.MainFrame = MainFrame;
+            AmirCloseWindow.AmirCloseWin = this;
         }
     }
 }

@@ -27,7 +27,7 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
         public AmirPractisePage()
         {
             InitializeComponent();  
-            Text1.Text = ("Перейдите на сайт https://www.onlinegdb.com/online_csharp_compiler, через любой удобный браузер\r" +
+            Text1.Text = ("Перейдите на сайт"+"https://www.onlinegdb.com/online_csharp_compiler,"+" через любой удобный браузер\r" +
                 "Вместо строки:\r" +
                 "Console.WriteLine(\"Hello World\");\r" +
                 "Введите строки:\r" +
@@ -48,6 +48,11 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
         }
 
         private void TextBox_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
+
+        }
+
+        private void Text2_Click(object sender, RoutedEventArgs e)
         {
 
         }

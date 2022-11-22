@@ -16,6 +16,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="1" Text=" Выберите главу" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Style="{StaticResource ResourceKey=BlockDesign}" ></TextBlock>
@@ -23,5 +24,6 @@
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter2" Grid.Column="1" Grid.Row="2" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 2: Использование суффиксов и системных типов" Click="ButtonCapter2_Click"></Button>
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonCapter3" Grid.Column="1" Grid.Row="3" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Глава 3: Неявная типизация" Click="ButtonCapter3_Click"></Button>
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonPractise" Grid.Column="1" Grid.Row="4" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Практика" Click="ButtonPractise_Click"></Button>
+        <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonGoBack" Grid.Column="1" Grid.Row="5" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Вернуться" Click="ButtonGoBack_Click"></Button>
     </Grid>
 </Page>
