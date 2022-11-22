@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.IO.Packaging;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -41,30 +43,9 @@ namespace CSharpLearningApp.TagirBranch
         {
             int a = 0;
             int b = 0;
-           // string = "";
-
-            /*if (Radioint.IsChecked == false && Radiostring.IsChecked == false && RadioOtvet1.IsChecked == false)
-            {
-                b++;
-            }
-            if (true2.IsChecked == false && false2.IsChecked == false && RadioOtvet2.IsChecked == false)
-            {
-                b++;
-
-            }
-            if (Srav3.IsChecked== false && Log3.IsChecked==false && ObaNo3.IsChecked==false && RadioOtvet3.IsChecked==false) 
-            {
-                b++;
-            }
-            if (true4.IsChecked == false && false4.IsChecked == false && Yes4.IsChecked== false && No4.IsChecked == false && Yesno4.IsChecked == false && RadioOtvet4.IsChecked == false)
-            {
-                b++;
-            }
-            if (Isp5.IsChecked == false && IspUpr5.IsChecked==false && RadioOtvet5.IsChecked==false)
-            {
-                b++;
-
-            }*/
+            string c = null;
+            string d = null;
+            string otvet = null;
 
             switch (RadioOtvet1.IsChecked)
             {
@@ -74,7 +55,6 @@ namespace CSharpLearningApp.TagirBranch
                 case false:
                     switch (Radiostring.IsChecked)
                     {
-
                         case true:
                             b++;
                             break;
@@ -85,61 +65,196 @@ namespace CSharpLearningApp.TagirBranch
                                     b++;
                                     break;
                                     case false:
-                                    
+                                    c = "\rПервый вопрос не отвечен";
                                     break;
                             }
                             break;
                     }
                     break;
             }
-
-
-            if (RadioOtvet1.IsChecked == true)
+            switch (RadioOtvet2.IsChecked)
             {
-                a++;
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (true2.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (false2.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    c = c + "\rВторой вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            
-
-            if (RadioOtvet2.IsChecked == true)
+            switch (RadioOtvet3.IsChecked)
             {
-                a++;
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (Srav3.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (Log3.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    switch (ObaNo3.IsChecked)
+                                    {
+                                        case true:
+                                            b++;
+                                            break;
+                                            case false:
+                                            c = c + "\rТретий вопрос не отвечен";
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            
-            if (RadioOtvet3.IsChecked == true) 
+            switch (RadioOtvet4.IsChecked)
             {
-                a++;
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (true4.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (false4.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    switch (Yes4.IsChecked)
+                                    {
+                                        case true:
+                                            b++;
+                                            break;
+                                        case false:
+                                            switch (No4.IsChecked)
+                                            {
+                                                case true:
+                                                    b++;
+                                                    break;
+                                                case false:
+                                                    switch (Yesno4.IsChecked)
+                                                    {
+                                                        case true:
+                                                            b++;
+                                                            break;
+                                                        case false:
+                                                            c = c + "\rЧетвёртый вопрос не отвечен";
+                                                            break;
+                                                    }
+                                                    break;
+                                            }
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            
-            if (RadioOtvet4.IsChecked == true)
+            switch (RadioOtvet5.IsChecked)
             {
-                a++;
+                case true:
+                    a++;
+                    break;
+                    case false:
+                    switch (Isp5.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                            case false:
+                            switch (IspUpr5.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                    case false:
+                                    c = c + "\rПятый вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            
-            if (RadioOtvet5.IsChecked == true)
+            switch (b)
             {
-                a++;
+                case 0:
+                    d = "ноль ошибок!";
+                        break;
+                case 1:
+                    d = "одна ошибка!";
+                    break;
+                case 2:
+                    d = "две ошибки!";
+                    break;
+                case 3:
+                    d = "три ошибки!";
+                    break;
+                case 4:
+                    d = "четыре ошибки!";
+                    break;
+                case 5:
+                    d = "пять ошибок!";
+                    break;
             }
-            
-
-            if (b == 5 || a==0)
+            switch (a)
             {
-                MessageBox.Show("Ответьте на вопросы");
+                case 0:
+                case 1:
+                case 2:
+                    otvet = "оценка 2";
+                    break;
+                case 3:
+                    otvet = "оценка 3";
+                    break;
+                case 4:
+                    otvet = "оценка 4";
+                    break;
+                case 5:
+                    otvet = "оценка 5";
+                    break;
             }
-            if (a==2 || a==1)
+           MessageBoxResult result = MessageBox.Show($"У вас {d} \r\rВопросы на которые не даны " +
+               $"ответы:{c} \r\rВаша {otvet} поздравляю \r\rХотите перейти дальше?" , "Итог" , MessageBoxButton.YesNoCancel, MessageBoxImage.Asterisk);
+            switch (result)
             {
-                MessageBox.Show("Оценка 2 перечитайте текст и перепройдите тест");
-            }
-            if (a==3) 
-            {
-                MessageBox.Show("Оценка 3 ");
-            }
-            if (a == 4)
-            {
-                MessageBox.Show("Оценка 4");
-            }
-            if (a == 5)
-            {
-                MessageBox.Show("Оценка 5");
+                case MessageBoxResult.Yes:
+                    NavigationService.Navigate(new PracticePage());
+                    break;
+                        case MessageBoxResult.No:
+                        MessageBox.Show("Тогда переходим к теории!");
+                    NavigationService.Navigate(new TheoryPage());
+                    break;
+                default:
+                    break;
             }
         }
     }

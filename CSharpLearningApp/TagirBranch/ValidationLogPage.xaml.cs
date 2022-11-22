@@ -26,8 +26,8 @@ namespace CSharpLearningApp.TagirBranch
             TextBlock1.Text = "Операция логического сложения или логическое ИЛИ. Возвращает true, если хотя бы один из операндов возвращает true.";
             TextBlock2.Text = "Операция логического умножения или логическое И. Возвращает true, если оба операнда одновременно равны true.";
             TextBlock3.Text = "Операция логического умножения или логическое И. Возвращает true, если оба операнда одновременно равны true.";
-            TextBlock5.Text = "Операция логического отрицания. Производится над одним операндом и возвращает true, если операнд равен false. Если операнд равен true, то операция возвращает false:";
-            TextBlock6.Text = "Операция исключающего ИЛИ. Возвращает true, если либо первый, либо второй операнд (но не одновременно) равны true, иначе возвращает false";
+            TextBlock4.Text = "Операция логического отрицания. Производится над одним операндом и возвращает true, если операнд равен false. Если операнд равен true, то операция возвращает false:";
+            TextBlock5.Text = "Операция исключающего ИЛИ. Возвращает true, если либо первый, либо второй операнд (но не одновременно) равны true, иначе возвращает false";
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
@@ -37,53 +37,189 @@ namespace CSharpLearningApp.TagirBranch
 
         private void CheckBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (Radio1.IsChecked == true)
+            int a = 0;
+            int b = 0;
+            string c = null;
+            string d = null;
+            string otvet = null;
+
+            switch (Radio1.IsChecked)
             {
-                MessageBox.Show("Правильный ответ! ");
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (RV11.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (RV12.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    c = "\rПервый вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            else
+            switch (Radio2.IsChecked)
             {
-                MessageBox.Show("Неправильный ответ!");
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (RV21.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (RV22.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    c = c + "\rВторой вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            if (Radio2.IsChecked == true)
+            switch (Radio3.IsChecked)
             {
-                MessageBox.Show("Правильный ответ! ");
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (RV31.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (RV32.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    c = c + "\rТретий вопрос не отвечен";
+                                    break;
+
+                            }
+                            break;
+                    }
+                    break;
             }
-            else
+            switch (Radio4.IsChecked)
             {
-                MessageBox.Show("Неправильный ответ!");
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (RV41.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (RV42.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    c = c + "\rЧетвёртый вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            if (Radio3.IsChecked == true)
+            switch (Radio5.IsChecked)
             {
-                MessageBox.Show("Правильный ответ! ");
+                case true:
+                    a++;
+                    break;
+                case false:
+                    switch (RV51.IsChecked)
+                    {
+                        case true:
+                            b++;
+                            break;
+                        case false:
+                            switch (RV52.IsChecked)
+                            {
+                                case true:
+                                    b++;
+                                    break;
+                                case false:
+                                    c = c + "\rПятый вопрос не отвечен";
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
             }
-            else
+            switch (b)
             {
-                MessageBox.Show("Неправильный ответ!");
+                case 0:
+                    d = "ноль ошибок!";
+                    break;
+                case 1:
+                    d = "одна ошибка!";
+                    break;
+                case 2:
+                    d = "две ошибки!";
+                    break;
+                case 3:
+                    d = "три ошибки!";
+                    break;
+                case 4:
+                    d = "четыре ошибки!";
+                    break;
+                case 5:
+                    d = "пять ошибок!";
+                    break;
             }
-            if (Radio5.IsChecked == true)
+            switch (a)
             {
-                MessageBox.Show("Правильный ответ! ");
+                case 0:
+                case 1:
+                case 2:
+                    otvet = "оценка 2";
+                    break;
+                case 3:
+                    otvet = "оценка 3";
+                    break;
+                case 4:
+                    otvet = "оценка 4";
+                    break;
+                case 5:
+                    otvet = "оценка 5";
+                    break;
             }
-            else
+            MessageBoxResult result = MessageBox.Show($"У вас {d} \r\rВопросы на которые не даны " +
+               $"ответы:{c} \r\rВаша {otvet} поздравляю \r\rХотите перейти дальше?", "Итог", MessageBoxButton.YesNoCancel, MessageBoxImage.Asterisk);
+            switch (result)
             {
-                MessageBox.Show("Неправильный ответ!");
-            }
-            if (Radio6.IsChecked == true)
-            {
-                MessageBox.Show("Правильный ответ! ");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-            if (Radio1.IsChecked == true && Radio2.IsChecked == true && Radio3.IsChecked == true && Radio5.IsChecked == true && Radio6.IsChecked == true)
-            {
-                NavigationService.Navigate(new PracticeLogPage());
-            }
-            if (Radio1.IsChecked == false || Radio2.IsChecked == false || Radio3.IsChecked == false || Radio5.IsChecked == false || Radio6.IsChecked == false)
-            {
-                NavigationService.Navigate(new TheoryLogPage());
+                case MessageBoxResult.Yes:
+                    NavigationService.Navigate(new PracticeLogPage());
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("Тогда переходим к теории!");
+                    NavigationService.Navigate(new TheoryLogPage());
+                    break;
+                default:
+                    break;
             }
         }
     }
