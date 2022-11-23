@@ -50,7 +50,7 @@ namespace CSharpLearningApp
                 score = 5;
             }
 
-			MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из {listViewItems.Count}");
+			MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из {listViewItems.Count}. Оценка: {score}");
 			ShowResult(score, title, type);
 		}
 
@@ -60,7 +60,7 @@ namespace CSharpLearningApp
 		/// <param name="score">Оценка</param>
 		/// <param name="title">Название темы</param>
 		/// <param name="type">Тип задания: "type_1" - Тест, "type_2" - Практическое задание</param>
-		public static void ShowResult(double score, string title, string type)
+		public static void ShowResult(int score, string title, string type)
 		{
 			switch (type)
 			{

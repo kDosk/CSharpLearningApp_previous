@@ -41,7 +41,7 @@ namespace CSharpLearningApp.TagirBranch
             int b = 0;
             string c = null;
             string d = null;
-            string otvet = null;
+            int otvet = 0;
 
             switch (RadioOtvet1.IsChecked)
             {
@@ -195,20 +195,22 @@ namespace CSharpLearningApp.TagirBranch
                 case 0:
                 case 1:
                 case 2:
-                    otvet = "оценка 2";
+                    otvet = 2;
                     break;
                 case 3:
-                    otvet = "оценка 3";
+                    otvet = 3;
                     break;
                 case 4:
-                    otvet = "оценка 4";
+                    otvet = 4;
                     break;
                 case 5:
-                    otvet = "оценка 5";
+                    otvet = 5;
                     break;
             }
             MessageBoxResult result = MessageBox.Show($"У вас {d} \r\rВопросы на которые не даны " +
                $"ответы:{c} \r\rВаша {otvet} поздравляю \r\rХотите перейти дальше?", "Итог", MessageBoxButton.YesNoCancel, MessageBoxImage.Asterisk);
+            TestCalculate.ShowResult(otvet, "Условные выражения: Операции сравнения", "type_1");
+            
             switch (result)
             {
                 case MessageBoxResult.Yes:

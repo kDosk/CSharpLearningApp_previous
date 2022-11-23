@@ -58,6 +58,9 @@ namespace CSharpLearningApp.Pages
             }
 
             KamilyaOcenki.ocenka1 = otc1;
+
+            TestCalculate.ShowResult(KamilyaOcenki.ocenka1, "Переменные и константы: Переменные", "type_1");
+
             Manager.MainFrame.Navigate(new KamilyaOcenka1());
         }
     }

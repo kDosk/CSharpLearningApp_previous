@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpLearningApp.AmirFolder;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,6 +59,9 @@ namespace CSharpLearningApp.Pages
             }
 
             KamilyaOcenki.ocenka2 = otc3;
+
+            TestCalculate.ShowResult(KamilyaOcenki.ocenka2, "Переменные и константы: Константы", "type_1");
+
             Manager.MainFrame.Navigate(new KamilyaOcenka2());
         }
     }

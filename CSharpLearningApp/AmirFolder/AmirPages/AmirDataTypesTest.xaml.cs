@@ -41,35 +41,38 @@ namespace CSharpLearningApp.AmirFolder
             else
             {
                if (otvet13.IsChecked == true)
-            {
-                otc1++;
-            }
+                {
+                    otc1++;
+                }
 
-            if (otvet21.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet21.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otvet32.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet32.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otvet41.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet41.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otvet52.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet52.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otc1 <= 2)
-            {
-                otc1 = 2;
-            }
+                if (otc1 <= 2)
+                {
+                    otc1 = 2;
+                }
                 AmirOcenki.ocenka1 = otc1;
+
+                TestCalculate.ShowResult(AmirOcenki.ocenka1, "Типы данных: Базовые типы данных", "type_1");
+
                 Manager.MainFrame.Navigate(new AmirOcenka1());
             }
 

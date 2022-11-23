@@ -37,22 +37,24 @@ namespace CSharpLearningApp.Niyaz
             else
             {
                 if (otvet12.IsChecked == true)
-            {
-                otc3++;
-            }
+                {
+                    otc3++;
+                }
 
-            if (otvet21.IsChecked == true)
-            {
-                otc3++;
-            }
+                if (otvet21.IsChecked == true)
+                {
+                    otc3++;
+                }
 
-            if (otvet31.IsChecked == true)
-            {
-                otc3++;
-            }
+                if (otvet31.IsChecked == true)
+                {
+                    otc3++;
+                }
 
-            Niyazocenka.ocenka3 = otc3;
-            PageNavigationManager.ChangePage(new NiyazOcenka3());
+                TestCalculate.ShowResult(otc3, "Арифметические операции: Ассоциативность операторов", "type_1");
+
+                Niyazocenka.ocenka3 = otc3;
+                PageNavigationManager.ChangePage(new NiyazOcenka3());
             }
             
         }
