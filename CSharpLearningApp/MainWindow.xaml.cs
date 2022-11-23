@@ -24,7 +24,6 @@ namespace CSharpLearningApp
         {
             InitializeComponent();
             MainFrame.Navigate(new MWMainPage());
-            
         }
 
         private void NavigateButton_Click(object sender, RoutedEventArgs e)

@@ -14,7 +14,6 @@
 
         <TextBlock Text="Основы программирования на C#" HorizontalAlignment="Left" Style="{StaticResource BlockDesign}" VerticalAlignment="Center" Margin="30 0"/>
         <StackPanel Orientation="Horizontal" Margin="10 0" HorizontalAlignment="Right">
-            <!--<TextBlock x:Name="TBoxCurrentUserName" Margin="10" Style="{StaticResource BlockDesignSmall}"/>-->
             <Button x:Name="MainButton" Content="Пользователь" Click="NavigateButton_Click" Style="{StaticResource ButtonDesign}" VerticalAlignment="Center" Width="170" Height="35" HorizontalAlignment="Right"/>
         </StackPanel>
 

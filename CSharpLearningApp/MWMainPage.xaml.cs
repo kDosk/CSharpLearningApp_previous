@@ -59,7 +59,7 @@ namespace CSharpLearningApp
                     case "Методы":
                         ShowWindow(new Window());
                         break;
-                    case "Оператор return":
+                    case "Возвращение значения и оператор return":
                         ShowWindow(new Window());
                         break;
                     case "Перечисления enum":
