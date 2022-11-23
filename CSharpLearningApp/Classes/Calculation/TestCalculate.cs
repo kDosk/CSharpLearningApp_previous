@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CSharpLearningApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpLearningApp
+namespace CSharpLearningApp.Classes.Calculation
 {
 	internal static class TestCalculate
 	{

@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -58,15 +59,14 @@
     <Compile Include="AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\PageNavigationManager.cs" />
-    <Compile Include="Classes\WindowNavigationManager.cs" />
+    <Compile Include="Classes\Navigation\NavigationManager.cs" />
     <Compile Include="Classes\InfoStorage.cs" />
     <Compile Include="MWMainPage.xaml.cs">
       <DependentUpon>MWMainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\TestCalculate.cs" />
-    <Compile Include="Classes\TestModel.cs" />
-    <Compile Include="Classes\UserModel.cs" />
+    <Compile Include="Classes\Calculation\TestCalculate.cs" />
+    <Compile Include="Models\TestModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Page Include="AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -89,7 +89,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\MessageService.cs" />
+    <Compile Include="Classes\MessageService\MessageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -114,6 +114,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\Exceptions\" />
+    <Folder Include="Components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
