@@ -35,43 +35,45 @@ namespace CSharpLearningApp.Niyaz
                 || otvet31.IsChecked != true && otvet32.IsChecked != true && otvet33.IsChecked != true
                 || otvet41.IsChecked != true && otvet42.IsChecked != true && otvet43.IsChecked != true
                 || otvet51.IsChecked != true && otvet52.IsChecked != true && otvet53.IsChecked != true)
-            {
-                MessageService.ShowMessage("Есть пустые ячейки");
-            }
+                {
+                    MessageService.ShowMessage("Есть пустые ячейки");
+                }
             else
             {
                 if (otvet13.IsChecked == true)
-            {
-                otc1++;
-            }
+                {
+                    otc1++;
+                }
 
-            if (otvet21.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet21.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otvet31.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet31.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otvet43.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet43.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otvet52.IsChecked == true)
-            {
-                otc1++;
-            }
+                if (otvet52.IsChecked == true)
+                {
+                    otc1++;
+                }
 
-            if (otc1 <= 2)
-            {
-                otc1 = 2;
-            }
+                if (otc1 <= 2)
+                {
+                    otc1 = 2;
+                }
 
-            Niyazocenka.ocenka1 = otc1;
-            PageNavigationManager.ChangePage(new Ocenka1());
+                TestCalculate.ShowResult(otc1, "Арифметические операции: Бинарные операции", "type_1");
+
+                Niyazocenka.ocenka1 = otc1;
+                PageNavigationManager.ChangePage(new Ocenka1());
             }
         }
     }

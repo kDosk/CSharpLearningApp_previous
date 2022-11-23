@@ -37,39 +37,40 @@ namespace CSharpLearningApp.Niyaz
             else
             {
                 if (otvet11.IsChecked == true)
-            {
-                otc2++;
-            }
+                {
+                    otc2++;
+                }
 
-            if (otvet21.IsChecked == true)
-            {
-                otc2++;
-            }
+                if (otvet21.IsChecked == true)
+                {
+                    otc2++;
+                }
 
-            if (otvet33.IsChecked == true)
-            {
-                otc2++;
-            }
+                if (otvet33.IsChecked == true)
+                {
+                    otc2++;
+                }
 
-            if (otvet41.IsChecked == true)
-            {
-                otc2++;
-            }
+                if (otvet41.IsChecked == true)
+                {
+                    otc2++;
+                }
 
-            if (otvet51.IsChecked == true)
-            {
-                otc2++;
-            }
+                if (otvet51.IsChecked == true)
+                {
+                    otc2++;
+                }
 
-            if (otc2 <= 2)
-            {
-                otc2 = 2;
-            }
+                if (otc2 <= 2)
+                {
+                    otc2 = 2;
+                }
 
-            Niyazocenka.ocenka2 = otc2;
-            PageNavigationManager.ChangePage(new Ocenka2());
+                TestCalculate.ShowResult(otc2, "Арифметические операции: Унарные операции", "type_1");
+
+                Niyazocenka.ocenka2 = otc2;
+                PageNavigationManager.ChangePage(new Ocenka2());
             }
-            
         }
     }
 }

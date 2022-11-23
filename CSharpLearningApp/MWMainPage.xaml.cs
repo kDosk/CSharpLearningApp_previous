@@ -29,6 +29,19 @@ namespace CSharpLearningApp
         {
             InitializeComponent();
             TBoxinfo.Text = InfoStorage.Inforamation;
+            
+            //if (AmirOcenki.ocenka1 != 0)
+            //{
+            //    TestCalculate.ShowResult(AmirOcenki.ocenka1, "Типы данных: Базовые типы данных", "type_1");
+            //}
+            //if (AmirOcenki.ocenka2 != 0)
+            //{
+            //    TestCalculate.ShowResult(AmirOcenki.ocenka2, "Типы данных: Использование суффиксов и системных типов", "type_1");
+            //}
+            //if (AmirOcenki.ocenka3 != 0)
+            //{
+            //    TestCalculate.ShowResult(AmirOcenki.ocenka3, "Типы данных: Неявная типизация", "type_1");
+            //}
         }
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
         {

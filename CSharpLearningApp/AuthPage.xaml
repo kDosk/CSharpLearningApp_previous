@@ -49,7 +49,7 @@
                 <TextBox x:Name="TBoxSignInLogin" Grid.Column="1" Margin="10" FontSize="16" VerticalAlignment="Center"/>
 
                 <TextBlock Grid.Row="1" Text="Пароль:" Style="{StaticResource BlockDesignSmall}" VerticalAlignment="Center" Margin="10"/>
-                <TextBox x:Name="TBoxSignInPass" Grid.Row="1" Grid.Column="1" Margin="10" FontSize="16" VerticalAlignment="Center"/>
+                <PasswordBox x:Name="TBoxSignInPass" Grid.Row="1" Grid.Column="1" Margin="10" FontSize="16" VerticalAlignment="Center"/>
 
                 <Button Grid.Row="2" Grid.ColumnSpan="2" x:Name="SignIn" Content="Вход" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="10" HorizontalAlignment="Right" Click="SignIn_Click" FontSize="16"/>
             </Grid>
@@ -80,10 +80,10 @@
                 <TextBox Grid.Row="2" x:Name="TBoxSignUpLogin" Grid.Column="1" Height="20" Margin="10" FontSize="16"/>
 
                 <TextBlock Grid.Row="3" Text="Пароль:" Style="{StaticResource BlockDesignSmall}" VerticalAlignment="Center" Margin="10"/>
-                <TextBox x:Name="TBoxSignUpPass" Grid.Row="3" Grid.Column="1" Height="20" Margin="10" FontSize="16"/>
+                <PasswordBox x:Name="TBoxSignUpPass" Grid.Row="3" Grid.Column="1" Height="20" Margin="10" FontSize="16"/>
 
                 <TextBlock Grid.Row="4" Text="Повтор пароля:" Style="{StaticResource BlockDesignSmall}" VerticalAlignment="Center" Margin="10"/>
-                <TextBox x:Name="TBoxSignUpPassConfirm" Grid.Row="4" Grid.Column="1" Height="20" Margin="10" FontSize="16"/>
+                <PasswordBox x:Name="TBoxSignUpPassConfirm" Grid.Row="4" Grid.Column="1" Height="20" Margin="10" FontSize="16"/>
 
                 <Button x:Name="SignUp" Grid.Row="5" Grid.ColumnSpan="2" Content="Регистрация" Width="120" Style="{StaticResource ButtonDesign}" Height="35" Margin="10" HorizontalAlignment="Right" Click="SignUp_Click" FontSize="16"/>
             </Grid>

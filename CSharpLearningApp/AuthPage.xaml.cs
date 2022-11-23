@@ -48,7 +48,7 @@ namespace CSharpLearningApp
             SignInButton.IsChecked = true;
 
             TBoxSignInLogin.Text = String.Empty;
-            TBoxSignInPass.Text = String.Empty;
+            TBoxSignInPass.Password = String.Empty;
 
             gridSignIn.Visibility = Visibility.Visible;
             gridSignUp.Visibility = Visibility.Collapsed;
@@ -66,8 +66,8 @@ namespace CSharpLearningApp
             TBoxSignUpSurname.Text = string.Empty;
             TBoxSignUpName.Text = string.Empty;
             TBoxSignUpLogin.Text = string.Empty;
-            TBoxSignUpPass.Text = string.Empty;
-            TBoxSignUpPassConfirm.Text = string.Empty;
+            TBoxSignUpPass.Password = string.Empty;
+            TBoxSignUpPassConfirm.Password = string.Empty;
 
             gridSignUp.Visibility = Visibility.Visible;
             gridSignIn.Visibility = Visibility.Collapsed;
@@ -81,6 +81,8 @@ namespace CSharpLearningApp
                 if (user != null)
                 {
                     UserModel.CurrentUser = user;
+
+                    TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
 
                     UserInfoGrid.Visibility = Visibility.Visible;
                     AuthGrid.Visibility = Visibility.Collapsed;
@@ -109,8 +111,11 @@ namespace CSharpLearningApp
                     UserModel.AddUser(name, login, pass, surname);
                     UserModel.CurrentUser = UserModel.SearchUser(login, pass);
 
+                    TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
+
                     UserInfoGrid.Visibility = Visibility.Visible;
                     AuthGrid.Visibility = Visibility.Collapsed;
+
                 }
                 else
                 {
@@ -125,14 +130,12 @@ namespace CSharpLearningApp
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
-            Authorization(TBoxSignInLogin.Text, TBoxSignInPass.Text);
-            TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
+            Authorization(TBoxSignInLogin.Text, TBoxSignInPass.Password);
         }
 
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
-            Registration(TBoxSignUpSurname.Text, TBoxSignUpName.Text, TBoxSignUpLogin.Text, TBoxSignUpPass.Text, TBoxSignUpPassConfirm.Text);
-            TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
+            Registration(TBoxSignUpSurname.Text, TBoxSignUpName.Text, TBoxSignUpLogin.Text, TBoxSignUpPass.Password, TBoxSignUpPassConfirm.Password);
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
