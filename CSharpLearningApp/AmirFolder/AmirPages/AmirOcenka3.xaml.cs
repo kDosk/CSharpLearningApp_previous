@@ -49,6 +49,7 @@ namespace CSharpLearningApp.AmirFolder.AmirPages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            AmirOcenki.loadOcenka3 = true;
             Manager.MainFrame.GoBack();
             Manager.MainFrame.GoBack();
             Manager.MainFrame.GoBack();
