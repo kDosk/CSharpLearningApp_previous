@@ -11,9 +11,5 @@ namespace CSharpLearningApp.AmirFolder
         public static int ocenka1 { get; set; }
         public static int ocenka2 { get; set; }
         public static int ocenka3 { get; set; }
-
-        public static bool loadOcenka1 { get; set; }
-        public static bool loadOcenka2 { get; set; }
-        public static bool loadOcenka3 { get; set; }
     }
 }
