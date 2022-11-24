@@ -66,10 +66,11 @@ namespace CSharpLearningApp.Niyaz
                     otc2 = 2;
                 }
 
-                TestCalculate.ShowResult(otc2, "Арифметические операции: Унарные операции", "type_1");
-
                 Niyazocenka.ocenka2 = otc2;
-                PageNavigationManager.ChangePage(new Ocenka2());
+
+				TestCalculate.ShowResult(Niyazocenka.ocenka2, "Арифметические операции: Унарные операции", "type_1");
+
+				PageNavigationManager.ChangePage(new Ocenka2());
             }
         }
     }

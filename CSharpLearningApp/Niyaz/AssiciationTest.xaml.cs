@@ -51,10 +51,12 @@ namespace CSharpLearningApp.Niyaz
                     otc3++;
                 }
 
-                TestCalculate.ShowResult(otc3, "Арифметические операции: Ассоциативность операторов", "type_1");
 
                 Niyazocenka.ocenka3 = otc3;
-                PageNavigationManager.ChangePage(new NiyazOcenka3());
+
+				TestCalculate.ShowResult(Niyazocenka.ocenka3, "Арифметические операции: Ассоциативность операторов", "type_1");
+
+				PageNavigationManager.ChangePage(new NiyazOcenka3());
             }
             
         }

@@ -35,29 +35,52 @@ namespace CSharpLearningApp.TagirBranch
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int score = 0;
+            int correctAnswersCount = 0;
             if (Textbox1.Text == TextBlock1.Text)
             {
                 MessageBox.Show("Правильно1");
+                correctAnswersCount++;
             }
             if (Textbox2.Text == TextBlock2.Text)
             {
                 MessageBox.Show("Правильно2");
-            }
+				correctAnswersCount++;
+			}
             if (Textbox3.Text == TextBlock3.Text)
             {
                 MessageBox.Show("Правильно3");
-            }
-            if (Textbox1.Text == TextBlock1.Text && Textbox2.Text == TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
+				correctAnswersCount++;
+			}
+
+			if (correctAnswersCount == 3)
+			{
+				score = 5;
+			}
+			else if (correctAnswersCount == 2)
+			{
+				score = 4;
+			}
+			else
+			{
+				score = 2;
+			}
+
+			if (Textbox1.Text == TextBlock1.Text && Textbox2.Text == TextBlock2.Text && Textbox3.Text == TextBlock3.Text)
             {
-                MessageBox.Show("Всё правильно!");
-                NavigationService.Navigate(new MainPage());
-            }
+				MessageService.ShowMessage($"Всё правильно! Оценка: {score}");
+				TestCalculate.ShowResult(score, "Арифметические операции: Часть 3", "type_2");
+				NavigationService.Navigate(new MainPage());
+				
+			}
             else
             {
-                MessageBox.Show("Где-то ошибка, переходим к теории");
-                NavigationService.Navigate(new TheorySravpage());
+                MessageService.ShowMessage($"Где-то ошибка, переходим к теории. Оценка: {score}");
+				TestCalculate.ShowResult(score, "Арифметические операции: Часть 3", "type_2");
+				NavigationService.Navigate(new TheorySravpage());
             }
-        }
+			
+		}
 
         private void TextBlock1_MouseDown(object sender, MouseButtonEventArgs e)
         {

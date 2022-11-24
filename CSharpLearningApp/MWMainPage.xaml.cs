@@ -1,4 +1,5 @@
 ﻿using CSharpLearningApp.AmirFolder;
+using CSharpLearningApp.Galimova;
 using CSharpLearningApp.lilia;
 using CSharpLearningApp.Liniza;
 using CSharpLearningApp.Niyaz;
@@ -57,7 +58,7 @@ namespace CSharpLearningApp
                         ShowWindow(new MainWindowTagir());
                         break;
                     case "Циклы":
-                        ShowWindow(new WindowLilia());
+                        ShowWindow(new WindowGalimova());
                         break;
                     case "Массивы":
 						MessageService.ShowExclamination("Данный элемент в разработке.");
@@ -90,6 +91,7 @@ namespace CSharpLearningApp
         {
             currentWindow.ShowDialog();
 			TBoxinfo.Text = InfoStorage.Inforamation;
+            TBoxinfo.ScrollToEnd();
 		}
     }
 }

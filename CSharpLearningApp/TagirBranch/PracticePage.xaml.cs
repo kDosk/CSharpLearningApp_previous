@@ -36,11 +36,16 @@ namespace CSharpLearningApp.TagirBranch
             string b1 = Textb1.Text;
             string b2 = Textb2.Text;
             string b3 = Textb3.Text;
-            switch (b1)
+
+			int score = 0;
+			int correctAnswersCount = 0;
+
+			switch (b1)
             {
                 case "bool":
                     Textb1.Text = $"Правильно! {b1}";
-                    break;
+					correctAnswersCount++;
+					break;
                 default:
                     Textb1.Text = "Не верный ответ";
                     break;
@@ -49,7 +54,8 @@ namespace CSharpLearningApp.TagirBranch
             {
                 case "true":
                     Textb2.Text = $"Правильно! {b2}";
-                    break;
+					correctAnswersCount++;
+					break;
                 default:
                     Textb2.Text = "Не верный ответ";
                     break;
@@ -58,20 +64,37 @@ namespace CSharpLearningApp.TagirBranch
             {
                 case "false":
                     Textb3.Text = $"Правильно! {b3}";
+                    correctAnswersCount++;
                     break;
                 default:
                     Textb3.Text = "Не верный ответ";
                     break;
             }
-            if (b1 == ("bool") && b2==("true")&& b3==("false"))
+
+			if (correctAnswersCount == 3)
+			{
+				score = 5;
+			}
+			else if (correctAnswersCount == 2)
+			{
+				score = 4;
+			}
+			else
+			{
+				score = 2;
+			}
+
+			if (b1 == ("bool") && b2==("true")&& b3==("false"))
             {
-                MessageBox.Show("Всё правильно!");
-                NavigationService.Navigate(new MainPage());
+				MessageService.ShowMessage($"Всё правильно! Оценка: {score}");
+				TestCalculate.ShowResult(score, "Арифметические операции: Часть 1", "type_2");
+				NavigationService.Navigate(new MainPage());
             }
             if (b1 != ("bool") || b2 != ("true") || b3 != ("false"))
             {
-                MessageBox.Show("Повторика теорию");
-                NavigationService.Navigate(new TheoryPage());
+				MessageService.ShowMessage($"Повторика теорию. Оценка: {score}");
+				TestCalculate.ShowResult(score, "Арифметические операции: Часть 1", "type_2");
+				NavigationService.Navigate(new TheoryPage());
             }
         }
 

@@ -38,46 +38,98 @@ namespace CSharpLearningApp.Galimova
         private void CheckBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            if (Radio6.IsChecked == true)
-            {
-                MessageBox.Show("Правильный ответ!  Версия while с постпроверкой условия");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-            if (Radio7.IsChecked == true)
-            {
-                MessageBox.Show("Правильный ответ! Цикл с постусловием");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-            if (Radio8.IsChecked == true)
-            {
-                MessageBox.Show("Правильный ответ! один или несколько раз");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-            if (Radio9.IsChecked == true)
-            {
-                MessageBox.Show("Правильный ответ! условие цикла никогда не станет = false");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-            if (Radio10.IsChecked == true)
-            {
-                MessageBox.Show("Правильный ответ! изменять параметр, проверяемый в условии");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-        }
+			//if (Radio6.IsChecked == true)
+			//{
+			//    MessageBox.Show("Правильный ответ!  Версия while с постпроверкой условия");
+			//}
+			//else
+			//{
+			//    MessageBox.Show("Неправильный ответ!");
+			//}
+			//if (Radio7.IsChecked == true)
+			//{
+			//    MessageBox.Show("Правильный ответ! Цикл с постусловием");
+			//}
+			//else
+			//{
+			//    MessageBox.Show("Неправильный ответ!");
+			//}
+			//if (Radio8.IsChecked == true)
+			//{
+			//    MessageBox.Show("Правильный ответ! один или несколько раз");
+			//}
+			//else
+			//{
+			//    MessageBox.Show("Неправильный ответ!");
+			//}
+			//if (Radio9.IsChecked == true)
+			//{
+			//    MessageBox.Show("Правильный ответ! условие цикла никогда не станет = false");
+			//}
+			//else
+			//{
+			//    MessageBox.Show("Неправильный ответ!");
+			//}
+			//if (Radio10.IsChecked == true)
+			//{
+			//    MessageBox.Show("Правильный ответ! изменять параметр, проверяемый в условии");
+			//}
+			//else
+			//{
+			//    MessageBox.Show("Неправильный ответ!");
+			//}
+
+			int correctAnswersCount = 0;
+			int score = 0;
+
+			if (Radio6.IsChecked == true)
+			{
+				MessageBox.Show("Правильный ответ!  Версия while с постпроверкой условия");
+				correctAnswersCount++;
+			}
+			if (Radio7.IsChecked == true)
+			{
+				MessageBox.Show("Правильный ответ! Цикл с постусловием");
+				correctAnswersCount++;
+			}
+			if (Radio8.IsChecked == true)
+			{
+				MessageBox.Show("Правильный ответ! один или несколько раз");
+				correctAnswersCount++;
+			}
+			if (Radio9.IsChecked == true)
+			{
+				MessageBox.Show("Правильный ответ! условие цикла никогда не станет = false");
+				correctAnswersCount++;
+			}
+			if (Radio10.IsChecked == true)
+			{
+				MessageBox.Show("Правильный ответ! изменять параметр, проверяемый в условии");
+				correctAnswersCount++;
+			}
+
+			double percent = 100f / 5 * correctAnswersCount;
+
+			if (percent < 40)
+			{
+				score = 2;
+			}
+			else if (percent >= 40 && percent < 60)
+			{
+				score = 3;
+			}
+			else if (percent >= 60 && percent < 70)
+			{
+				score = 4;
+			}
+			else
+			{
+				score = 5;
+			}
+
+			MessageService.ShowMessage($"Правильных ответов: {correctAnswersCount} из 5. Оценка: {score}.");
+			TestCalculate.ShowResult(score, "Циклы: Циклы do...while, while", "type_1");
+			NavigationService.Navigate(new MainPage());
+		}
     }
 }

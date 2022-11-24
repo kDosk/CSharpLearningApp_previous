@@ -70,10 +70,11 @@ namespace CSharpLearningApp.Niyaz
                     otc1 = 2;
                 }
 
-                TestCalculate.ShowResult(otc1, "Арифметические операции: Бинарные операции", "type_1");
-
                 Niyazocenka.ocenka1 = otc1;
-                PageNavigationManager.ChangePage(new Ocenka1());
+
+				TestCalculate.ShowResult(Niyazocenka.ocenka1, "Арифметические операции: Бинарные операции", "type_1");
+
+				PageNavigationManager.ChangePage(new Ocenka1());
             }
         }
     }

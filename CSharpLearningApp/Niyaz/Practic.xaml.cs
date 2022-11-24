@@ -36,36 +36,36 @@ namespace CSharpLearningApp.Niyaz
                 string c1 = TBox32.Text.ToLower();
                 string d1 = TBox33.Text.ToLower();
 
-                int correctAswersCount = 0;
+                int correctAnswersCount = 0;
 
                 switch (a1)
                 {
                     case "2.5":
                         TBox1.Text = $"{a1}";
-                        correctAswersCount++;
+                        correctAnswersCount++;
 						break;
 					case "2,5":
 						TBox1.Text = $"{a1}";
-						correctAswersCount++;
+						correctAnswersCount++;
 						break;
                 }
 
                 if (TextBlock1.Text == TBox3.Text && TextBlock2.Text == TBox2.Text && TextBlock3.Text == Textbox1.Text)
                 {
-					correctAswersCount++;
+					correctAnswersCount++;
 				}
 
 				if (b1 == "унарными" && c1 == "бинарными" && d1 == "тернарными")
 				{
-					correctAswersCount++;
+					correctAnswersCount++;
 				}
 
                 int score = 0;
-                if (correctAswersCount == 3)
+                if (correctAnswersCount == 3)
                 {
                     score = 5;
 				}
-                else if (correctAswersCount == 2)
+                else if (correctAnswersCount == 2)
                 {
                     score = 4;
                 }
@@ -74,7 +74,8 @@ namespace CSharpLearningApp.Niyaz
                     score = 2;
                 }
 
-				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3. Оценка: {score}.");
+				MessageService.ShowMessage($"Правильных ответов: {correctAnswersCount.ToString()} из 3. Оценка: {score}.");
+                TestCalculate.ShowResult(score, "Арифметические операции", "type_2");
 				PageNavigationManager.ChangePage(new MainPage());
             }
             catch (Exception)

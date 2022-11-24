@@ -48,8 +48,8 @@ namespace CSharpLearningApp
         {
             SignInButton.IsChecked = true;
 
-            TBoxSignInLogin.Text = String.Empty;
-            TBoxSignInPass.Password = String.Empty;
+            TBoxSignInLogin.Text = string.Empty;
+            TBoxSignInPass.Password = string.Empty;
 
             gridSignIn.Visibility = Visibility.Visible;
             gridSignUp.Visibility = Visibility.Collapsed;
@@ -112,7 +112,7 @@ namespace CSharpLearningApp
                     UserModel.AddUser(name, login, pass, surname);
                     UserModel.CurrentUser = UserModel.SearchUser(login, pass);
 
-                    SaveData(UserModel.CurrentUser);
+                    //SaveData(UserModel.CurrentUser);
 
                     TBoxUser.Text = $"{UserModel.CurrentUser.Surname} {UserModel.CurrentUser.Name}";
 
