@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
 		<Grid Background="{StaticResource PrimaryColorBrush}">
-			<TextBlock Text="Основы программирования на C#" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30 0"/>
+			<TextBlock Text="Основы программирования на C#" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource TextBoxH1}" Margin="30 0"/>
 		</Grid>
 		<StackPanel Orientation="Horizontal" Margin="10 0" HorizontalAlignment="Right">
             

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="800" d:DesignWidth="800"
       Title="MWMainPage">
 
     <Grid>
@@ -16,24 +16,106 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-				<Grid Width="400" Background="{StaticResource PrimaryColorBrush}">
-					<ScrollViewer VerticalScrollBarVisibility="Auto" VerticalAlignment="Center" Margin="10">
+				<Grid x:Name="MenuGrid" Width="90" Background="{StaticResource PrimaryColorBrush}">
+					<ScrollViewer VerticalScrollBarVisibility="Hidden" VerticalAlignment="Top" Margin="10">
 						<StackPanel>
-							<ToggleButton Width="40" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent">
-								<Image Source="Resources/menu-burger.png" Stretch="Uniform"  Margin="1"/>
-							</ToggleButton>
-							<Button Content="Переменные и константы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Камиля" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Типы данных" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Т. Амир" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Арифметические вычисления" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Л. Нияз" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Операции присваивания" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Г. Лилия" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Преобразование типов данных" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: М. Спартак" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Условные выражения" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Тагир" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Циклы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Г. Лилия" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Массивы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Булат" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Методы" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Е. Линиза" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Оператор return" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Рустем" Style="{StaticResource NavigationButton}"/>
-							<Button Content="Перечисления enum" Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Регина" Style="{StaticResource NavigationButton}"/>
-						</StackPanel>
+							<ToggleButton x:Name="MenuButton" Style="{StaticResource ToggleButtonNavigationBorderless}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Resources/menu-burger.png" Stretch="Uniform" Margin="1"/>
+                                    <TextBlock Text="МЕНЮ" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center" Margin="15 0"/>
+                                </StackPanel>
+                                <ToggleButton.Triggers>
+                                    <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                        <BeginStoryboard>
+                                            <Storyboard x:Name="ShowMenu">
+                                                <DoubleAnimation Storyboard.TargetName="MenuGrid"
+                                                                 Storyboard.TargetProperty="Width" Duration="0:0:1"
+                                                                 From="90" To="400"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                    <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                        <BeginStoryboard>
+                                            <Storyboard x:Name="HideMenu">
+                                                <DoubleAnimation Storyboard.TargetName="MenuGrid"
+                                                                 Storyboard.TargetProperty="Width" Duration="0:0:1"
+                                                                 From="400" To="90"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </ToggleButton.Triggers>
+                            </ToggleButton>
+
+                            <ToggleButton x:Name="ThemesButton" Style="{StaticResource ToggleButtonNavigationBorderless}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Resources/edit.png" Stretch="Uniform" Margin="1"/>
+                                    <TextBlock Text="ТЕМЫ" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center" Margin="15 0"/>
+                                </StackPanel>
+                                <ToggleButton.Triggers>
+                                    <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                        <BeginStoryboard>
+                                            <Storyboard x:Name="ShowButtons">
+                                                <DoubleAnimation Storyboard.TargetName="ButtonsPanel"
+                                                                 Storyboard.TargetProperty="Height" Duration="0:0:1"
+                                                                 From="0" To="500"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                    <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                        <BeginStoryboard>
+                                            <Storyboard x:Name="HideButtons">
+                                                <DoubleAnimation Storyboard.TargetName="ButtonsPanel"
+                                                                 Storyboard.TargetProperty="Height" Duration="0:0:1"
+                                                                 From="500" To="0"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </ToggleButton.Triggers>
+                            </ToggleButton>
+
+                            <StackPanel Orientation="Vertical" x:Name="ButtonsPanel"  Margin="15 0" Height="0">
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Камиля" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Переменные и константы" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Т. Амир" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Типы данных" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Л. Нияз" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Арифметические вычисления" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Г. Лилия" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Операции присваивания" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: М. Спартак" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Преобразование типов данных" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Тагир" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Условные выражения" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Г. Лилия" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Циклы" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Булат" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Массивы" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: Е. Линиза" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Методы" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Рустем" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Оператор return" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                                <Button Click="NavigateButton_Click" ToolTip="Ответсвенный за окно: С. Регина" Style="{StaticResource NavigationButton}">
+                                    <TextBlock Text="Перечисления enum" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center"/>
+                                </Button>
+                            </StackPanel>
+
+                            <ToggleButton x:Name="UserButton" Style="{StaticResource ToggleButtonNavigationBorderless}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Resources/user-icon.png" Stretch="Uniform" Margin="1"/>
+                                    <TextBlock Text="ПОЛЬЗОВАТЕЛЬ" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center" Margin="15 0"/>
+                                </StackPanel>
+                            </ToggleButton>
+                        </StackPanel>
 					</ScrollViewer>
 				</Grid>
 

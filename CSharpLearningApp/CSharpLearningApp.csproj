@@ -120,7 +120,19 @@
     <Folder Include="Components\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu-burger.png" />
+    <Resource Include="Resources\menu-burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cross-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\user-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
