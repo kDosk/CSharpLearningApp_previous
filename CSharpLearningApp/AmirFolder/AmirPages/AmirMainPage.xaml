@@ -26,6 +26,6 @@
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonPractise" Grid.Column="1" Grid.Row="4" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Практика" Click="ButtonPractise_Click"></Button>
         <Button Style="{StaticResource ResourceKey=ButtonDesign}" Name="ButtonGoBack" Grid.Column="1" Grid.Row="5" Height="50" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Вернуться" Click="ButtonGoBack_Click"></Button>
 
-        <TextBlock Grid.Row="6" Text="Окно создал Тимергалеев Амир" Style="{StaticResource ResourceKey=BlockDesign}" HorizontalAlignment="Center" Foreground="#FF3DAD8D"></TextBlock>
+        <TextBlock Grid.Row="6" Text="Окно создал Тимергалеев Амир" Style="{StaticResource ResourceKey=BlockDesign}" HorizontalAlignment="Center" Opacity="0.4" ></TextBlock>
     </Grid>
 </Page>
