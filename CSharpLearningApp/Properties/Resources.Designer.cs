@@ -59,15 +59,5 @@ namespace CSharpLearningApp.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BacGr {
-            get {
-                object obj = ResourceManager.GetObject("BacGr", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
