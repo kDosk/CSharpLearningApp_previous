@@ -14,8 +14,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <TextBlock Text="Сокращенная запись методов" Style="{StaticResource BlockDesign}" FontFamily="Tames New Roman" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
-            <Button x:Name="ExitButton" Content="Выйти" Margin="645,5,0,0" Height="30" Width="150" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ButtonExit_Click"/>
+            <TextBlock Text="Сокращенная запись методов" Style="{StaticResource BlockDesign}" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+            <Button x:Name="ExitButton" Content="Выйти" Margin="700,0,0,5" Height="30" Width="150" Style="{StaticResource  ButtonDesign}" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ButtonExit_Click"/>
         </Grid>
         <ScrollViewer Grid.Row="1">
             <StackPanel Orientation="Vertical">

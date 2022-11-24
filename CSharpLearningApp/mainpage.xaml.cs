@@ -33,7 +33,12 @@ namespace CSharpLearningApp
         private void Theory_ButtonClick2(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Page2Teoriya());
-    }
+        }
+
+        private void Theory_ButtonClick3(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Page3Teoriya());
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -54,12 +59,6 @@ namespace CSharpLearningApp
         {
 
         }
-
-        private void Theory_ButtonClick3(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Page3Teoriya());
-        }
-
         private void Valibation_ButtonClick3(object sender, RoutedEventArgs e)
         {
 
