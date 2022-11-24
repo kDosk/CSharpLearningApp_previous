@@ -13,16 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CSharpLearningApp
+namespace CSharpLearningApp.Liniza
 {
     /// <summary>
-    /// Логика взаимодействия для Test1.xaml
+    /// Логика взаимодействия для осno.xaml
     /// </summary>
-    public partial class Test1 : Page
+    public partial class осno : Window
     {
-        public Test1()
+        public осno()
         {
             InitializeComponent();
         }
+
     }
 }
+        

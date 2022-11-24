@@ -55,33 +55,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="mainpage.xaml.cs">
+    <Compile Include="Liniza\mainpage.xaml.cs">
       <DependentUpon>mainpage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page1Teoriya.xaml.cs">
+    <Compile Include="Liniza\Page1Teoriya.xaml.cs">
       <DependentUpon>Page1Teoriya.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page2Teoriya.xaml.cs">
+    <Compile Include="Liniza\Page2Teoriya.xaml.cs">
       <DependentUpon>Page2Teoriya.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page3Teoriya.xaml.cs">
+    <Compile Include="Liniza\Page3Teoriya.xaml.cs">
       <DependentUpon>Page3Teoriya.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test1.xaml.cs">
+    <Compile Include="Liniza\Test1.xaml.cs">
       <DependentUpon>Test1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test2.xaml.cs">
+    <Compile Include="Liniza\Test2.xaml.cs">
       <DependentUpon>Test2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test3.xaml.cs">
+    <Compile Include="Liniza\Test3.xaml.cs">
       <DependentUpon>Test3.xaml</DependentUpon>
     </Compile>
     <Compile Include="TestCalculate.cs" />
     <Compile Include="TestModel.cs" />
-    <Compile Include="осno.xaml.cs">
+    <Compile Include="Liniza\осno.xaml.cs">
       <DependentUpon>осno.xaml</DependentUpon>
     </Compile>
-    <Page Include="mainpage.xaml">
+    <Page Include="Liniza\mainpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,31 +97,31 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Page1Teoriya.xaml">
+    <Page Include="Liniza\Page1Teoriya.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page2Teoriya.xaml">
+    <Page Include="Liniza\Page2Teoriya.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page3Teoriya.xaml">
+    <Page Include="Liniza\Page3Teoriya.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Test1.xaml">
+    <Page Include="Liniza\Test1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Test2.xaml">
+    <Page Include="Liniza\Test2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Test3.xaml">
+    <Page Include="Liniza\Test3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="осno.xaml">
+    <Page Include="Liniza\осno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CSharpLearningApp
+namespace CSharpLearningApp.Liniza
 {
     /// <summary>
     /// Логика взаимодействия для Test2.xaml
