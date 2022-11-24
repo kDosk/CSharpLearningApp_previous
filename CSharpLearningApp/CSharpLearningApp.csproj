@@ -226,6 +226,34 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="Galimova\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\Page1T.xaml.cs">
+      <DependentUpon>Page1T.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\Page1Test.xaml.cs">
+      <DependentUpon>Page1Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\Page2Teoriya.xaml.cs">
+      <DependentUpon>Page2Teoriya.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\Page2Test.xaml.cs">
+      <DependentUpon>Page2Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\Page3Teoriya.xaml.cs">
+      <DependentUpon>Page3Teoriya.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\Page3Test.xaml.cs">
+      <DependentUpon>Page3Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Galimova\WindowGalimova.xaml.cs">
+      <DependentUpon>WindowGalimova.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Galimova\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -465,6 +493,34 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="lilia\TEST2PED.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\Page1T.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\Page1Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\Page2Teoriya.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\Page2Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\Page3Teoriya.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\Page3Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Galimova\WindowGalimova.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
