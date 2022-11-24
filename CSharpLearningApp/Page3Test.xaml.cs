@@ -34,7 +34,7 @@ namespace CSharpLearningApp
         {
             if (Radio11.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются один раз до выполнения цикла.");
+                MessageBox.Show("Правильный ответ! Выйти из цикла, из оператора выбора, из блока");
             }
             else
             {
@@ -42,7 +42,7 @@ namespace CSharpLearningApp
             }
             if (Radio12.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Условие, при котором будет выполняться цикл. ");
+                MessageBox.Show("Правильный ответ! для прерывания текущей итерации");
             }
             else
             {
@@ -50,7 +50,7 @@ namespace CSharpLearningApp
             }
             if (Radio13.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! нужно перейти к выполнению следующей итерации");
             }
             else
             {
@@ -58,7 +58,7 @@ namespace CSharpLearningApp
             }
             if (Radio14.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! запускает новую итерацию цикла");
             }
             else
             {
@@ -66,7 +66,7 @@ namespace CSharpLearningApp
             }
             if (Radio15.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! организованные в теле другого цикла");
             }
             else
             {

@@ -64,7 +64,7 @@ namespace CSharpLearningApp
             }
             if (Radio4.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! Однократное выполнение блока цикла");
             }
             else
             {
@@ -72,7 +72,7 @@ namespace CSharpLearningApp
             }
             if (Radio5.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! Для перебора набора или коллекции элементов");
             }
             else 
             {

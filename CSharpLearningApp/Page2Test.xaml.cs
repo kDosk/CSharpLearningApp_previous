@@ -40,7 +40,7 @@ namespace CSharpLearningApp
 
             if (Radio6.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются один раз до выполнения цикла.");
+                MessageBox.Show("Правильный ответ!  Версия while с постпроверкой условия");
             }
             else
             {
@@ -48,7 +48,7 @@ namespace CSharpLearningApp
             }
             if (Radio7.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Условие, при котором будет выполняться цикл. ");
+                MessageBox.Show("Правильный ответ! Цикл с постусловием");
             }
             else
             {
@@ -56,7 +56,7 @@ namespace CSharpLearningApp
             }
             if (Radio8.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! один или несколько раз");
             }
             else
             {
@@ -64,7 +64,7 @@ namespace CSharpLearningApp
             }
             if (Radio9.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! условие цикла никогда не станет = false");
             }
             else
             {
@@ -72,7 +72,7 @@ namespace CSharpLearningApp
             }
             if (Radio10.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! Действия выполняются после завершения блока цикла");
+                MessageBox.Show("Правильный ответ! изменять параметр, проверяемый в условии");
             }
             else
             {
