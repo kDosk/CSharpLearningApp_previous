@@ -32,8 +32,8 @@
                     </StackPanel>
                 </ScrollViewer>
 
-                <Border Grid.Column="1" Margin="10" BorderThickness="3" BorderBrush="#FFBD6432">
-                    <TextBox x:Name="TBoxinfo" Background="Transparent" Foreground="#FF8FF3D7" FontSize="16" VerticalAlignment="Stretch" BorderThickness="0" IsReadOnly="True" TextWrapping="Wrap"/>
+                <Border Grid.Column="1" Margin="10" BorderThickness="3" BorderBrush="#22355b">
+                    <TextBox x:Name="TBoxinfo" Background="Transparent" Foreground="White" FontSize="16" VerticalAlignment="Stretch" BorderThickness="0" IsReadOnly="True" TextWrapping="Wrap"/>
                 </Border>
             </Grid>
         </Grid>
