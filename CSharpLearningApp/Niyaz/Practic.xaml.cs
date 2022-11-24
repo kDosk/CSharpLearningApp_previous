@@ -60,8 +60,22 @@ namespace CSharpLearningApp.Niyaz
 					correctAswersCount++;
 				}
 
-				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3");
-                PageNavigationManager.ChangePage(new MainPage());
+                int score = 0;
+                if (correctAswersCount == 3)
+                {
+                    score = 5;
+				}
+                else if (correctAswersCount == 2)
+                {
+                    score = 4;
+                }
+                else
+                {
+                    score = 2;
+                }
+
+				MessageService.ShowMessage($"Правильных ответов: {correctAswersCount.ToString()} из 3. Оценка: {score}.");
+				PageNavigationManager.ChangePage(new MainPage());
             }
             catch (Exception)
             {

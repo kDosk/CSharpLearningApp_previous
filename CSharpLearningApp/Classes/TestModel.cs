@@ -20,4 +20,11 @@ namespace CSharpLearningApp
 		public string Value { get; set; }
 		public bool IsCorrect { get; set; } = false;
 	}
+	public class PracticeModel
+	{
+		public int ID { get; set; }
+		public string Question { get; set; }
+		public string CorrectAnswer { get; set; }
+		public string Answer { get; set; } = string.Empty;
+	}
 }

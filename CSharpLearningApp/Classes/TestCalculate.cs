@@ -1,8 +1,10 @@
-﻿using System;
+﻿using CSharpLearningApp.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace CSharpLearningApp
 {
@@ -73,6 +75,41 @@ namespace CSharpLearningApp
 				default:
 					break;
 			}
+		}
+
+		public static void CalculatePractice(List<PracticeModel> listViewItems, List<PracticeModel> practiceModels, string title = null, string type = "type_2")
+		{
+			int score = 0;
+			int correctAnswersCount = 0;
+			for (int i = 0; i < listViewItems.Count; i++)
+			{
+				if (listViewItems[i].Answer.ToLower() == practiceModels[i].CorrectAnswer.ToLower())
+				{
+					correctAnswersCount++;
+				}
+			}
+
+			double percent = 100f / listViewItems.Count * correctAnswersCount;
+
+			if (percent < 40)
+			{
+				score = 2;
+			}
+			else if (percent >= 40 && percent < 60)
+			{
+				score = 3;
+			}
+			else if (percent >= 60 && percent < 70)
+			{
+				score = 4;
+			}
+			else
+			{
+				score = 5;
+			}
+
+			MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из {listViewItems.Count}. Оценка: {score}");
+			ShowResult(score, title, type);
 		}
 	}
 }

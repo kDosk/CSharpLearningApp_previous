@@ -1,5 +1,6 @@
 ﻿using CSharpLearningApp.AmirFolder;
 using CSharpLearningApp.lilia;
+using CSharpLearningApp.Liniza;
 using CSharpLearningApp.Niyaz;
 using CSharpLearningApp.Rustem.Windows;
 using CSharpLearningApp.TagirBranch;
@@ -29,19 +30,6 @@ namespace CSharpLearningApp
         {
             InitializeComponent();
             TBoxinfo.Text = InfoStorage.Inforamation;
-            
-            //if (AmirOcenki.ocenka1 != 0)
-            //{
-            //    TestCalculate.ShowResult(AmirOcenki.ocenka1, "Типы данных: Базовые типы данных", "type_1");
-            //}
-            //if (AmirOcenki.ocenka2 != 0)
-            //{
-            //    TestCalculate.ShowResult(AmirOcenki.ocenka2, "Типы данных: Использование суффиксов и системных типов", "type_1");
-            //}
-            //if (AmirOcenki.ocenka3 != 0)
-            //{
-            //    TestCalculate.ShowResult(AmirOcenki.ocenka3, "Типы данных: Неявная типизация", "type_1");
-            //}
         }
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
         {
@@ -63,26 +51,26 @@ namespace CSharpLearningApp
                         ShowWindow(new WindowLilia());
                         break;
                     case "Преобразование типов данных":
-                        ShowWindow(new Window());
+                        MessageService.ShowExclamination("Данный элемент в разработке.");
                         break;
                     case "Условные выражения":
                         ShowWindow(new MainWindowTagir());
                         break;
                     case "Циклы":
-                        ShowWindow(new Window());
+                        ShowWindow(new WindowLilia());
                         break;
                     case "Массивы":
-                        ShowWindow(new Window());
-                        break;
+						MessageService.ShowExclamination("Данный элемент в разработке.");
+						break;
                     case "Методы":
-                        ShowWindow(new Window());
+                        ShowWindow(new осno());
                         break;
                     case "Оператор return":
                         ShowWindow(new BasicWindow());
                         break;
                     case "Перечисления enum":
-                        ShowWindow(new Window());
-                        break;
+						MessageService.ShowExclamination("Данный элемент в разработке.");
+						break;
                     default:
                         MessageBox.Show("Ошибка выполнения.");
                         break;

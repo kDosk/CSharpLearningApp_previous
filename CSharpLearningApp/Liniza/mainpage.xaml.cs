@@ -42,31 +42,31 @@ namespace CSharpLearningApp.Liniza
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
 
         private void Valibation_ButtonClick2(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
 
         private void Practice_ButtonClick1(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
         private void Valibation_ButtonClick3(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
 
         private void Practice_ButtonClick3(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
     }
 }

@@ -5,35 +5,34 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CSharpLearningApp"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="900"
       Title="mainpage">
 
     <Grid Style="{StaticResource GridDesign}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Методы" FontSize="25" HorizontalAlignment="Left" Margin="72,30,0,0" Style="{StaticResource BlockDesign}" Grid.Column="1" Grid.ColumnSpan="2" Width="100"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource StackPanelDesign}" Height="178" Width="244">
             <TextBlock Text="Определение метода" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_1"/>
+            <Button Content="Теория" HorizontalAlignment="Stretch" Margin="10" Click="Theory_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click"/>
+            <Button Content="Практическое занятие" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_1"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource StackPanelDesign}" Grid.ColumnSpan="3" Margin="16,0,0,0" Height="178" Width="243" Grid.Column="1">
             <TextBlock Text="Вызов методов" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Valibation_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Stretch" Margin="10" Click="Theory_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Stretch" Margin="10" Click="Valibation_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Практическое занятие" HorizontalAlignment="Stretch" Margin="10" Click="Practice_ButtonClick1" Style="{StaticResource ButtonDesign}"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Height="178" Width="294">
             <TextBlock Text="Сокращенная запись методов" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Click="Valibation_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Click="Practice_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Stretch" Margin="10" Click="Theory_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Stretch" Margin="10" Click="Valibation_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Практическое занятие" HorizontalAlignment="Stretch" Margin="10" Click="Practice_ButtonClick3" Style="{StaticResource ButtonDesign}"/>
         </StackPanel>
     </Grid>
 </Page>

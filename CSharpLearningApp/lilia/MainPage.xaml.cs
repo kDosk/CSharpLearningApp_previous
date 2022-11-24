@@ -46,8 +46,8 @@ namespace CSharpLearningApp.lilia
 
         private void Practik_Click(object sender, RoutedEventArgs e)
         {
-
-        }
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -55,5 +55,10 @@ namespace CSharpLearningApp.lilia
             NavigationService.Navigate(new teorio_2());
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
     }
 }

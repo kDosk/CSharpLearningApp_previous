@@ -195,6 +195,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			}
 
 			TestCalculate.Calculate(_listViewItems, _testModels, "Оператор return: Сокращенная версия методов с результатом");
+			PageNavigationManager.ChangePage(new MainPage());
 		}
 	}
 }

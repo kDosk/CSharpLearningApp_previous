@@ -23,6 +23,7 @@ namespace CSharpLearningApp.Liniza
         public осno()
         {
             InitializeComponent();
+            MainFrame.Content = new mainpage();
         }
 
     }

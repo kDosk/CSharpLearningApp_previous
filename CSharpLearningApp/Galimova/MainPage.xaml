@@ -17,21 +17,21 @@
         <TextBlock HorizontalAlignment="Center" Margin="15" TextWrapping="Wrap" Text="Циклы" VerticalAlignment="Top" FontSize="25" Style="{StaticResource BlockDesign}" Grid.Column="1"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Style="{StaticResource StackPanelDesign}">
             <TextBlock Text="Циклы for, foreach" VerticalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Style="{StaticResource ButtonDesign}" Margin="10" Click="Button_Click"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_1"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Stretch" Style="{StaticResource ButtonDesign}" Margin="10" Click="Button_Click"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_1"/>
+			<Button Content="Практическое занятие" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="ButtonError_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Style="{StaticResource StackPanelDesign}">
             <TextBlock Text="Циклы do...while, while" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Click="Theory_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_2"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Stretch" Margin="10" Click="Theory_ButtonClick2" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_2"/>
+			<Button Content="Практическое занятие" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="ButtonError_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Style="{StaticResource StackPanelDesign}">
             <TextBlock Text="Команды continue и break" HorizontalAlignment="Center" Style="{StaticResource BlockDesign}"/>
-            <Button Content="Теория" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}" Click="Theory_ButtonClick3"/>
-            <Button Content="Проверка знаний" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_3"/>
-            <Button Content="Практическое занятие" HorizontalAlignment="Center" Margin="10" Style="{StaticResource ButtonDesign}"/>
+            <Button Content="Теория" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="Theory_ButtonClick3"/>
+            <Button Content="Проверка знаний" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="Button_Click_3"/>
+			<Button Content="Практическое занятие" HorizontalAlignment="Stretch" Margin="10" Style="{StaticResource ButtonDesign}" Click="ButtonError_Click"/>
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Style="{StaticResource BlockDesign}" Margin="13,364,0,0" TextWrapping="Wrap" Text="Ответственная за модуль: Галимова Лилия" VerticalAlignment="Top" FontSize="25" Height="102" Width="603" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
             <TextBlock.RenderTransform>

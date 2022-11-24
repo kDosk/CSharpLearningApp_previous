@@ -37,46 +37,52 @@ namespace CSharpLearningApp.lilia
 
         private void CheckBtn_Click(object sender, RoutedEventArgs e)
         {
+            int correctAnswersCount = 0;
+            int score = 0;
             if (Radio1.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! ");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
+                correctAnswersCount++;
+
+			}
             if (Radio2.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! ");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
+				correctAnswersCount++;
+			}
             if (Radio3.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! ");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
+				correctAnswersCount++;
+			}
             if (Radio4.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! ");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
+				correctAnswersCount++;
+			}
             if (Radio5.IsChecked == true)
             {
-                MessageBox.Show("Правильный ответ! ");
-            }
-            else
-            {
-                MessageBox.Show("Неправильный ответ!");
-            }
-        }
+				correctAnswersCount++;
+			}
+
+			double percent = 100f / 5f * correctAnswersCount;
+
+			if (percent < 40)
+			{
+				score = 2;
+			}
+			else if (percent >= 40 && percent < 60)
+			{
+				score = 3;
+			}
+			else if (percent >= 60 && percent < 70)
+			{
+				score = 4;
+			}
+			else
+			{
+				score = 5;
+			}
+
+            MessageService.ShowMessage($"Правильные ответы: {correctAnswersCount} из 5. Оценка: {score}.");
+            TestCalculate.ShowResult(score, "Операции присваивание: Базовые операции", "type_1");
+			NavigationService.Navigate(new MainPage());
+		}
     }
 }

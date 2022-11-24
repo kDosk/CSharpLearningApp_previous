@@ -27,7 +27,7 @@ namespace CSharpLearningApp.Liniza
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {
-           
-        }
+			NavigationService.Navigate(new mainpage());
+		}
     }
 }

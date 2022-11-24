@@ -55,5 +55,10 @@ namespace CSharpLearningApp.Galimova
         {
             NavigationService.Navigate(new Page3Test());
         }
+
+        private void ButtonError_Click(object sender, RoutedEventArgs e)
+        {
+			MessageService.ShowExclamination("Данный элемент в разработке.");
+		}
     }
 }

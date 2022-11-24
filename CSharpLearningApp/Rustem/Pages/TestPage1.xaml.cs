@@ -194,6 +194,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			}
 
 			TestCalculate.Calculate(_listViewItems, _testModels, "Оператор return: Метод void, return");
+			PageNavigationManager.ChangePage(new MainPage());
 		}
 	}
 }

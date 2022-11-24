@@ -194,6 +194,7 @@ namespace CSharpLearningApp.Rustem.Pages
 			}
 
 			TestCalculate.Calculate(_listViewItems, _testModels, "Оператор return: Выход из метода");
+			PageNavigationManager.ChangePage(new MainPage());
 		}
 	}
 }
