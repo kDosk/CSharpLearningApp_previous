@@ -86,5 +86,46 @@ namespace CSharpLearningApp
         {
             currentWindow.ShowDialog();
         }
+
+        private void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SignInButton_Checked(object sender, RoutedEventArgs e)
+        {
+            gridSignIn.Visibility = Visibility.Visible;
+            gridSignUp.Visibility = Visibility.Hidden;
+        }
+
+        private void SignUpButton_Checked(object sender, RoutedEventArgs e)
+        {
+            gridSignUp.Visibility = Visibility.Visible;
+            gridSignIn.Visibility = Visibility.Hidden;
+        }
+
+        private void SignIn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShowModal_Click(object sender, RoutedEventArgs e)
+        {
+            ShowModal();
+        }
+
+        private void HideModal_Click(object sender, RoutedEventArgs e)
+        {
+            HideModal();
+        }
+
+        private void ShowModal()
+        {
+            AuthModalWindow.IsOpen = true;
+        }
+        private void HideModal()
+        {
+            AuthModalWindow.IsOpen = false;
+        }
     }
 }
