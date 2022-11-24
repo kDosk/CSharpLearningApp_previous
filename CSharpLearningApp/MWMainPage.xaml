@@ -19,7 +19,7 @@
 				<Grid x:Name="MenuGrid" Width="90" Background="{StaticResource PrimaryColorBrush}">
 					<ScrollViewer VerticalScrollBarVisibility="Hidden" VerticalAlignment="Top" Margin="10">
 						<StackPanel>
-							<ToggleButton x:Name="MenuButton" Style="{StaticResource ToggleButtonNavigationBorderless}">
+							<!--<ToggleButton x:Name="MenuButton" Style="{StaticResource ToggleButtonNavigationBorderless}">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="Resources/menu-burger.png" Stretch="Uniform" Margin="1"/>
                                     <TextBlock Text="МЕНЮ" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center" Margin="15 0"/>
@@ -29,8 +29,12 @@
                                         <BeginStoryboard>
                                             <Storyboard x:Name="ShowMenu">
                                                 <DoubleAnimation Storyboard.TargetName="MenuGrid"
-                                                                 Storyboard.TargetProperty="Width" Duration="0:0:1"
+                                                                 Storyboard.TargetProperty="Width" Duration="0:0:0.5"
                                                                  From="90" To="400"/>
+                                                <BooleanAnimationUsingKeyFrames Storyboard.TargetName="ThemesButton"
+                                                                                Storyboard.TargetProperty="IsEnabled">
+                                                    <DiscreteBooleanKeyFrame Value="True"/>
+                                                </BooleanAnimationUsingKeyFrames>
                                             </Storyboard>
                                         </BeginStoryboard>
                                     </EventTrigger>
@@ -38,25 +42,28 @@
                                         <BeginStoryboard>
                                             <Storyboard x:Name="HideMenu">
                                                 <DoubleAnimation Storyboard.TargetName="MenuGrid"
-                                                                 Storyboard.TargetProperty="Width" Duration="0:0:1"
+                                                                 Storyboard.TargetProperty="Width" Duration="0:0:0.5"
                                                                  From="400" To="90"/>
                                             </Storyboard>
                                         </BeginStoryboard>
                                     </EventTrigger>
                                 </ToggleButton.Triggers>
-                            </ToggleButton>
+                            </ToggleButton>-->
 
                             <ToggleButton x:Name="ThemesButton" Style="{StaticResource ToggleButtonNavigationBorderless}">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="Resources/edit.png" Stretch="Uniform" Margin="1"/>
+                                    <Image Source="Resources/menu-burger.png" Stretch="Uniform" Margin="1"/>
                                     <TextBlock Text="ТЕМЫ" Style="{StaticResource TextBoxH1WithAnimation}" VerticalAlignment="Center" Margin="15 0"/>
                                 </StackPanel>
                                 <ToggleButton.Triggers>
                                     <EventTrigger RoutedEvent="ToggleButton.Checked">
                                         <BeginStoryboard>
                                             <Storyboard x:Name="ShowButtons">
+                                                <DoubleAnimation Storyboard.TargetName="MenuGrid"
+                                                                 Storyboard.TargetProperty="Width" Duration="0:0:0.5"
+                                                                 From="90" To="400"/>
                                                 <DoubleAnimation Storyboard.TargetName="ButtonsPanel"
-                                                                 Storyboard.TargetProperty="Height" Duration="0:0:1"
+                                                                 Storyboard.TargetProperty="Height" BeginTime="0:0:0.5" Duration="0:0:0.5"
                                                                  From="0" To="500"/>
                                             </Storyboard>
                                         </BeginStoryboard>
@@ -64,8 +71,11 @@
                                     <EventTrigger RoutedEvent="ToggleButton.Unchecked">
                                         <BeginStoryboard>
                                             <Storyboard x:Name="HideButtons">
+                                                <DoubleAnimation Storyboard.TargetName="MenuGrid"
+                                                                 Storyboard.TargetProperty="Width" BeginTime="0:0:0.5" Duration="0:0:0.5"
+                                                                 From="400" To="90"/>
                                                 <DoubleAnimation Storyboard.TargetName="ButtonsPanel"
-                                                                 Storyboard.TargetProperty="Height" Duration="0:0:1"
+                                                                 Storyboard.TargetProperty="Height" Duration="0:0:0.5"
                                                                  From="500" To="0"/>
                                             </Storyboard>
                                         </BeginStoryboard>
