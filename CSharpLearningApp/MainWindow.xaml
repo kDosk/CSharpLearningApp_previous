@@ -148,7 +148,7 @@
         </Grid>
 
         <!--#region ModalWindow -->
-        <modal:ModalWindowControl x:Name="AuthModalWindow" Grid.RowSpan="2" IsOpen="True">
+        <modal:ModalWindowControl x:Name="AuthModalWindow" Grid.RowSpan="2">
             <!--#region AuthorizationPage -->
             <Grid x:Name="AuthGrid" Grid.Column="1" VerticalAlignment="Center" Height="350" Width="350">
                 <Grid.RowDefinitions>
