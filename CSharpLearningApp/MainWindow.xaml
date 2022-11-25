@@ -142,13 +142,13 @@
             </Grid>
             <!--#endregion-->
             
-            <Border Grid.Column="1" Margin="10" BorderThickness="3" BorderBrush="#FFBD6432">
+            <Border Grid.Column="1" Margin="10" BorderThickness="3" BorderBrush="{StaticResource PrimaryColorBrush}" CornerRadius="20">
                 <TextBox x:Name="TBoxinfo" Background="Transparent" Foreground="#FF8FF3D7" FontSize="16" VerticalAlignment="Stretch" BorderThickness="0" IsReadOnly="True"/>
             </Border>
         </Grid>
 
         <!--#region ModalWindow -->
-        <modal:ModalWindowControl x:Name="AuthModalWindow" Grid.RowSpan="2" IsOpen="True">
+        <modal:ModalWindowControl x:Name="AuthModalWindow" Grid.RowSpan="2">
             <!--#region AuthorizationPage -->
             <Grid x:Name="AuthGrid" Grid.Column="1" VerticalAlignment="Center" Height="350" Width="350">
                 <Grid.RowDefinitions>
