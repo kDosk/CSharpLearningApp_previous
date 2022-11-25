@@ -8,7 +8,57 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Test3">
 
-    <Grid>
-        
+    <Grid  Style="{StaticResource GridDesign}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Сокращенная запись методов" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
+        <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonExit_Click"/>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Grid.Row="1" Style="{StaticResource StackPanelDesign}">
+                <Border BorderThickness="1" Margin="5">
+                    <StackPanel Margin="10" >
+                        <TextBlock x:Name="TextBlock11" FontSize="20" Style="{StaticResource BlockDesign}"/>
+                        <RadioButton GroupName="First" x:Name="Radio11" Content="a) Получающие значения, передаваемые методу при вызове"  Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
+                        <RadioButton GroupName="First" Content="b) задающие значения" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First" Content="c) отправляющие значения метода" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="1" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock12" FontSize="20" Style="{StaticResource BlockDesign}"/>
+                        <RadioButton GroupName="Second" Content="a) if" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second"  x:Name="Radio12" Content="b) return" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second" Content="c) while" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock13" FontSize="20" Style="{StaticResource BlockDesign}" TextWrapping="Wrap"/>
+                        <RadioButton GroupName="five"  Content="a) не возвращает никакого значения"   Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"  Content="b) выполняет некоторые действия" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"  x:Name="Radio13" Content="c) оба ответа верны" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock14"  FontSize="20" Style="{StaticResource BlockDesign}" TextWrapping="Wrap"/>
+                        <RadioButton GroupName="five"   Content="a) тип return" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"   Content="b) тип void" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"   Content="c) тип int" x:Name="Radio14" Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock15"  FontSize="20" Style="{StaticResource BlockDesign}" TextWrapping="Wrap"/>
+                        <RadioButton GroupName="five" Content="a) оператор условного перехода" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five" Content="b) оператор безусловного перехода" x:Name="Radio15" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five" Content="c) оператор вызова"   Style="{StaticResource RadioDesign}" Margin="8"/>
+                    </StackPanel>
+                </Border>
+                <Button x:Name="CheckBtn7" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

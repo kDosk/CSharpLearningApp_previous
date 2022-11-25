@@ -8,12 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Test1">
 
-    <Grid Style="{StaticResource GridDesign}">
+    <Grid  Style="{StaticResource GridDesign}">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Циклы for foreach" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
+        <TextBlock Text="Определение метода" Grid.Row="0" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" FontFamily="Times new Roman" Style="{StaticResource BlockDesign}"/>
         <Button x:Name="ExitButton" Content="Выйти" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonExit_Click"/>
         <ScrollViewer Grid.Row="1">
             <StackPanel Grid.Row="1" Style="{StaticResource StackPanelDesign}">
@@ -21,23 +21,48 @@
                     <StackPanel Margin="10" >
                         <TextBlock x:Name="TextBlock1" FontSize="20" Style="{StaticResource BlockDesign}"/>
                         <RadioButton GroupName="First" Content="a) Выполнение какого-то действия" Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
-                        <RadioButton GroupName="First" x:Name="Radio1" Content="b) Именованный блок кода" Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
-                        <RadioButton GroupName="First" Content="c) Способ достижения цели" Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
+                        <RadioButton GroupName="First" x:Name="Radio1" Content="b) Именованный блок кода " Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="First" Content="c) Способ достижения какой-то цели" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <Button x:Name="CheckBtn1" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
                     </StackPanel>
                 </Border>
-            </StackPanel>
-            <StackPanel Grid.Row="1" Style="{StaticResource StackPanelDesign}">
                 <Border BorderThickness="1" Margin="5">
-                    <StackPanel Margin="10" >
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
                         <TextBlock x:Name="TextBlock2" FontSize="20" Style="{StaticResource BlockDesign}"/>
-                        <RadioButton GroupName="First" Content="a) Выполнение какого-то действия" Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
-                        <RadioButton GroupName="First" x:Name="Radio2" Content="b) Именованный блок кода" Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
-                        <RadioButton GroupName="First" Content="c) Способ достижения цели" Style="{StaticResource RadioDesign}" Margin="8" Height="18"/>
+                        <RadioButton GroupName="Second"  x:Name="Radio2" Content="a)	Любых модификаторов"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second"  Content="b) Циклов " Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="Second" Content="c)	Любых значений " Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <Button x:Name="CheckBtn2" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock3"  FontSize="20" Style="{StaticResource BlockDesign}" TextWrapping="Wrap"/>
+                        <RadioButton GroupName="five"   Content="a)	Методы" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five" x:Name="Radio3"  Content="b)	Объекты" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"   Content="c)	Циклы" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <Button x:Name="CheckBtn3" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock4"  FontSize="20" Style="{StaticResource BlockDesign}" TextWrapping="Wrap"/>
+                        <RadioButton GroupName="five"   Content="a)	Точкой завершения"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"   Content="b)	Завершением и именем метода" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five" x:Name="Radio4"   Content="c) Точкой входа и именем метода" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <Button x:Name="CheckBtn4" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" Margin="5">
+                    <StackPanel Margin="10" Style="{StaticResource StackPanelDesign}">
+                        <TextBlock x:Name="TextBlock5"  FontSize="20" Style="{StaticResource BlockDesign}" TextWrapping="Wrap"/>
+                        <RadioButton GroupName="five" x:Name="Radio5"  Content="a)	Тип возвращаемого значения и или метода" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"   Content="b)	Класссы,обьекты"  Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <RadioButton GroupName="five"   Content="c)	Или методы и обьекты" Style="{StaticResource RadioDesign}" Margin="8"/>
+                        <Button x:Name="CheckBtn5" Content="Проверить" Margin="5" Height="30" Width="150" Style="{StaticResource ButtonDesign}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckBtn_Click"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
         </ScrollViewer>
-        <Grid/>
-
     </Grid>
 </Page>

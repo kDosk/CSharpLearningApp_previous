@@ -42,7 +42,7 @@ namespace CSharpLearningApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Test1());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -52,7 +52,7 @@ namespace CSharpLearningApp
 
         private void Valibation_ButtonClick2(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Test2());
         }
 
         private void Practice_ButtonClick1(object sender, RoutedEventArgs e)
@@ -61,7 +61,7 @@ namespace CSharpLearningApp
         }
         private void Valibation_ButtonClick3(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Test3());
         }
 
         private void Practice_ButtonClick3(object sender, RoutedEventArgs e)

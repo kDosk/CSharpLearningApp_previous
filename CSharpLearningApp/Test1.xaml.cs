@@ -23,6 +23,60 @@ namespace CSharpLearningApp
         public Test1()
         {
             InitializeComponent();
+            TextBlock1.Text = "Метод-это...";
+            TextBlock2.Text = "Из чего в С# состоит определение метода?";
+            TextBlock3.Text = "Что предоставляют классы?";
+            TextBlock4.Text = "Чем является метод Main для консольного приложения?";
+            TextBlock5.Text = "Обязательными элементами для определения метода в С# являются?";
+        }
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new mainpage());
+        }
+
+        private void CheckBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (Radio1.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+            if (Radio2.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+            if (Radio3.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+            if (Radio4.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
+            if (Radio5.IsChecked == true)
+            {
+                MessageBox.Show("Правильный ответ!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильный ответ!");
+            }
         }
     }
 }
