@@ -152,6 +152,12 @@
         </Style>
         <!--#endregion-->
 
+        <!--#region TextBlock H1 Black Font -->
+        <Style x:Key="TextBlockH1BlackFont" TargetType="TextBlock" BasedOn="{StaticResource TextBlockH1}">
+            <Setter Property="Foreground" Value="{StaticResource ThirdFontColorBrush}"/>
+        </Style>
+        <!--#endregion-->
+
         <!--#region TextBlock Animation H1 -->
         <Style x:Key="TextBlockH1WithAnimation" TargetType="TextBlock" BasedOn="{StaticResource TextBlockH1}">
             <Style.Triggers>
@@ -186,10 +192,9 @@
         </Style>
         <!--#endregion-->
 
-        <!--#region TextBlock H2 -->
+        <!--#region TextBlock H2 Black Font -->
         <Style x:Key="TextBlockH2BlackFont" TargetType="TextBlock" BasedOn="{StaticResource TextBlockH2}">
             <Setter Property="Foreground" Value="{StaticResource ThirdFontColorBrush}"/>
-            <Setter Property="FontSize" Value="14"/>
         </Style>
         <!--#endregion-->
         
@@ -416,6 +421,32 @@
             </Setter>
         </Style>
         <!--#endregion-->
+
+        <Style x:Key="ListViewTestElement" TargetType="ListView">
+            <Style.Resources>
+                <DataTemplate x:Key="LinearListViewItemTemplate">
+                    
+                </DataTemplate>
+            </Style.Resources>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="ItemTemplate" Value="{DynamicResource LinearListViewItemTemplate}"/>
+        </Style>
+
+        <Style x:Key="ListViewAnswers" TargetType="ListView">
+            <Style.Resources>
+                <DataTemplate x:Key="LinearListViewItemTemplate">
+
+                </DataTemplate>
+            </Style.Resources>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="ItemTemplate" Value="{DynamicResource LinearListViewItemTemplate}"/>
+        </Style>
 
         <!--<Style x:Key="ButtonDesign" TargetType="Button">
 

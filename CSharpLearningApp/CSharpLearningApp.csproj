@@ -67,6 +67,9 @@
     <Compile Include="Classes\Calculation\TestCalculate.cs" />
     <Compile Include="Models\TestModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Templates\ThemeWindow.xaml.cs">
+      <DependentUpon>ThemeWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,6 +87,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MWMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Templates\ThemeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
