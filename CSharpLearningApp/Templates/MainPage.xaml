@@ -13,21 +13,21 @@
 			<ListView x:Name="LViewTitles" Style="{StaticResource ListViewDefault}">
 				<ListView.ItemTemplate>
 					<DataTemplate>
-						<Border BorderBrush="{StaticResource SecondaryColorBrush}" BorderThickness="3" CornerRadius="20" Width="500" Margin="15" VerticalAlignment="Center">
+						<Border BorderBrush="{StaticResource SecondaryColorBrush}" BorderThickness="3" CornerRadius="20" Width="500" Margin="15" VerticalAlignment="Center" Background="Gray">
 							<Grid Margin="10">
 								<Grid.RowDefinitions>
 									<RowDefinition Height="auto"/>
 									<RowDefinition Height="auto"/>
 								</Grid.RowDefinitions>
 
-								<TextBlock Text="Заголовок" Style="{StaticResource TextBlockH1}" VerticalAlignment="Center" Margin="10"/>
+								<TextBlock Text="{Binding Question}" Style="{StaticResource TextBlockH1}" VerticalAlignment="Center" Margin="10"/>
 
-								<ListView x:Name="LViewSubtitles" Style="{StaticResource ListViewDefault}" Grid.Row="1">
+								<ListView x:Name="LViewSubtitles" Style="{StaticResource ListViewDefault}" Grid.Row="1" ItemsSource="{Binding Answers}">
 
 									<ListView.ItemTemplate>
 										<DataTemplate>
 											<Button Style="{StaticResource NavigationButton}" Margin="30 0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left">
-												<TextBlock Text="Подзаголовок" Style="{StaticResource TextBlockH1WithAnimation}" VerticalAlignment="Center"/>
+												<TextBlock Text="{Binding Value}" Style="{StaticResource TextBlockH1WithAnimation}" VerticalAlignment="Center"/>
 											</Button>
 										</DataTemplate>
 									</ListView.ItemTemplate>

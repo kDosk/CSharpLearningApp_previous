@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 
 namespace CSharpLearningApp.Models
 {
-	internal class Answer
+	internal class UserTestList
 	{
 		//[Key]
 		public int ID { get; set; }
-		public string Value { get; set; }
-		public bool IsCorrect { get; set; } = false;
-		public int TestID { get; set; }
+		public int UserID { get; set; }
+		public bool IsPassed { get; set; } = false;
+		public int TestListID { get; set; }
 
-		public TestQuestion Test { get; set; }
+
+		public User User { get; set; }
+		public TestList TestList { get; set; }
 	}
 }

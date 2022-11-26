@@ -19,6 +19,7 @@ namespace CSharpLearningApp.Classes.Navigation
 			get { return _currentPage; }
 			set
 			{
+				PreviousPage = _currentPage;
 				_currentPage = value;
 				OnPropertyChanged("CurrentPage");
 			}

@@ -11,8 +11,9 @@ namespace CSharpLearningApp.Classes
 	internal class ApplicationContext : DbContext
 	{
 		public DbSet<Answer> Answers { get; set; } = null!;
-		public DbSet<Test> Tests { get; set; } = null!;
+		public DbSet<TestQuestion> Tests { get; set; } = null!;
 		public DbSet<TestList> TestLists { get; set; } = null!;
+		public DbSet<UserTestList> UserTestLists { get; set; } = null!;
 		public DbSet<User> Users { get; set; } = null!;
 
 		public ApplicationContext()
