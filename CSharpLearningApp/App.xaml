@@ -422,30 +422,30 @@
 		</Style>
 		<!--#endregion-->
 
-		<Style x:Key="ListViewTestElement" TargetType="ListView">
+		<Style x:Key="ListViewDefault" TargetType="ListView">
 			<Style.Resources>
-				<DataTemplate x:Key="LinearListViewItemTemplate">
-
-				</DataTemplate>
-			</Style.Resources>
-			<Setter Property="Background" Value="Transparent"/>
-			<Setter Property="BorderBrush" Value="Transparent"/>
-			<Setter Property="BorderThickness" Value="0"/>
-			<Setter Property="HorizontalAlignment" Value="Center"/>
-			<Setter Property="ItemTemplate" Value="{DynamicResource LinearListViewItemTemplate}"/>
-		</Style>
-
-		<Style x:Key="ListViewAnswers" TargetType="ListView">
-			<Style.Resources>
-				<DataTemplate x:Key="LinearListViewItemTemplate">
-
-				</DataTemplate>
+				<Style TargetType="ListViewItem">
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="ListViewItem">
+								<ContentPresenter></ContentPresenter>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
 			</Style.Resources>
 			<Setter Property="Background" Value="Transparent"/>
 			<Setter Property="BorderBrush" Value="Transparent"/>
 			<Setter Property="BorderThickness" Value="0"/>
 			<Setter Property="HorizontalAlignment" Value="Stretch"/>
-			<Setter Property="ItemTemplate" Value="{DynamicResource LinearListViewItemTemplate}"/>
+		</Style>
+
+		<Style x:Key="ListViewTestList" TargetType="ListView" BasedOn="{StaticResource ListViewDefault}">
+			
+		</Style>
+
+		<Style x:Key="ListViewAnswers" TargetType="ListView" BasedOn="{StaticResource ListViewDefault}">
+			
 		</Style>
 
 		<!--<Style x:Key="ButtonDesign" TargetType="Button">
