@@ -5,34 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpLearningApp.Templates"
         mc:Ignorable="d"
-        Title="ThemeWindow" Height="450" Width="800">
+        Title="ThemeWindow" Height="720" Width="1280">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <ListView Grid.Row="1" Style="{StaticResource ListViewTestElement}">
-            s
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderBrush="{StaticResource SecondaryColorBrush}" BorderThickness="3" CornerRadius="20" Height="200" Width="700">
-                        <Grid Margin="15">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
 
-                            <Border BorderBrush="{StaticResource SecondaryColorBrush}" BorderThickness="0 0 0 3">
-                                <TextBlock x:Name="TBoxQuestion" Style="{StaticResource TextBlockH1BlackFont}" Text="Вопрос №1." Margin="5"/>
-                            </Border>
+		<Grid Background="{StaticResource PrimaryColorBrush}">
+			<TextBlock/>
+		</Grid>
+		
+		<ContentPresenter x:Name="ThemeWindowMainFrame" Grid.Row="1"/>
 
-                            <ListView Grid.Row="1" Style="{StaticResource ListViewAnswers}" Margin="15 5">
-                                
-                            </ListView>
-                        </Grid>
-                    </Border>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </Grid>
+	</Grid>
 </Window>
