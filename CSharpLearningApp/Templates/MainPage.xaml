@@ -9,11 +9,11 @@
 
     <ScrollViewer VerticalScrollBarVisibility="Hidden">
 		<StackPanel Orientation="Vertical" Margin="10">
-			<Border BorderBrush="{StaticResource SecondaryColorBrush}" BorderThickness="3" CornerRadius="20" Width="500" Margin="15" VerticalAlignment="Center">
-				<ListView x:Name="LViewTitles" Style="{StaticResource ListViewDefault}">
-					
-					<ListView.ItemTemplate>
-						<DataTemplate>
+
+			<ListView x:Name="LViewTitles" Style="{StaticResource ListViewDefault}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<Border BorderBrush="{StaticResource SecondaryColorBrush}" BorderThickness="3" CornerRadius="20" Width="500" Margin="15" VerticalAlignment="Center">
 							<Grid Margin="10">
 								<Grid.RowDefinitions>
 									<RowDefinition Height="auto"/>
@@ -23,7 +23,7 @@
 								<TextBlock Text="Заголовок" Style="{StaticResource TextBlockH1}" VerticalAlignment="Center" Margin="10"/>
 
 								<ListView x:Name="LViewSubtitles" Style="{StaticResource ListViewDefault}" Grid.Row="1">
-									
+
 									<ListView.ItemTemplate>
 										<DataTemplate>
 											<Button Style="{StaticResource NavigationButton}" Margin="30 0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left">
@@ -33,12 +33,10 @@
 									</ListView.ItemTemplate>
 								</ListView>
 							</Grid>
-						</DataTemplate>
-					</ListView.ItemTemplate>
-				</ListView>
-				
-			</Border>
-
+						</Border>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
 		</StackPanel>
 	</ScrollViewer>
 </UserControl>
