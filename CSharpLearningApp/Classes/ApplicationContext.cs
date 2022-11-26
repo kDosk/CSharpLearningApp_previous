@@ -15,6 +15,11 @@ namespace CSharpLearningApp.Classes
 		public DbSet<TestList> TestLists { get; set; } = null!;
 		public DbSet<User> Users { get; set; } = null!;
 
+		public ApplicationContext()
+		{
+			Database.EnsureCreated();
+		}
+
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			optionsBuilder.UseSqlite("Data Source=testdb.db");
