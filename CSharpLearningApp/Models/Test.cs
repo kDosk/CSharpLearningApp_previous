@@ -11,7 +11,10 @@ namespace CSharpLearningApp.Models
 		public int ID { get; set; }
 		public string Question { get; set; }
 		public List<Answer> Answers { get; set; }
-		public string CorrectAnswerId { get; set; }
+		public string CorrectAnswer { get; set; }
+
+		public int TestListId { get; set; }
+		public TestList TestList { get; set; }
 
 	}
 }

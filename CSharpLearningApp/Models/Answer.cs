@@ -11,5 +11,8 @@ namespace CSharpLearningApp.Models
 		public int Id { get; set; }
 		public string Value { get; set; }
 		public bool IsCorrect { get; set; } = false;
+
+		public int TestID { get; set; }
+		public Test Test { get; set; }
 	}
 }

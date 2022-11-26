@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CSharpLearningApp.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,14 @@ namespace CSharpLearningApp.Classes
 {
 	internal class ApplicationContext : DbContext
 	{
+		public DbSet<Answer> Answers { get; set; } = null!;
+		public DbSet<Test> Tests { get; set; } = null!;
+		public DbSet<TestList> TestLists { get; set; } = null!;
+		public DbSet<User> Users { get; set; } = null!;
 
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			optionsBuilder.UseSqlite("Data Source=testdb.db");
+		}
 	}
 }
