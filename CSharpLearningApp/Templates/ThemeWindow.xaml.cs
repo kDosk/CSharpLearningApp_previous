@@ -22,6 +22,7 @@ namespace CSharpLearningApp.Templates
         public ThemeWindow()
         {
             InitializeComponent();
+            ThemeWindowMainFrame.Content = new MainPage();
         }
     }
 }
