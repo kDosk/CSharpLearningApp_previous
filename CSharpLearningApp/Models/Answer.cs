@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpLearningApp.Models
 {
-	internal class TestModel
-	{
-		public int ID { get; set; }
-		public string Question { get; set; }
-		public List<Answers> Answers { get; set; }
-		public string CorrectAnswer { get; set; }
-
-	}
-	internal class Answers
+	internal class Answer
 	{
 		public int Id { get; set; }
 		public string Value { get; set; }

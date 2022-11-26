@@ -14,7 +14,7 @@ namespace CSharpLearningApp.Classes.Calculation
 		/// </summary>
 		/// <param name="listViewItems">Элементы ListView</param>
 		/// <param name="testModels">Тестовый бланк</param>
-		public static void Calculate(List<TestModel> listViewItems, List<TestModel> testModels)
+		public static void Calculate(List<Test> listViewItems, List<Test> testModels)
 		{
 			int correctAnswersCount = 0;
 

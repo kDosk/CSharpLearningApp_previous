@@ -30,7 +30,7 @@ namespace CSharpLearningApp
         private void NavigateButton_Click(object sender, RoutedEventArgs e)
         {
             //Переход к окну по названию нажатой кнопки
-            if (UserModel.CurrentUser != null)
+            if (User.CurrentUser != null)
             {
                 switch ((sender as Button).Content)
                 {
