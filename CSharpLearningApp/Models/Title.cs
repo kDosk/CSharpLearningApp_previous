@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpLearningApp.Models
 {
-	internal class PageTitle
+	internal class Title
 	{
-		public int Id { get; set; }
+		public int ID { get; set; }
 		public string Name { get; set; }
-		public List<Subtitle> Subtitles { get; set; }
+		public List<Subtitle> Subtitles { get; set; } = new List<Subtitle>();
 	}
 }

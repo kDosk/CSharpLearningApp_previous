@@ -8,10 +8,12 @@ namespace CSharpLearningApp.Models
 {
 	internal class Subtitle
 	{
-		public int Id { get; set; }
+		public int ID { get; set; }
 		public string Name { get; set; }
+		public int TitleID { get; set; }
 
-		public int PageTitleId { get; set; }
-		public PageTitle PageTitle { get; set; }
+
+		public Title Title { get; set; }
+		public TestList TestList { get; set; }
 	}
 }
