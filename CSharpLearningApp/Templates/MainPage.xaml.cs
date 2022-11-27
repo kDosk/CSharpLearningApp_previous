@@ -2,6 +2,7 @@
 using CSharpLearningApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,49 +28,53 @@ namespace CSharpLearningApp.Templates
 			InitializeComponent();
 			ApplicationContext db = new ApplicationContext();
 
-			User user = new User
-			{
-				ID = 1,
-				Login = "213",
-				Name = "elena",
-				Password = "123",
-				Surname = "nikola"
-			};
-			db.Users.Add(user);
+			//User user = new User
+			//{
+			//	ID = 1,
+			//	Login = "213",
+			//	Name = "elena",
+			//	Password = "123",
+			//	Surname = "nikola"
+			//};
+			//db.Users.Add(user);
 
-			TestList testList = new TestList
-			{
-				ID = 1,
-				Title = "title"
-			};
-			db.TestLists.Add(testList);
-			TestQuestion test = new TestQuestion
-			{
-				ID = 1,
-				Question = "question",
-				CorrectAnswer = "123",
-				TestList = testList
-			};
-			Answer answer = new Answer
-			{
-				ID = 1,
-				Value = "Answer-1",
-				Test = test
-			};
-			db.Answers.Add(answer);
+			//TestList testList = new TestList
+			//{
+			//	ID = 1,
+			//	Title = "title"
+			//};
+			//db.TestLists.Add(testList);
+			//TestQuestion test = new TestQuestion
+			//{
+			//	ID = 1,
+			//	Question = "question",
+			//	CorrectAnswer = "123",
+			//	TestList = testList
+			//};
+			//Answer answer = new Answer
+			//{
+			//	ID = 1,
+			//	Value = "Answer-1",
+			//	Test = test
+			//};
+			//db.Answers.Add(answer);
 
-			UserTestList userTestList = new UserTestList
-			{
-				ID = 1,
-				TestList = testList,
-				User = user,
-				IsPassed = false
-			};
-			db.UserTestLists.Add(userTestList);
+			//UserTestList userTestList = new UserTestList
+			//{
+			//	ID = 1,
+			//	TestList = testList,
+			//	User = user,
+			//	IsPassed = false
+			//};
+			//db.UserTestLists.Add(userTestList);
 
-			db.SaveChanges();
+			//db.SaveChanges();
+			db.Tests.Load();
+			db.TestLists.Load();
+			db.Answers.Load();
+			var data = db.TestLists.Local.ToObservableCollection()[0].Tests.ToList();
 
-			LViewTitles.ItemsSource = db.TestLists.ToList()[0].Tests.ToList();
+			LViewTitles.ItemsSource = data;
 
 
 		}
