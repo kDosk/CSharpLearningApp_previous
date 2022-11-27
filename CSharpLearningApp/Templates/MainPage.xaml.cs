@@ -28,7 +28,12 @@ namespace CSharpLearningApp.Templates
 		{
 			InitializeComponent();
 			ApplicationContext db = new ApplicationContext();
-
+			PageCreateData a = new PageCreateData(db);
+			db.Theory.Load();
+			db.Subtitles.Load();
+			db.TestLists.Load();
+			var list = db.Subtitles.ToList();
+			LViewTitles.ItemsSource = list;
 			
 		}
 	}

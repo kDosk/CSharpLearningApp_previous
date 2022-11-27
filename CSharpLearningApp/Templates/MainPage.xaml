@@ -21,23 +21,16 @@
 									<RowDefinition Height="auto"/>
 								</Grid.RowDefinitions>
 
-								<TextBlock Text="{Binding Question}" Style="{StaticResource TextBlockH1}" VerticalAlignment="Center" Margin="10"/>
+								<TextBlock Text="{Binding Name}" Style="{StaticResource TextBlockH1}" VerticalAlignment="Center" Margin="10"/>
 
-								<ListView x:Name="LViewSubtitles" Style="{StaticResource ListViewDefault}" Grid.Row="1" ItemsSource="{Binding Answers}">
-
-									<ListView.ItemTemplate>
-										<DataTemplate>
-											<StackPanel>
-												<Button Style="{StaticResource NavigationButton}" Margin="30 0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
-													<TextBlock Text="{Binding Value}" Style="{StaticResource TextBlockH1WithAnimation}" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
-												</Button>
-												<Button Style="{StaticResource NavigationButton}" Margin="30 0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
-													<TextBlock Text="{Binding}" Style="{StaticResource TextBlockH1WithAnimation}" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
-												</Button>
-											</StackPanel>
-										</DataTemplate>
-									</ListView.ItemTemplate>
-								</ListView>
+								<StackPanel Grid.Row="1">
+									<Button Style="{StaticResource NavigationButton}" Margin="30 0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+										<TextBlock Text="Теория" Style="{StaticResource TextBlockH1WithAnimation}" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
+									</Button>
+									<Button Style="{StaticResource NavigationButton}" Margin="30 0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+										<TextBlock Text="Тест" Style="{StaticResource TextBlockH1WithAnimation}" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
+									</Button>
+								</StackPanel>
 							</Grid>
 						</Border>
 					</DataTemplate>

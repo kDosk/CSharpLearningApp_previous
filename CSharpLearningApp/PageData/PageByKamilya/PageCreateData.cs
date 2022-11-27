@@ -1,4 +1,5 @@
 ﻿using CSharpLearningApp.Classes;
+using CSharpLearningApp.Models.PageModels;
 using CSharpLearningApp.Models.PageModels.TestModels;
 using System;
 using System.Collections.Generic;
@@ -21,29 +22,125 @@ namespace CSharpLearningApp.PageData.PageByKamilya
 		{
 			if (!_db.Titles.ToList().Exists(p => p.Name == name))
 			{
-				var tempTitle = CreateTitle(name);
+				Title title = new Title
+				{
+					Name = name
+				};
 
-				var tempSubtitle1 = CreateSubtitle("Глава 1. Переменные", tempTitle);
-				var tempTheory1 = CreateTheory("theory1", tempSubtitle1);
-				var tempTestList1 = CreateTestList("Переменные: Тест", tempSubtitle1);
+				Practice practice = new Practice
+				{
+					Task = "Задача",
+					CorrectAnswer = "Правильный ответ",
+					Title = title
+				};
 
-				var tempPractice1 = CreatePractice("Задание1", "Ответ", tempSubtitle1);
+				title.Practice = practice;
 
-				var tempAnswers1 = new string[] { "void", "const", "if" };
-				var tempTestQuestion1 = CreateTestQuestion("Какое ключевое слово используется для определения констант?", tempAnswers1[1], tempTestList1, tempAnswers1);
+				title.Subtitles.AddRange(new List<Subtitle>
+				{
+					Subtitle_1("Глава 1. Переменные",
+							   "Теория",
+							   title),
+					Subtitle_2("Глава 2. Константы",
+							   "Теория",
+							   title)
+				});
 
-				var tempAnswers2 = new string[] { "const string NAME = \"Tom\"; ", "const string NAME;", "NAME = \"Bob\";" };
-				var tempTestQuestion2 = CreateTestQuestion("Какое ключевое слово используется для определения констант?", tempAnswers2[0], tempTestList1, tempAnswers2);
-
-				var tempTestQuestionsList = new List<TestQuestion>() { tempTestQuestion1, tempTestQuestion2 };
-				tempTestList1.TestQuestions = tempTestQuestionsList;
-
-				tempSubtitle1.Theory = tempTheory1;
-				tempSubtitle1.TestList = tempTestList1;
-				tempSubtitle1.Practice = tempPractice1;
-
-
+				_db.Titles.Add(title);
+				_db.SaveChanges();
 			}
+		}
+
+		private Subtitle Subtitle_1(string name, string theoryContent, Title title)
+		{
+			Subtitle subtitle = AddSubtitle(name, theoryContent, title);
+
+			subtitle.TestList = TestList_1(subtitle);
+
+			return subtitle;
+		}
+
+		private Subtitle Subtitle_2(string name, string theoryContent, Title title)
+		{
+			Subtitle subtitle = AddSubtitle(name, theoryContent, title);
+
+			subtitle.TestList = TestList_2(subtitle);
+
+			return subtitle;
+		}
+
+		private Subtitle AddSubtitle(string name, string theoryContent, Title title)
+		{
+			Subtitle subtitle = new Subtitle
+			{
+				Name = name,
+				Title = title
+			};
+
+			Theory theory = new Theory
+			{
+				TheoryContent = theoryContent,
+				Subtitle = subtitle
+			};
+			subtitle.Theory = theory;
+
+			return subtitle;
+		}
+
+		private TestList TestList_1(Subtitle subtitle)
+		{
+			TestList testList = CreateTestList("Переменные: Тест", subtitle);
+
+			testList.TestQuestions.Add(CreateQuestion("Как выглядит синтаксис определения переменной?",
+													  new string[] { "имя_типа переменной", "имя тип_переменной", "тип имя_переменной" },
+													  "тип имя_переменной",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("В каком варианте переменная представляет строку?",
+													  new string[] { "String name", "String Name", "String = \"name\";" },
+													  "String name",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Какой тип данных хранит набор символов Unicode?",
+													  new string[] { "string", "bool", "int" },
+													  "string",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Какие из следующих вариантов представляют корректное определение переменных:",
+													  new string[] { "string name =Tom", "string name = \"Tom\";", "string name=(Tom)" },
+													  "string name = \"Tom\";",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Код для вывода на Console?",
+													  new string[] { "Console.WriteLine(Tom);", "Console.WriteLine(name);", "Console.WriteLine(name.Tom);" },
+													  "Console.WriteLine(name);",
+													  testList));
+
+			return testList;
+		}
+
+		private TestList TestList_2(Subtitle subtitle)
+		{
+			TestList testList = CreateTestList("Константы: Тест", subtitle);
+
+			testList.TestQuestions.Add(CreateQuestion("Какое ключевое слово используется для определения констант?",
+													  new string[] { "void", "const", "if" },
+													  "const",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Как определяется константа в коде?",
+													  new string[] { "const string NAME = \"Tom\"", "const string NAME;", "NAME = \"Bob\";" },
+													  "const string NAME = \"Tom\"",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Сколько форм имеют вещественные константы?",
+													  new string[] { "2", "4", "6" },
+													  "2",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Если мы храним некоторые данные, которых не надо изменять, что мы используем?",
+													  new string[] { "Переменные", "Константы" },
+													  "Константы",
+													  testList));
+			testList.TestQuestions.Add(CreateQuestion("Во что заключены символы в символьных константах?",
+													  new string[] { "Дефис", "Скобки", "Апострофы" },
+													  "Апострофы",
+													  testList));
+
+			return testList;
 		}
 	}
 }

@@ -18,6 +18,7 @@ namespace CSharpLearningApp.Classes
 		public DbSet<TestQuestion> Tests { get; set; } = null!;
 		public DbSet<TestList> TestLists { get; set; } = null!;
 		public DbSet<Practice> Practices { get; set; } = null!;
+		public DbSet<Theory> Theory { get; set; } = null!;
 		public DbSet<Subtitle> Subtitles { get; set; } = null!;
 		public DbSet<Title> Titles { get; set; } = null!;
 		public DbSet<UserTestList> UserTestLists { get; set; } = null!;

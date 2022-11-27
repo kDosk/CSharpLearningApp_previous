@@ -18,6 +18,5 @@ namespace CSharpLearningApp.Models.PageModels
         public Title Title { get; set; }
         public Theory Theory { get; set; }
         public TestList TestList { get; set; }
-        public Practice Practice { get; set; }
     }
 }
