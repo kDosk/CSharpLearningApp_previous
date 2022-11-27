@@ -1,5 +1,6 @@
 ﻿using CSharpLearningApp.Classes;
-using CSharpLearningApp.Models;
+using CSharpLearningApp.Models.PageModels;
+using CSharpLearningApp.Models.PageModels.TestModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CSharpLearningApp.PageData
 {
-	internal class PageDataBasic
+    internal class PageDataBasic
 	{
 		protected Answer CreateAnswer(string answer, TestQuestion testQuestion)
 		{

@@ -1,4 +1,6 @@
-﻿using CSharpLearningApp.Models;
+﻿using CSharpLearningApp.Models.PageModels;
+using CSharpLearningApp.Models.PageModels.TestModels;
+using CSharpLearningApp.Models.UserModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

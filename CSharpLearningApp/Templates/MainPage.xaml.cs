@@ -1,5 +1,6 @@
 ﻿using CSharpLearningApp.Classes;
 using CSharpLearningApp.Models;
+using CSharpLearningApp.PageData.PageByKamilya;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -27,14 +28,8 @@ namespace CSharpLearningApp.Templates
 		{
 			InitializeComponent();
 			ApplicationContext db = new ApplicationContext();
-			db.Tests.Load();
-			db.TestLists.Load();
-			db.Answers.Load();
-			var data = db.TestLists.Local.ToObservableCollection()[0].TestQuestions.ToList();
 
-			LViewTitles.ItemsSource = data;
-
-
+			
 		}
 	}
 }
