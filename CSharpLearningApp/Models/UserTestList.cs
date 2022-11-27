@@ -9,7 +9,7 @@ namespace CSharpLearningApp.Models
 {
 	internal class UserTestList
 	{
-		//[Key]
+		[Key]
 		public int ID { get; set; }
 		public int UserID { get; set; }
 		public bool IsPassed { get; set; } = false;

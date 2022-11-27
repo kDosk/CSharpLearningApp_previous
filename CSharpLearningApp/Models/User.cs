@@ -9,7 +9,7 @@ namespace CSharpLearningApp.Models
 {
     internal class User
     {
-		//[Key]
+		[Key]
 		public int ID { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }

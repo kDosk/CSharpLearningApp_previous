@@ -9,12 +9,12 @@ namespace CSharpLearningApp.Models
 {
 	internal class Answer
 	{
-		//[Key]
+		[Key]
 		public int ID { get; set; }
 		public string Value { get; set; }
 		public bool IsCorrect { get; set; } = false;
 		public int TestID { get; set; }
 
-		public TestQuestion Test { get; set; }
+		public TestQuestion TestQuestion { get; set; }
 	}
 }

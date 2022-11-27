@@ -9,13 +9,13 @@ namespace CSharpLearningApp.Models
 {
 	internal class TestList
 	{
-		//[Key]
+		[Key]
 		public int ID { get; set; }
 		public string Title { get; set; }
 		public int SubtitleID { get; set; }
 		
 		public Subtitle Subtitle { get; set; }
-		public List<TestQuestion> Tests { get; set; } = new List<TestQuestion>();
+		public List<TestQuestion> TestQuestions { get; set; } = new List<TestQuestion>();
 		
 	}
 }

@@ -9,7 +9,7 @@ namespace CSharpLearningApp.Models
 {
 	internal class TestQuestion
 	{
-		//[Key]
+		[Key]
 		public int ID { get; set; }
 		public string Question { get; set; }
 		public List<Answer> Answers { get; set; } = new List<Answer>();
