@@ -61,14 +61,8 @@
     <Compile Include="TagirBranch\MainWindowTagir.xaml.cs">
       <DependentUpon>MainWindowTagir.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TagirBranch\PracticeLogPage.xaml.cs">
-      <DependentUpon>PracticeLogPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="TagirBranch\PracticePage.xaml.cs">
       <DependentUpon>PracticePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TagirBranch\PracticeSravPage.xaml.cs">
-      <DependentUpon>PracticeSravPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TagirBranch\TheoryLogPage.xaml.cs">
       <DependentUpon>TheoryLogPage.xaml</DependentUpon>
@@ -110,15 +104,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TagirBranch\PracticeLogPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="TagirBranch\PracticePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TagirBranch\PracticeSravPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
